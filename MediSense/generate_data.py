@@ -1,5 +1,5 @@
 """
-PharmaPred — Génération des données historiques
+MediSense — Génération des données historiques
 30 médicaments · 5 ans (2020-2025) · Saisonnalité réaliste
 Lancez : python generate_data.py
 """
