@@ -1,0 +1,31 @@
+id,name,category,unit_cost,reorder_point
+MED001,Paracétamol 500mg,Antalgique,2.5,50
+MED002,Amoxicilline 500mg,Antibiotique,8.0,30
+MED003,Ibuprofène 400mg,Anti-inflammatoire,3.5,40
+MED004,Oméprazole 20mg,Gastrique,5.0,25
+MED005,Metformine 850mg,Diabète,4.0,35
+MED006,Amlodipine 5mg,Cardiovasculaire,6.5,20
+MED007,Salbutamol Spray,Respiratoire,12.0,15
+MED008,Loratadine 10mg,Antihistaminique,4.5,30
+MED009,Vitamine C 1000mg,Supplément,3.0,45
+MED010,Doliprane 1000mg,Antalgique,3.0,60
+MED011,Augmentin 875mg,Antibiotique,15.0,20
+MED012,Ventoline 100mcg,Respiratoire,14.0,15
+MED013,Atorvastatine 20mg,Cardiovasculaire,7.0,25
+MED014,Lévothyroxine 50mcg,Thyroïde,5.5,20
+MED015,Pantoprazole 40mg,Gastrique,6.0,30
+MED016,Sertraline 50mg,Psychiatrique,9.0,15
+MED017,Lansoprazole 30mg,Gastrique,5.5,20
+MED018,Cétirizine 10mg,Antihistaminique,3.5,35
+MED019,Diclofénac 50mg,Anti-inflammatoire,4.0,30
+MED020,Tramadol 50mg,Antalgique,6.0,20
+MED021,Fluconazole 150mg,Antifongique,10.0,15
+MED022,Ciprofloxacine 500mg,Antibiotique,12.0,20
+MED023,Doxycycline 100mg,Antibiotique,8.5,20
+MED024,Prednisolone 5mg,Corticoïde,4.5,25
+MED025,Vitamine D3 1000UI,Supplément,3.5,40
+MED026,Magnésium 300mg,Supplément,4.0,35
+MED027,Fer 80mg,Supplément,3.0,30
+MED028,Acide Folique 5mg,Supplément,2.5,25
+MED029,Bisoprolol 5mg,Cardiovasculaire,5.0,20
+MED030,Ramipril 5mg,Cardiovasculaire,5.5,20

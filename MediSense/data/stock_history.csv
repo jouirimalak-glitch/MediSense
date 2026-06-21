@@ -1,0 +1,1891 @@
+period,medication_id,medication_name,category,opening_stock,quantity_sold,quantity_restocked,closing_stock,reorder_point,unit_cost
+2020-01,MED001,Paracétamol 500mg,Antalgique,760,760,0,0,50,2.5
+2020-02,MED001,Paracétamol 500mg,Antalgique,423,723,300,0,50,2.5
+2020-03,MED001,Paracétamol 500mg,Antalgique,418,718,300,0,50,2.5
+2020-04,MED001,Paracétamol 500mg,Antalgique,401,701,300,0,50,2.5
+2020-05,MED001,Paracétamol 500mg,Antalgique,421,721,300,0,50,2.5
+2020-06,MED001,Paracétamol 500mg,Antalgique,425,725,300,0,50,2.5
+2020-07,MED001,Paracétamol 500mg,Antalgique,481,781,300,0,50,2.5
+2020-08,MED001,Paracétamol 500mg,Antalgique,450,750,300,0,50,2.5
+2020-09,MED001,Paracétamol 500mg,Antalgique,547,847,300,0,50,2.5
+2020-10,MED001,Paracétamol 500mg,Antalgique,614,914,300,0,50,2.5
+2020-11,MED001,Paracétamol 500mg,Antalgique,661,961,300,0,50,2.5
+2020-12,MED001,Paracétamol 500mg,Antalgique,676,976,300,0,50,2.5
+2021-01,MED001,Paracétamol 500mg,Antalgique,454,754,300,0,50,2.5
+2021-02,MED001,Paracétamol 500mg,Antalgique,386,686,300,0,50,2.5
+2021-03,MED001,Paracétamol 500mg,Antalgique,509,809,300,0,50,2.5
+2021-04,MED001,Paracétamol 500mg,Antalgique,458,758,300,0,50,2.5
+2021-05,MED001,Paracétamol 500mg,Antalgique,445,745,300,0,50,2.5
+2021-06,MED001,Paracétamol 500mg,Antalgique,434,734,300,0,50,2.5
+2021-07,MED001,Paracétamol 500mg,Antalgique,524,824,300,0,50,2.5
+2021-08,MED001,Paracétamol 500mg,Antalgique,451,751,300,0,50,2.5
+2021-09,MED001,Paracétamol 500mg,Antalgique,538,838,300,0,50,2.5
+2021-10,MED001,Paracétamol 500mg,Antalgique,645,945,300,0,50,2.5
+2021-11,MED001,Paracétamol 500mg,Antalgique,648,948,300,0,50,2.5
+2021-12,MED001,Paracétamol 500mg,Antalgique,677,977,300,0,50,2.5
+2022-01,MED001,Paracétamol 500mg,Antalgique,450,750,300,0,50,2.5
+2022-02,MED001,Paracétamol 500mg,Antalgique,441,741,300,0,50,2.5
+2022-03,MED001,Paracétamol 500mg,Antalgique,487,787,300,0,50,2.5
+2022-04,MED001,Paracétamol 500mg,Antalgique,471,771,300,0,50,2.5
+2022-05,MED001,Paracétamol 500mg,Antalgique,503,803,300,0,50,2.5
+2022-06,MED001,Paracétamol 500mg,Antalgique,477,777,300,0,50,2.5
+2022-07,MED001,Paracétamol 500mg,Antalgique,519,819,300,0,50,2.5
+2022-08,MED001,Paracétamol 500mg,Antalgique,511,811,300,0,50,2.5
+2022-09,MED001,Paracétamol 500mg,Antalgique,587,887,300,0,50,2.5
+2022-10,MED001,Paracétamol 500mg,Antalgique,628,928,300,0,50,2.5
+2022-11,MED001,Paracétamol 500mg,Antalgique,728,1028,300,0,50,2.5
+2022-12,MED001,Paracétamol 500mg,Antalgique,744,1044,300,0,50,2.5
+2023-01,MED001,Paracétamol 500mg,Antalgique,472,772,300,0,50,2.5
+2023-02,MED001,Paracétamol 500mg,Antalgique,403,703,300,0,50,2.5
+2023-03,MED001,Paracétamol 500mg,Antalgique,564,864,300,0,50,2.5
+2023-04,MED001,Paracétamol 500mg,Antalgique,468,768,300,0,50,2.5
+2023-05,MED001,Paracétamol 500mg,Antalgique,538,838,300,0,50,2.5
+2023-06,MED001,Paracétamol 500mg,Antalgique,478,778,300,0,50,2.5
+2023-07,MED001,Paracétamol 500mg,Antalgique,509,809,300,0,50,2.5
+2023-08,MED001,Paracétamol 500mg,Antalgique,605,905,300,0,50,2.5
+2023-09,MED001,Paracétamol 500mg,Antalgique,580,880,300,0,50,2.5
+2023-10,MED001,Paracétamol 500mg,Antalgique,747,1047,300,0,50,2.5
+2023-11,MED001,Paracétamol 500mg,Antalgique,787,1087,300,0,50,2.5
+2023-12,MED001,Paracétamol 500mg,Antalgique,677,977,300,0,50,2.5
+2024-01,MED001,Paracétamol 500mg,Antalgique,524,824,300,0,50,2.5
+2024-02,MED001,Paracétamol 500mg,Antalgique,525,825,300,0,50,2.5
+2024-03,MED001,Paracétamol 500mg,Antalgique,539,839,300,0,50,2.5
+2024-04,MED001,Paracétamol 500mg,Antalgique,490,790,300,0,50,2.5
+2024-05,MED001,Paracétamol 500mg,Antalgique,562,862,300,0,50,2.5
+2024-06,MED001,Paracétamol 500mg,Antalgique,507,807,300,0,50,2.5
+2024-07,MED001,Paracétamol 500mg,Antalgique,564,864,300,0,50,2.5
+2024-08,MED001,Paracétamol 500mg,Antalgique,555,855,300,0,50,2.5
+2024-09,MED001,Paracétamol 500mg,Antalgique,596,896,300,0,50,2.5
+2024-10,MED001,Paracétamol 500mg,Antalgique,742,1042,300,0,50,2.5
+2024-11,MED001,Paracétamol 500mg,Antalgique,781,1081,300,0,50,2.5
+2024-12,MED001,Paracétamol 500mg,Antalgique,726,1026,300,0,50,2.5
+2025-01,MED001,Paracétamol 500mg,Antalgique,574,874,300,0,50,2.5
+2025-02,MED001,Paracétamol 500mg,Antalgique,474,774,300,0,50,2.5
+2025-03,MED001,Paracétamol 500mg,Antalgique,578,878,300,0,50,2.5
+2020-01,MED002,Amoxicilline 500mg,Antibiotique,542,542,0,0,30,8.0
+2020-02,MED002,Amoxicilline 500mg,Antibiotique,247,427,180,0,30,8.0
+2020-03,MED002,Amoxicilline 500mg,Antibiotique,220,400,180,0,30,8.0
+2020-04,MED002,Amoxicilline 500mg,Antibiotique,114,294,180,0,30,8.0
+2020-05,MED002,Amoxicilline 500mg,Antibiotique,104,284,180,0,30,8.0
+2020-06,MED002,Amoxicilline 500mg,Antibiotique,60,240,180,0,30,8.0
+2020-07,MED002,Amoxicilline 500mg,Antibiotique,68,248,180,0,30,8.0
+2020-08,MED002,Amoxicilline 500mg,Antibiotique,95,275,180,0,30,8.0
+2020-09,MED002,Amoxicilline 500mg,Antibiotique,178,358,180,0,30,8.0
+2020-10,MED002,Amoxicilline 500mg,Antibiotique,252,432,180,0,30,8.0
+2020-11,MED002,Amoxicilline 500mg,Antibiotique,314,494,180,0,30,8.0
+2020-12,MED002,Amoxicilline 500mg,Antibiotique,430,610,180,0,30,8.0
+2021-01,MED002,Amoxicilline 500mg,Antibiotique,354,534,180,0,30,8.0
+2021-02,MED002,Amoxicilline 500mg,Antibiotique,239,419,180,0,30,8.0
+2021-03,MED002,Amoxicilline 500mg,Antibiotique,247,427,180,0,30,8.0
+2021-04,MED002,Amoxicilline 500mg,Antibiotique,140,320,180,0,30,8.0
+2021-05,MED002,Amoxicilline 500mg,Antibiotique,94,274,180,0,30,8.0
+2021-06,MED002,Amoxicilline 500mg,Antibiotique,67,247,180,0,30,8.0
+2021-07,MED002,Amoxicilline 500mg,Antibiotique,93,273,180,0,30,8.0
+2021-08,MED002,Amoxicilline 500mg,Antibiotique,96,276,180,0,30,8.0
+2021-09,MED002,Amoxicilline 500mg,Antibiotique,182,362,180,0,30,8.0
+2021-10,MED002,Amoxicilline 500mg,Antibiotique,269,449,180,0,30,8.0
+2021-11,MED002,Amoxicilline 500mg,Antibiotique,331,511,180,0,30,8.0
+2021-12,MED002,Amoxicilline 500mg,Antibiotique,404,584,180,0,30,8.0
+2022-01,MED002,Amoxicilline 500mg,Antibiotique,391,571,180,0,30,8.0
+2022-02,MED002,Amoxicilline 500mg,Antibiotique,243,423,180,0,30,8.0
+2022-03,MED002,Amoxicilline 500mg,Antibiotique,231,411,180,0,30,8.0
+2022-04,MED002,Amoxicilline 500mg,Antibiotique,152,332,180,0,30,8.0
+2022-05,MED002,Amoxicilline 500mg,Antibiotique,113,293,180,0,30,8.0
+2022-06,MED002,Amoxicilline 500mg,Antibiotique,79,259,180,0,30,8.0
+2022-07,MED002,Amoxicilline 500mg,Antibiotique,87,267,180,0,30,8.0
+2022-08,MED002,Amoxicilline 500mg,Antibiotique,117,297,180,0,30,8.0
+2022-09,MED002,Amoxicilline 500mg,Antibiotique,199,379,180,0,30,8.0
+2022-10,MED002,Amoxicilline 500mg,Antibiotique,263,443,180,0,30,8.0
+2022-11,MED002,Amoxicilline 500mg,Antibiotique,319,499,180,0,30,8.0
+2022-12,MED002,Amoxicilline 500mg,Antibiotique,443,623,180,0,30,8.0
+2023-01,MED002,Amoxicilline 500mg,Antibiotique,459,639,180,0,30,8.0
+2023-02,MED002,Amoxicilline 500mg,Antibiotique,284,464,180,0,30,8.0
+2023-03,MED002,Amoxicilline 500mg,Antibiotique,269,449,180,0,30,8.0
+2023-04,MED002,Amoxicilline 500mg,Antibiotique,153,333,180,0,30,8.0
+2023-05,MED002,Amoxicilline 500mg,Antibiotique,124,304,180,0,30,8.0
+2023-06,MED002,Amoxicilline 500mg,Antibiotique,67,247,180,0,30,8.0
+2023-07,MED002,Amoxicilline 500mg,Antibiotique,82,262,180,0,30,8.0
+2023-08,MED002,Amoxicilline 500mg,Antibiotique,116,296,180,0,30,8.0
+2023-09,MED002,Amoxicilline 500mg,Antibiotique,199,379,180,0,30,8.0
+2023-10,MED002,Amoxicilline 500mg,Antibiotique,303,483,180,0,30,8.0
+2023-11,MED002,Amoxicilline 500mg,Antibiotique,350,530,180,0,30,8.0
+2023-12,MED002,Amoxicilline 500mg,Antibiotique,433,613,180,0,30,8.0
+2024-01,MED002,Amoxicilline 500mg,Antibiotique,428,608,180,0,30,8.0
+2024-02,MED002,Amoxicilline 500mg,Antibiotique,293,473,180,0,30,8.0
+2024-03,MED002,Amoxicilline 500mg,Antibiotique,254,434,180,0,30,8.0
+2024-04,MED002,Amoxicilline 500mg,Antibiotique,142,322,180,0,30,8.0
+2024-05,MED002,Amoxicilline 500mg,Antibiotique,134,314,180,0,30,8.0
+2024-06,MED002,Amoxicilline 500mg,Antibiotique,90,270,180,0,30,8.0
+2024-07,MED002,Amoxicilline 500mg,Antibiotique,98,278,180,0,30,8.0
+2024-08,MED002,Amoxicilline 500mg,Antibiotique,127,307,180,0,30,8.0
+2024-09,MED002,Amoxicilline 500mg,Antibiotique,198,378,180,0,30,8.0
+2024-10,MED002,Amoxicilline 500mg,Antibiotique,294,474,180,0,30,8.0
+2024-11,MED002,Amoxicilline 500mg,Antibiotique,379,559,180,0,30,8.0
+2024-12,MED002,Amoxicilline 500mg,Antibiotique,449,629,180,0,30,8.0
+2025-01,MED002,Amoxicilline 500mg,Antibiotique,456,636,180,0,30,8.0
+2025-02,MED002,Amoxicilline 500mg,Antibiotique,294,474,180,0,30,8.0
+2025-03,MED002,Amoxicilline 500mg,Antibiotique,255,435,180,0,30,8.0
+2020-01,MED003,Ibuprofène 400mg,Anti-inflammatoire,631,631,0,0,40,3.5
+2020-02,MED003,Ibuprofène 400mg,Anti-inflammatoire,307,547,240,0,40,3.5
+2020-03,MED003,Ibuprofène 400mg,Anti-inflammatoire,306,546,240,0,40,3.5
+2020-04,MED003,Ibuprofène 400mg,Anti-inflammatoire,285,525,240,0,40,3.5
+2020-05,MED003,Ibuprofène 400mg,Anti-inflammatoire,231,471,240,0,40,3.5
+2020-06,MED003,Ibuprofène 400mg,Anti-inflammatoire,236,476,240,0,40,3.5
+2020-07,MED003,Ibuprofène 400mg,Anti-inflammatoire,251,491,240,0,40,3.5
+2020-08,MED003,Ibuprofène 400mg,Anti-inflammatoire,300,540,240,0,40,3.5
+2020-09,MED003,Ibuprofène 400mg,Anti-inflammatoire,321,561,240,0,40,3.5
+2020-10,MED003,Ibuprofène 400mg,Anti-inflammatoire,423,663,240,0,40,3.5
+2020-11,MED003,Ibuprofène 400mg,Anti-inflammatoire,404,644,240,0,40,3.5
+2020-12,MED003,Ibuprofène 400mg,Anti-inflammatoire,475,715,240,0,40,3.5
+2021-01,MED003,Ibuprofène 400mg,Anti-inflammatoire,392,632,240,0,40,3.5
+2021-02,MED003,Ibuprofène 400mg,Anti-inflammatoire,305,545,240,0,40,3.5
+2021-03,MED003,Ibuprofène 400mg,Anti-inflammatoire,334,574,240,0,40,3.5
+2021-04,MED003,Ibuprofène 400mg,Anti-inflammatoire,335,575,240,0,40,3.5
+2021-05,MED003,Ibuprofène 400mg,Anti-inflammatoire,272,512,240,0,40,3.5
+2021-06,MED003,Ibuprofène 400mg,Anti-inflammatoire,234,474,240,0,40,3.5
+2021-07,MED003,Ibuprofène 400mg,Anti-inflammatoire,271,511,240,0,40,3.5
+2021-08,MED003,Ibuprofène 400mg,Anti-inflammatoire,321,561,240,0,40,3.5
+2021-09,MED003,Ibuprofène 400mg,Anti-inflammatoire,345,585,240,0,40,3.5
+2021-10,MED003,Ibuprofène 400mg,Anti-inflammatoire,391,631,240,0,40,3.5
+2021-11,MED003,Ibuprofène 400mg,Anti-inflammatoire,446,686,240,0,40,3.5
+2021-12,MED003,Ibuprofène 400mg,Anti-inflammatoire,509,749,240,0,40,3.5
+2022-01,MED003,Ibuprofène 400mg,Anti-inflammatoire,416,656,240,0,40,3.5
+2022-02,MED003,Ibuprofène 400mg,Anti-inflammatoire,346,586,240,0,40,3.5
+2022-03,MED003,Ibuprofène 400mg,Anti-inflammatoire,344,584,240,0,40,3.5
+2022-04,MED003,Ibuprofène 400mg,Anti-inflammatoire,323,563,240,0,40,3.5
+2022-05,MED003,Ibuprofène 400mg,Anti-inflammatoire,293,533,240,0,40,3.5
+2022-06,MED003,Ibuprofène 400mg,Anti-inflammatoire,289,529,240,0,40,3.5
+2022-07,MED003,Ibuprofène 400mg,Anti-inflammatoire,282,522,240,0,40,3.5
+2022-08,MED003,Ibuprofène 400mg,Anti-inflammatoire,343,583,240,0,40,3.5
+2022-09,MED003,Ibuprofène 400mg,Anti-inflammatoire,381,621,240,0,40,3.5
+2022-10,MED003,Ibuprofène 400mg,Anti-inflammatoire,453,693,240,0,40,3.5
+2022-11,MED003,Ibuprofène 400mg,Anti-inflammatoire,452,692,240,0,40,3.5
+2022-12,MED003,Ibuprofène 400mg,Anti-inflammatoire,543,783,240,0,40,3.5
+2023-01,MED003,Ibuprofène 400mg,Anti-inflammatoire,465,705,240,0,40,3.5
+2023-02,MED003,Ibuprofène 400mg,Anti-inflammatoire,317,557,240,0,40,3.5
+2023-03,MED003,Ibuprofène 400mg,Anti-inflammatoire,316,556,240,0,40,3.5
+2023-04,MED003,Ibuprofène 400mg,Anti-inflammatoire,322,562,240,0,40,3.5
+2023-05,MED003,Ibuprofène 400mg,Anti-inflammatoire,298,538,240,0,40,3.5
+2023-06,MED003,Ibuprofène 400mg,Anti-inflammatoire,252,492,240,0,40,3.5
+2023-07,MED003,Ibuprofène 400mg,Anti-inflammatoire,298,538,240,0,40,3.5
+2023-08,MED003,Ibuprofène 400mg,Anti-inflammatoire,370,610,240,0,40,3.5
+2023-09,MED003,Ibuprofène 400mg,Anti-inflammatoire,418,658,240,0,40,3.5
+2023-10,MED003,Ibuprofène 400mg,Anti-inflammatoire,500,740,240,0,40,3.5
+2023-11,MED003,Ibuprofène 400mg,Anti-inflammatoire,453,693,240,0,40,3.5
+2023-12,MED003,Ibuprofène 400mg,Anti-inflammatoire,551,791,240,0,40,3.5
+2024-01,MED003,Ibuprofène 400mg,Anti-inflammatoire,488,728,240,0,40,3.5
+2024-02,MED003,Ibuprofène 400mg,Anti-inflammatoire,378,618,240,0,40,3.5
+2024-03,MED003,Ibuprofène 400mg,Anti-inflammatoire,360,600,240,0,40,3.5
+2024-04,MED003,Ibuprofène 400mg,Anti-inflammatoire,355,595,240,0,40,3.5
+2024-05,MED003,Ibuprofène 400mg,Anti-inflammatoire,325,565,240,0,40,3.5
+2024-06,MED003,Ibuprofène 400mg,Anti-inflammatoire,274,514,240,0,40,3.5
+2024-07,MED003,Ibuprofène 400mg,Anti-inflammatoire,326,566,240,0,40,3.5
+2024-08,MED003,Ibuprofène 400mg,Anti-inflammatoire,362,602,240,0,40,3.5
+2024-09,MED003,Ibuprofène 400mg,Anti-inflammatoire,395,635,240,0,40,3.5
+2024-10,MED003,Ibuprofène 400mg,Anti-inflammatoire,464,704,240,0,40,3.5
+2024-11,MED003,Ibuprofène 400mg,Anti-inflammatoire,479,719,240,0,40,3.5
+2024-12,MED003,Ibuprofène 400mg,Anti-inflammatoire,582,822,240,0,40,3.5
+2025-01,MED003,Ibuprofène 400mg,Anti-inflammatoire,500,740,240,0,40,3.5
+2025-02,MED003,Ibuprofène 400mg,Anti-inflammatoire,424,664,240,0,40,3.5
+2025-03,MED003,Ibuprofène 400mg,Anti-inflammatoire,372,612,240,0,40,3.5
+2020-01,MED004,Oméprazole 20mg,Gastrique,307,307,0,0,25,5.0
+2020-02,MED004,Oméprazole 20mg,Gastrique,138,288,150,0,25,5.0
+2020-03,MED004,Oméprazole 20mg,Gastrique,140,290,150,0,25,5.0
+2020-04,MED004,Oméprazole 20mg,Gastrique,162,312,150,0,25,5.0
+2020-05,MED004,Oméprazole 20mg,Gastrique,183,333,150,0,25,5.0
+2020-06,MED004,Oméprazole 20mg,Gastrique,155,305,150,0,25,5.0
+2020-07,MED004,Oméprazole 20mg,Gastrique,151,301,150,0,25,5.0
+2020-08,MED004,Oméprazole 20mg,Gastrique,122,272,150,0,25,5.0
+2020-09,MED004,Oméprazole 20mg,Gastrique,150,300,150,0,25,5.0
+2020-10,MED004,Oméprazole 20mg,Gastrique,133,283,150,0,25,5.0
+2020-11,MED004,Oméprazole 20mg,Gastrique,130,280,150,0,25,5.0
+2020-12,MED004,Oméprazole 20mg,Gastrique,143,293,150,0,25,5.0
+2021-01,MED004,Oméprazole 20mg,Gastrique,148,298,150,0,25,5.0
+2021-02,MED004,Oméprazole 20mg,Gastrique,113,263,150,0,25,5.0
+2021-03,MED004,Oméprazole 20mg,Gastrique,176,326,150,0,25,5.0
+2021-04,MED004,Oméprazole 20mg,Gastrique,192,342,150,0,25,5.0
+2021-05,MED004,Oméprazole 20mg,Gastrique,207,357,150,0,25,5.0
+2021-06,MED004,Oméprazole 20mg,Gastrique,183,333,150,0,25,5.0
+2021-07,MED004,Oméprazole 20mg,Gastrique,141,291,150,0,25,5.0
+2021-08,MED004,Oméprazole 20mg,Gastrique,167,317,150,0,25,5.0
+2021-09,MED004,Oméprazole 20mg,Gastrique,141,291,150,0,25,5.0
+2021-10,MED004,Oméprazole 20mg,Gastrique,150,300,150,0,25,5.0
+2021-11,MED004,Oméprazole 20mg,Gastrique,154,304,150,0,25,5.0
+2021-12,MED004,Oméprazole 20mg,Gastrique,151,301,150,0,25,5.0
+2022-01,MED004,Oméprazole 20mg,Gastrique,159,309,150,0,25,5.0
+2022-02,MED004,Oméprazole 20mg,Gastrique,130,280,150,0,25,5.0
+2022-03,MED004,Oméprazole 20mg,Gastrique,161,311,150,0,25,5.0
+2022-04,MED004,Oméprazole 20mg,Gastrique,184,334,150,0,25,5.0
+2022-05,MED004,Oméprazole 20mg,Gastrique,253,403,150,0,25,5.0
+2022-06,MED004,Oméprazole 20mg,Gastrique,200,350,150,0,25,5.0
+2022-07,MED004,Oméprazole 20mg,Gastrique,167,317,150,0,25,5.0
+2022-08,MED004,Oméprazole 20mg,Gastrique,161,311,150,0,25,5.0
+2022-09,MED004,Oméprazole 20mg,Gastrique,159,309,150,0,25,5.0
+2022-10,MED004,Oméprazole 20mg,Gastrique,166,316,150,0,25,5.0
+2022-11,MED004,Oméprazole 20mg,Gastrique,172,322,150,0,25,5.0
+2022-12,MED004,Oméprazole 20mg,Gastrique,158,308,150,0,25,5.0
+2023-01,MED004,Oméprazole 20mg,Gastrique,147,297,150,0,25,5.0
+2023-02,MED004,Oméprazole 20mg,Gastrique,139,289,150,0,25,5.0
+2023-03,MED004,Oméprazole 20mg,Gastrique,174,324,150,0,25,5.0
+2023-04,MED004,Oméprazole 20mg,Gastrique,179,329,150,0,25,5.0
+2023-05,MED004,Oméprazole 20mg,Gastrique,218,368,150,0,25,5.0
+2023-06,MED004,Oméprazole 20mg,Gastrique,180,330,150,0,25,5.0
+2023-07,MED004,Oméprazole 20mg,Gastrique,166,316,150,0,25,5.0
+2023-08,MED004,Oméprazole 20mg,Gastrique,164,314,150,0,25,5.0
+2023-09,MED004,Oméprazole 20mg,Gastrique,165,315,150,0,25,5.0
+2023-10,MED004,Oméprazole 20mg,Gastrique,165,315,150,0,25,5.0
+2023-11,MED004,Oméprazole 20mg,Gastrique,162,312,150,0,25,5.0
+2023-12,MED004,Oméprazole 20mg,Gastrique,145,295,150,0,25,5.0
+2024-01,MED004,Oméprazole 20mg,Gastrique,184,334,150,0,25,5.0
+2024-02,MED004,Oméprazole 20mg,Gastrique,145,295,150,0,25,5.0
+2024-03,MED004,Oméprazole 20mg,Gastrique,185,335,150,0,25,5.0
+2024-04,MED004,Oméprazole 20mg,Gastrique,214,364,150,0,25,5.0
+2024-05,MED004,Oméprazole 20mg,Gastrique,255,405,150,0,25,5.0
+2024-06,MED004,Oméprazole 20mg,Gastrique,206,356,150,0,25,5.0
+2024-07,MED004,Oméprazole 20mg,Gastrique,173,323,150,0,25,5.0
+2024-08,MED004,Oméprazole 20mg,Gastrique,198,348,150,0,25,5.0
+2024-09,MED004,Oméprazole 20mg,Gastrique,172,322,150,0,25,5.0
+2024-10,MED004,Oméprazole 20mg,Gastrique,198,348,150,0,25,5.0
+2024-11,MED004,Oméprazole 20mg,Gastrique,186,336,150,0,25,5.0
+2024-12,MED004,Oméprazole 20mg,Gastrique,190,340,150,0,25,5.0
+2025-01,MED004,Oméprazole 20mg,Gastrique,200,350,150,0,25,5.0
+2025-02,MED004,Oméprazole 20mg,Gastrique,158,308,150,0,25,5.0
+2025-03,MED004,Oméprazole 20mg,Gastrique,178,328,150,0,25,5.0
+2020-01,MED005,Metformine 850mg,Diabète,231,231,0,0,35,4.0
+2020-02,MED005,Metformine 850mg,Diabète,0,210,210,0,35,4.0
+2020-03,MED005,Metformine 850mg,Diabète,22,232,210,0,35,4.0
+2020-04,MED005,Metformine 850mg,Diabète,13,223,210,0,35,4.0
+2020-05,MED005,Metformine 850mg,Diabète,16,226,210,0,35,4.0
+2020-06,MED005,Metformine 850mg,Diabète,15,225,210,0,35,4.0
+2020-07,MED005,Metformine 850mg,Diabète,15,225,210,0,35,4.0
+2020-08,MED005,Metformine 850mg,Diabète,15,225,210,0,35,4.0
+2020-09,MED005,Metformine 850mg,Diabète,22,232,210,0,35,4.0
+2020-10,MED005,Metformine 850mg,Diabète,32,242,210,0,35,4.0
+2020-11,MED005,Metformine 850mg,Diabète,19,229,210,0,35,4.0
+2020-12,MED005,Metformine 850mg,Diabète,31,241,210,0,35,4.0
+2021-01,MED005,Metformine 850mg,Diabète,28,238,210,0,35,4.0
+2021-02,MED005,Metformine 850mg,Diabète,10,220,210,0,35,4.0
+2021-03,MED005,Metformine 850mg,Diabète,36,246,210,0,35,4.0
+2021-04,MED005,Metformine 850mg,Diabète,33,243,210,0,35,4.0
+2021-05,MED005,Metformine 850mg,Diabète,26,236,210,0,35,4.0
+2021-06,MED005,Metformine 850mg,Diabète,22,232,210,0,35,4.0
+2021-07,MED005,Metformine 850mg,Diabète,38,248,210,0,35,4.0
+2021-08,MED005,Metformine 850mg,Diabète,32,242,210,0,35,4.0
+2021-09,MED005,Metformine 850mg,Diabète,25,235,210,0,35,4.0
+2021-10,MED005,Metformine 850mg,Diabète,29,239,210,0,35,4.0
+2021-11,MED005,Metformine 850mg,Diabète,34,244,210,0,35,4.0
+2021-12,MED005,Metformine 850mg,Diabète,43,253,210,0,35,4.0
+2022-01,MED005,Metformine 850mg,Diabète,28,238,210,0,35,4.0
+2022-02,MED005,Metformine 850mg,Diabète,7,217,210,0,35,4.0
+2022-03,MED005,Metformine 850mg,Diabète,38,248,210,0,35,4.0
+2022-04,MED005,Metformine 850mg,Diabète,24,234,210,0,35,4.0
+2022-05,MED005,Metformine 850mg,Diabète,39,249,210,0,35,4.0
+2022-06,MED005,Metformine 850mg,Diabète,34,244,210,0,35,4.0
+2022-07,MED005,Metformine 850mg,Diabète,28,238,210,0,35,4.0
+2022-08,MED005,Metformine 850mg,Diabète,36,246,210,0,35,4.0
+2022-09,MED005,Metformine 850mg,Diabète,34,244,210,0,35,4.0
+2022-10,MED005,Metformine 850mg,Diabète,40,250,210,0,35,4.0
+2022-11,MED005,Metformine 850mg,Diabète,44,254,210,0,35,4.0
+2022-12,MED005,Metformine 850mg,Diabète,39,249,210,0,35,4.0
+2023-01,MED005,Metformine 850mg,Diabète,42,252,210,0,35,4.0
+2023-02,MED005,Metformine 850mg,Diabète,15,225,210,0,35,4.0
+2023-03,MED005,Metformine 850mg,Diabète,41,251,210,0,35,4.0
+2023-04,MED005,Metformine 850mg,Diabète,26,236,210,0,35,4.0
+2023-05,MED005,Metformine 850mg,Diabète,41,251,210,0,35,4.0
+2023-06,MED005,Metformine 850mg,Diabète,37,247,210,0,35,4.0
+2023-07,MED005,Metformine 850mg,Diabète,45,255,210,0,35,4.0
+2023-08,MED005,Metformine 850mg,Diabète,45,255,210,0,35,4.0
+2023-09,MED005,Metformine 850mg,Diabète,38,248,210,0,35,4.0
+2023-10,MED005,Metformine 850mg,Diabète,43,253,210,0,35,4.0
+2023-11,MED005,Metformine 850mg,Diabète,26,236,210,0,35,4.0
+2023-12,MED005,Metformine 850mg,Diabète,50,260,210,0,35,4.0
+2024-01,MED005,Metformine 850mg,Diabète,47,257,210,0,35,4.0
+2024-02,MED005,Metformine 850mg,Diabète,35,245,210,0,35,4.0
+2024-03,MED005,Metformine 850mg,Diabète,37,247,210,0,35,4.0
+2024-04,MED005,Metformine 850mg,Diabète,49,259,210,0,35,4.0
+2024-05,MED005,Metformine 850mg,Diabète,54,264,210,0,35,4.0
+2024-06,MED005,Metformine 850mg,Diabète,47,257,210,0,35,4.0
+2024-07,MED005,Metformine 850mg,Diabète,58,268,210,0,35,4.0
+2024-08,MED005,Metformine 850mg,Diabète,47,257,210,0,35,4.0
+2024-09,MED005,Metformine 850mg,Diabète,43,253,210,0,35,4.0
+2024-10,MED005,Metformine 850mg,Diabète,58,268,210,0,35,4.0
+2024-11,MED005,Metformine 850mg,Diabète,57,267,210,0,35,4.0
+2024-12,MED005,Metformine 850mg,Diabète,51,261,210,0,35,4.0
+2025-01,MED005,Metformine 850mg,Diabète,54,264,210,0,35,4.0
+2025-02,MED005,Metformine 850mg,Diabète,29,239,210,0,35,4.0
+2025-03,MED005,Metformine 850mg,Diabète,62,272,210,0,35,4.0
+2020-01,MED006,Amlodipine 5mg,Cardiovasculaire,187,187,0,0,20,6.5
+2020-02,MED006,Amlodipine 5mg,Cardiovasculaire,32,152,120,0,20,6.5
+2020-03,MED006,Amlodipine 5mg,Cardiovasculaire,52,172,120,0,20,6.5
+2020-04,MED006,Amlodipine 5mg,Cardiovasculaire,52,172,120,0,20,6.5
+2020-05,MED006,Amlodipine 5mg,Cardiovasculaire,42,162,120,0,20,6.5
+2020-06,MED006,Amlodipine 5mg,Cardiovasculaire,53,173,120,0,20,6.5
+2020-07,MED006,Amlodipine 5mg,Cardiovasculaire,42,162,120,0,20,6.5
+2020-08,MED006,Amlodipine 5mg,Cardiovasculaire,45,165,120,0,20,6.5
+2020-09,MED006,Amlodipine 5mg,Cardiovasculaire,49,169,120,0,20,6.5
+2020-10,MED006,Amlodipine 5mg,Cardiovasculaire,46,166,120,0,20,6.5
+2020-11,MED006,Amlodipine 5mg,Cardiovasculaire,64,184,120,0,20,6.5
+2020-12,MED006,Amlodipine 5mg,Cardiovasculaire,74,194,120,0,20,6.5
+2021-01,MED006,Amlodipine 5mg,Cardiovasculaire,63,183,120,0,20,6.5
+2021-02,MED006,Amlodipine 5mg,Cardiovasculaire,36,156,120,0,20,6.5
+2021-03,MED006,Amlodipine 5mg,Cardiovasculaire,61,181,120,0,20,6.5
+2021-04,MED006,Amlodipine 5mg,Cardiovasculaire,51,171,120,0,20,6.5
+2021-05,MED006,Amlodipine 5mg,Cardiovasculaire,54,174,120,0,20,6.5
+2021-06,MED006,Amlodipine 5mg,Cardiovasculaire,51,171,120,0,20,6.5
+2021-07,MED006,Amlodipine 5mg,Cardiovasculaire,57,177,120,0,20,6.5
+2021-08,MED006,Amlodipine 5mg,Cardiovasculaire,62,182,120,0,20,6.5
+2021-09,MED006,Amlodipine 5mg,Cardiovasculaire,65,185,120,0,20,6.5
+2021-10,MED006,Amlodipine 5mg,Cardiovasculaire,50,170,120,0,20,6.5
+2021-11,MED006,Amlodipine 5mg,Cardiovasculaire,68,188,120,0,20,6.5
+2021-12,MED006,Amlodipine 5mg,Cardiovasculaire,79,199,120,0,20,6.5
+2022-01,MED006,Amlodipine 5mg,Cardiovasculaire,69,189,120,0,20,6.5
+2022-02,MED006,Amlodipine 5mg,Cardiovasculaire,38,158,120,0,20,6.5
+2022-03,MED006,Amlodipine 5mg,Cardiovasculaire,56,176,120,0,20,6.5
+2022-04,MED006,Amlodipine 5mg,Cardiovasculaire,51,171,120,0,20,6.5
+2022-05,MED006,Amlodipine 5mg,Cardiovasculaire,61,181,120,0,20,6.5
+2022-06,MED006,Amlodipine 5mg,Cardiovasculaire,44,164,120,0,20,6.5
+2022-07,MED006,Amlodipine 5mg,Cardiovasculaire,66,186,120,0,20,6.5
+2022-08,MED006,Amlodipine 5mg,Cardiovasculaire,73,193,120,0,20,6.5
+2022-09,MED006,Amlodipine 5mg,Cardiovasculaire,58,178,120,0,20,6.5
+2022-10,MED006,Amlodipine 5mg,Cardiovasculaire,69,189,120,0,20,6.5
+2022-11,MED006,Amlodipine 5mg,Cardiovasculaire,81,201,120,0,20,6.5
+2022-12,MED006,Amlodipine 5mg,Cardiovasculaire,80,200,120,0,20,6.5
+2023-01,MED006,Amlodipine 5mg,Cardiovasculaire,81,201,120,0,20,6.5
+2023-02,MED006,Amlodipine 5mg,Cardiovasculaire,44,164,120,0,20,6.5
+2023-03,MED006,Amlodipine 5mg,Cardiovasculaire,61,181,120,0,20,6.5
+2023-04,MED006,Amlodipine 5mg,Cardiovasculaire,58,178,120,0,20,6.5
+2023-05,MED006,Amlodipine 5mg,Cardiovasculaire,74,194,120,0,20,6.5
+2023-06,MED006,Amlodipine 5mg,Cardiovasculaire,60,180,120,0,20,6.5
+2023-07,MED006,Amlodipine 5mg,Cardiovasculaire,73,193,120,0,20,6.5
+2023-08,MED006,Amlodipine 5mg,Cardiovasculaire,79,199,120,0,20,6.5
+2023-09,MED006,Amlodipine 5mg,Cardiovasculaire,61,181,120,0,20,6.5
+2023-10,MED006,Amlodipine 5mg,Cardiovasculaire,72,192,120,0,20,6.5
+2023-11,MED006,Amlodipine 5mg,Cardiovasculaire,76,196,120,0,20,6.5
+2023-12,MED006,Amlodipine 5mg,Cardiovasculaire,78,198,120,0,20,6.5
+2024-01,MED006,Amlodipine 5mg,Cardiovasculaire,82,202,120,0,20,6.5
+2024-02,MED006,Amlodipine 5mg,Cardiovasculaire,61,181,120,0,20,6.5
+2024-03,MED006,Amlodipine 5mg,Cardiovasculaire,72,192,120,0,20,6.5
+2024-04,MED006,Amlodipine 5mg,Cardiovasculaire,69,189,120,0,20,6.5
+2024-05,MED006,Amlodipine 5mg,Cardiovasculaire,76,196,120,0,20,6.5
+2024-06,MED006,Amlodipine 5mg,Cardiovasculaire,63,183,120,0,20,6.5
+2024-07,MED006,Amlodipine 5mg,Cardiovasculaire,72,192,120,0,20,6.5
+2024-08,MED006,Amlodipine 5mg,Cardiovasculaire,79,199,120,0,20,6.5
+2024-09,MED006,Amlodipine 5mg,Cardiovasculaire,66,186,120,0,20,6.5
+2024-10,MED006,Amlodipine 5mg,Cardiovasculaire,89,209,120,0,20,6.5
+2024-11,MED006,Amlodipine 5mg,Cardiovasculaire,90,210,120,0,20,6.5
+2024-12,MED006,Amlodipine 5mg,Cardiovasculaire,95,215,120,0,20,6.5
+2025-01,MED006,Amlodipine 5mg,Cardiovasculaire,93,213,120,0,20,6.5
+2025-02,MED006,Amlodipine 5mg,Cardiovasculaire,65,185,120,0,20,6.5
+2025-03,MED006,Amlodipine 5mg,Cardiovasculaire,71,191,120,0,20,6.5
+2020-01,MED007,Salbutamol Spray,Respiratoire,234,234,0,0,15,12.0
+2020-02,MED007,Salbutamol Spray,Respiratoire,99,189,90,0,15,12.0
+2020-03,MED007,Salbutamol Spray,Respiratoire,54,144,90,0,15,12.0
+2020-04,MED007,Salbutamol Spray,Respiratoire,26,116,90,0,15,12.0
+2020-05,MED007,Salbutamol Spray,Respiratoire,4,94,90,0,15,12.0
+2020-06,MED007,Salbutamol Spray,Respiratoire,0,71,90,19,15,12.0
+2020-07,MED007,Salbutamol Spray,Respiratoire,19,81,90,28,15,12.0
+2020-08,MED007,Salbutamol Spray,Respiratoire,28,92,90,26,15,12.0
+2020-09,MED007,Salbutamol Spray,Respiratoire,38,128,90,0,15,12.0
+2020-10,MED007,Salbutamol Spray,Respiratoire,66,156,90,0,15,12.0
+2020-11,MED007,Salbutamol Spray,Respiratoire,97,187,90,0,15,12.0
+2020-12,MED007,Salbutamol Spray,Respiratoire,122,212,90,0,15,12.0
+2021-01,MED007,Salbutamol Spray,Respiratoire,143,233,90,0,15,12.0
+2021-02,MED007,Salbutamol Spray,Respiratoire,105,195,90,0,15,12.0
+2021-03,MED007,Salbutamol Spray,Respiratoire,74,164,90,0,15,12.0
+2021-04,MED007,Salbutamol Spray,Respiratoire,37,127,90,0,15,12.0
+2021-05,MED007,Salbutamol Spray,Respiratoire,5,95,90,0,15,12.0
+2021-06,MED007,Salbutamol Spray,Respiratoire,0,82,90,8,15,12.0
+2021-07,MED007,Salbutamol Spray,Respiratoire,8,85,90,13,15,12.0
+2021-08,MED007,Salbutamol Spray,Respiratoire,13,94,90,9,15,12.0
+2021-09,MED007,Salbutamol Spray,Respiratoire,35,125,90,0,15,12.0
+2021-10,MED007,Salbutamol Spray,Respiratoire,68,158,90,0,15,12.0
+2021-11,MED007,Salbutamol Spray,Respiratoire,99,189,90,0,15,12.0
+2021-12,MED007,Salbutamol Spray,Respiratoire,151,241,90,0,15,12.0
+2022-01,MED007,Salbutamol Spray,Respiratoire,144,234,90,0,15,12.0
+2022-02,MED007,Salbutamol Spray,Respiratoire,103,193,90,0,15,12.0
+2022-03,MED007,Salbutamol Spray,Respiratoire,76,166,90,0,15,12.0
+2022-04,MED007,Salbutamol Spray,Respiratoire,39,129,90,0,15,12.0
+2022-05,MED007,Salbutamol Spray,Respiratoire,8,98,90,0,15,12.0
+2022-06,MED007,Salbutamol Spray,Respiratoire,0,84,90,6,15,12.0
+2022-07,MED007,Salbutamol Spray,Respiratoire,6,79,90,17,15,12.0
+2022-08,MED007,Salbutamol Spray,Respiratoire,17,97,90,10,15,12.0
+2022-09,MED007,Salbutamol Spray,Respiratoire,45,135,90,0,15,12.0
+2022-10,MED007,Salbutamol Spray,Respiratoire,76,166,90,0,15,12.0
+2022-11,MED007,Salbutamol Spray,Respiratoire,99,189,90,0,15,12.0
+2022-12,MED007,Salbutamol Spray,Respiratoire,141,231,90,0,15,12.0
+2023-01,MED007,Salbutamol Spray,Respiratoire,166,256,90,0,15,12.0
+2023-02,MED007,Salbutamol Spray,Respiratoire,105,195,90,0,15,12.0
+2023-03,MED007,Salbutamol Spray,Respiratoire,77,167,90,0,15,12.0
+2023-04,MED007,Salbutamol Spray,Respiratoire,40,130,90,0,15,12.0
+2023-05,MED007,Salbutamol Spray,Respiratoire,12,102,90,0,15,12.0
+2023-06,MED007,Salbutamol Spray,Respiratoire,0,82,90,8,15,12.0
+2023-07,MED007,Salbutamol Spray,Respiratoire,8,91,90,7,15,12.0
+2023-08,MED007,Salbutamol Spray,Respiratoire,22,112,90,0,15,12.0
+2023-09,MED007,Salbutamol Spray,Respiratoire,51,141,90,0,15,12.0
+2023-10,MED007,Salbutamol Spray,Respiratoire,80,170,90,0,15,12.0
+2023-11,MED007,Salbutamol Spray,Respiratoire,108,198,90,0,15,12.0
+2023-12,MED007,Salbutamol Spray,Respiratoire,154,244,90,0,15,12.0
+2024-01,MED007,Salbutamol Spray,Respiratoire,172,262,90,0,15,12.0
+2024-02,MED007,Salbutamol Spray,Respiratoire,128,218,90,0,15,12.0
+2024-03,MED007,Salbutamol Spray,Respiratoire,76,166,90,0,15,12.0
+2024-04,MED007,Salbutamol Spray,Respiratoire,43,133,90,0,15,12.0
+2024-05,MED007,Salbutamol Spray,Respiratoire,17,107,90,0,15,12.0
+2024-06,MED007,Salbutamol Spray,Respiratoire,0,84,90,6,15,12.0
+2024-07,MED007,Salbutamol Spray,Respiratoire,6,89,90,7,15,12.0
+2024-08,MED007,Salbutamol Spray,Respiratoire,18,108,90,0,15,12.0
+2024-09,MED007,Salbutamol Spray,Respiratoire,41,131,90,0,15,12.0
+2024-10,MED007,Salbutamol Spray,Respiratoire,90,180,90,0,15,12.0
+2024-11,MED007,Salbutamol Spray,Respiratoire,122,212,90,0,15,12.0
+2024-12,MED007,Salbutamol Spray,Respiratoire,160,250,90,0,15,12.0
+2025-01,MED007,Salbutamol Spray,Respiratoire,174,264,90,0,15,12.0
+2025-02,MED007,Salbutamol Spray,Respiratoire,118,208,90,0,15,12.0
+2025-03,MED007,Salbutamol Spray,Respiratoire,89,179,90,0,15,12.0
+2020-01,MED008,Loratadine 10mg,Antihistaminique,180,180,0,0,30,4.5
+2020-02,MED008,Loratadine 10mg,Antihistaminique,0,175,180,5,30,4.5
+2020-03,MED008,Loratadine 10mg,Antihistaminique,84,264,180,0,30,4.5
+2020-04,MED008,Loratadine 10mg,Antihistaminique,211,391,180,0,30,4.5
+2020-05,MED008,Loratadine 10mg,Antihistaminique,331,511,180,0,30,4.5
+2020-06,MED008,Loratadine 10mg,Antihistaminique,302,482,180,0,30,4.5
+2020-07,MED008,Loratadine 10mg,Antihistaminique,228,408,180,0,30,4.5
+2020-08,MED008,Loratadine 10mg,Antihistaminique,114,294,180,0,30,4.5
+2020-09,MED008,Loratadine 10mg,Antihistaminique,77,257,180,0,30,4.5
+2020-10,MED008,Loratadine 10mg,Antihistaminique,38,218,180,0,30,4.5
+2020-11,MED008,Loratadine 10mg,Antihistaminique,1,181,180,0,30,4.5
+2020-12,MED008,Loratadine 10mg,Antihistaminique,0,174,180,6,30,4.5
+2021-01,MED008,Loratadine 10mg,Antihistaminique,6,184,180,2,30,4.5
+2021-02,MED008,Loratadine 10mg,Antihistaminique,2,168,180,14,30,4.5
+2021-03,MED008,Loratadine 10mg,Antihistaminique,95,275,180,0,30,4.5
+2021-04,MED008,Loratadine 10mg,Antihistaminique,235,415,180,0,30,4.5
+2021-05,MED008,Loratadine 10mg,Antihistaminique,385,565,180,0,30,4.5
+2021-06,MED008,Loratadine 10mg,Antihistaminique,313,493,180,0,30,4.5
+2021-07,MED008,Loratadine 10mg,Antihistaminique,252,432,180,0,30,4.5
+2021-08,MED008,Loratadine 10mg,Antihistaminique,147,327,180,0,30,4.5
+2021-09,MED008,Loratadine 10mg,Antihistaminique,88,268,180,0,30,4.5
+2021-10,MED008,Loratadine 10mg,Antihistaminique,20,200,180,0,30,4.5
+2021-11,MED008,Loratadine 10mg,Antihistaminique,2,182,180,0,30,4.5
+2021-12,MED008,Loratadine 10mg,Antihistaminique,9,189,180,0,30,4.5
+2022-01,MED008,Loratadine 10mg,Antihistaminique,2,182,180,0,30,4.5
+2022-02,MED008,Loratadine 10mg,Antihistaminique,0,168,180,12,30,4.5
+2022-03,MED008,Loratadine 10mg,Antihistaminique,102,282,180,0,30,4.5
+2022-04,MED008,Loratadine 10mg,Antihistaminique,230,410,180,0,30,4.5
+2022-05,MED008,Loratadine 10mg,Antihistaminique,419,599,180,0,30,4.5
+2022-06,MED008,Loratadine 10mg,Antihistaminique,320,500,180,0,30,4.5
+2022-07,MED008,Loratadine 10mg,Antihistaminique,222,402,180,0,30,4.5
+2022-08,MED008,Loratadine 10mg,Antihistaminique,144,324,180,0,30,4.5
+2022-09,MED008,Loratadine 10mg,Antihistaminique,96,276,180,0,30,4.5
+2022-10,MED008,Loratadine 10mg,Antihistaminique,49,229,180,0,30,4.5
+2022-11,MED008,Loratadine 10mg,Antihistaminique,2,182,180,0,30,4.5
+2022-12,MED008,Loratadine 10mg,Antihistaminique,14,194,180,0,30,4.5
+2023-01,MED008,Loratadine 10mg,Antihistaminique,25,205,180,0,30,4.5
+2023-02,MED008,Loratadine 10mg,Antihistaminique,0,167,180,13,30,4.5
+2023-03,MED008,Loratadine 10mg,Antihistaminique,102,282,180,0,30,4.5
+2023-04,MED008,Loratadine 10mg,Antihistaminique,225,405,180,0,30,4.5
+2023-05,MED008,Loratadine 10mg,Antihistaminique,420,600,180,0,30,4.5
+2023-06,MED008,Loratadine 10mg,Antihistaminique,359,539,180,0,30,4.5
+2023-07,MED008,Loratadine 10mg,Antihistaminique,247,427,180,0,30,4.5
+2023-08,MED008,Loratadine 10mg,Antihistaminique,178,358,180,0,30,4.5
+2023-09,MED008,Loratadine 10mg,Antihistaminique,90,270,180,0,30,4.5
+2023-10,MED008,Loratadine 10mg,Antihistaminique,38,218,180,0,30,4.5
+2023-11,MED008,Loratadine 10mg,Antihistaminique,14,194,180,0,30,4.5
+2023-12,MED008,Loratadine 10mg,Antihistaminique,11,191,180,0,30,4.5
+2024-01,MED008,Loratadine 10mg,Antihistaminique,20,200,180,0,30,4.5
+2024-02,MED008,Loratadine 10mg,Antihistaminique,4,184,180,0,30,4.5
+2024-03,MED008,Loratadine 10mg,Antihistaminique,120,300,180,0,30,4.5
+2024-04,MED008,Loratadine 10mg,Antihistaminique,239,419,180,0,30,4.5
+2024-05,MED008,Loratadine 10mg,Antihistaminique,460,640,180,0,30,4.5
+2024-06,MED008,Loratadine 10mg,Antihistaminique,328,508,180,0,30,4.5
+2024-07,MED008,Loratadine 10mg,Antihistaminique,296,476,180,0,30,4.5
+2024-08,MED008,Loratadine 10mg,Antihistaminique,190,370,180,0,30,4.5
+2024-09,MED008,Loratadine 10mg,Antihistaminique,114,294,180,0,30,4.5
+2024-10,MED008,Loratadine 10mg,Antihistaminique,69,249,180,0,30,4.5
+2024-11,MED008,Loratadine 10mg,Antihistaminique,19,199,180,0,30,4.5
+2024-12,MED008,Loratadine 10mg,Antihistaminique,25,205,180,0,30,4.5
+2025-01,MED008,Loratadine 10mg,Antihistaminique,15,195,180,0,30,4.5
+2025-02,MED008,Loratadine 10mg,Antihistaminique,0,179,180,1,30,4.5
+2025-03,MED008,Loratadine 10mg,Antihistaminique,106,286,180,0,30,4.5
+2020-01,MED009,Vitamine C 1000mg,Supplément,523,523,0,0,45,3.0
+2020-02,MED009,Vitamine C 1000mg,Supplément,181,451,270,0,45,3.0
+2020-03,MED009,Vitamine C 1000mg,Supplément,162,432,270,0,45,3.0
+2020-04,MED009,Vitamine C 1000mg,Supplément,180,450,270,0,45,3.0
+2020-05,MED009,Vitamine C 1000mg,Supplément,138,408,270,0,45,3.0
+2020-06,MED009,Vitamine C 1000mg,Supplément,77,347,270,0,45,3.0
+2020-07,MED009,Vitamine C 1000mg,Supplément,79,349,270,0,45,3.0
+2020-08,MED009,Vitamine C 1000mg,Supplément,117,387,270,0,45,3.0
+2020-09,MED009,Vitamine C 1000mg,Supplément,172,442,270,0,45,3.0
+2020-10,MED009,Vitamine C 1000mg,Supplément,240,510,270,0,45,3.0
+2020-11,MED009,Vitamine C 1000mg,Supplément,224,494,270,0,45,3.0
+2020-12,MED009,Vitamine C 1000mg,Supplément,334,604,270,0,45,3.0
+2021-01,MED009,Vitamine C 1000mg,Supplément,273,543,270,0,45,3.0
+2021-02,MED009,Vitamine C 1000mg,Supplément,179,449,270,0,45,3.0
+2021-03,MED009,Vitamine C 1000mg,Supplément,183,453,270,0,45,3.0
+2021-04,MED009,Vitamine C 1000mg,Supplément,187,457,270,0,45,3.0
+2021-05,MED009,Vitamine C 1000mg,Supplément,122,392,270,0,45,3.0
+2021-06,MED009,Vitamine C 1000mg,Supplément,93,363,270,0,45,3.0
+2021-07,MED009,Vitamine C 1000mg,Supplément,107,377,270,0,45,3.0
+2021-08,MED009,Vitamine C 1000mg,Supplément,136,406,270,0,45,3.0
+2021-09,MED009,Vitamine C 1000mg,Supplément,186,456,270,0,45,3.0
+2021-10,MED009,Vitamine C 1000mg,Supplément,262,532,270,0,45,3.0
+2021-11,MED009,Vitamine C 1000mg,Supplément,280,550,270,0,45,3.0
+2021-12,MED009,Vitamine C 1000mg,Supplément,353,623,270,0,45,3.0
+2022-01,MED009,Vitamine C 1000mg,Supplément,271,541,270,0,45,3.0
+2022-02,MED009,Vitamine C 1000mg,Supplément,186,456,270,0,45,3.0
+2022-03,MED009,Vitamine C 1000mg,Supplément,189,459,270,0,45,3.0
+2022-04,MED009,Vitamine C 1000mg,Supplément,182,452,270,0,45,3.0
+2022-05,MED009,Vitamine C 1000mg,Supplément,152,422,270,0,45,3.0
+2022-06,MED009,Vitamine C 1000mg,Supplément,97,367,270,0,45,3.0
+2022-07,MED009,Vitamine C 1000mg,Supplément,113,383,270,0,45,3.0
+2022-08,MED009,Vitamine C 1000mg,Supplément,166,436,270,0,45,3.0
+2022-09,MED009,Vitamine C 1000mg,Supplément,198,468,270,0,45,3.0
+2022-10,MED009,Vitamine C 1000mg,Supplément,244,514,270,0,45,3.0
+2022-11,MED009,Vitamine C 1000mg,Supplément,303,573,270,0,45,3.0
+2022-12,MED009,Vitamine C 1000mg,Supplément,374,644,270,0,45,3.0
+2023-01,MED009,Vitamine C 1000mg,Supplément,312,582,270,0,45,3.0
+2023-02,MED009,Vitamine C 1000mg,Supplément,210,480,270,0,45,3.0
+2023-03,MED009,Vitamine C 1000mg,Supplément,209,479,270,0,45,3.0
+2023-04,MED009,Vitamine C 1000mg,Supplément,190,460,270,0,45,3.0
+2023-05,MED009,Vitamine C 1000mg,Supplément,169,439,270,0,45,3.0
+2023-06,MED009,Vitamine C 1000mg,Supplément,103,373,270,0,45,3.0
+2023-07,MED009,Vitamine C 1000mg,Supplément,123,393,270,0,45,3.0
+2023-08,MED009,Vitamine C 1000mg,Supplément,189,459,270,0,45,3.0
+2023-09,MED009,Vitamine C 1000mg,Supplément,195,465,270,0,45,3.0
+2023-10,MED009,Vitamine C 1000mg,Supplément,290,560,270,0,45,3.0
+2023-11,MED009,Vitamine C 1000mg,Supplément,302,572,270,0,45,3.0
+2023-12,MED009,Vitamine C 1000mg,Supplément,396,666,270,0,45,3.0
+2024-01,MED009,Vitamine C 1000mg,Supplément,338,608,270,0,45,3.0
+2024-02,MED009,Vitamine C 1000mg,Supplément,249,519,270,0,45,3.0
+2024-03,MED009,Vitamine C 1000mg,Supplément,228,498,270,0,45,3.0
+2024-04,MED009,Vitamine C 1000mg,Supplément,206,476,270,0,45,3.0
+2024-05,MED009,Vitamine C 1000mg,Supplément,178,448,270,0,45,3.0
+2024-06,MED009,Vitamine C 1000mg,Supplément,113,383,270,0,45,3.0
+2024-07,MED009,Vitamine C 1000mg,Supplément,151,421,270,0,45,3.0
+2024-08,MED009,Vitamine C 1000mg,Supplément,171,441,270,0,45,3.0
+2024-09,MED009,Vitamine C 1000mg,Supplément,201,471,270,0,45,3.0
+2024-10,MED009,Vitamine C 1000mg,Supplément,311,581,270,0,45,3.0
+2024-11,MED009,Vitamine C 1000mg,Supplément,346,616,270,0,45,3.0
+2024-12,MED009,Vitamine C 1000mg,Supplément,446,716,270,0,45,3.0
+2025-01,MED009,Vitamine C 1000mg,Supplément,358,628,270,0,45,3.0
+2025-02,MED009,Vitamine C 1000mg,Supplément,255,525,270,0,45,3.0
+2025-03,MED009,Vitamine C 1000mg,Supplément,257,527,270,0,45,3.0
+2020-01,MED010,Doliprane 1000mg,Antalgique,916,916,0,0,60,3.0
+2020-02,MED010,Doliprane 1000mg,Antalgique,498,858,360,0,60,3.0
+2020-03,MED010,Doliprane 1000mg,Antalgique,557,917,360,0,60,3.0
+2020-04,MED010,Doliprane 1000mg,Antalgique,519,879,360,0,60,3.0
+2020-05,MED010,Doliprane 1000mg,Antalgique,531,891,360,0,60,3.0
+2020-06,MED010,Doliprane 1000mg,Antalgique,559,919,360,0,60,3.0
+2020-07,MED010,Doliprane 1000mg,Antalgique,565,925,360,0,60,3.0
+2020-08,MED010,Doliprane 1000mg,Antalgique,552,912,360,0,60,3.0
+2020-09,MED010,Doliprane 1000mg,Antalgique,616,976,360,0,60,3.0
+2020-10,MED010,Doliprane 1000mg,Antalgique,764,1124,360,0,60,3.0
+2020-11,MED010,Doliprane 1000mg,Antalgique,810,1170,360,0,60,3.0
+2020-12,MED010,Doliprane 1000mg,Antalgique,791,1151,360,0,60,3.0
+2021-01,MED010,Doliprane 1000mg,Antalgique,567,927,360,0,60,3.0
+2021-02,MED010,Doliprane 1000mg,Antalgique,469,829,360,0,60,3.0
+2021-03,MED010,Doliprane 1000mg,Antalgique,601,961,360,0,60,3.0
+2021-04,MED010,Doliprane 1000mg,Antalgique,564,924,360,0,60,3.0
+2021-05,MED010,Doliprane 1000mg,Antalgique,526,886,360,0,60,3.0
+2021-06,MED010,Doliprane 1000mg,Antalgique,543,903,360,0,60,3.0
+2021-07,MED010,Doliprane 1000mg,Antalgique,595,955,360,0,60,3.0
+2021-08,MED010,Doliprane 1000mg,Antalgique,620,980,360,0,60,3.0
+2021-09,MED010,Doliprane 1000mg,Antalgique,637,997,360,0,60,3.0
+2021-10,MED010,Doliprane 1000mg,Antalgique,804,1164,360,0,60,3.0
+2021-11,MED010,Doliprane 1000mg,Antalgique,842,1202,360,0,60,3.0
+2021-12,MED010,Doliprane 1000mg,Antalgique,838,1198,360,0,60,3.0
+2022-01,MED010,Doliprane 1000mg,Antalgique,589,949,360,0,60,3.0
+2022-02,MED010,Doliprane 1000mg,Antalgique,475,835,360,0,60,3.0
+2022-03,MED010,Doliprane 1000mg,Antalgique,574,934,360,0,60,3.0
+2022-04,MED010,Doliprane 1000mg,Antalgique,565,925,360,0,60,3.0
+2022-05,MED010,Doliprane 1000mg,Antalgique,608,968,360,0,60,3.0
+2022-06,MED010,Doliprane 1000mg,Antalgique,613,973,360,0,60,3.0
+2022-07,MED010,Doliprane 1000mg,Antalgique,636,996,360,0,60,3.0
+2022-08,MED010,Doliprane 1000mg,Antalgique,566,926,360,0,60,3.0
+2022-09,MED010,Doliprane 1000mg,Antalgique,665,1025,360,0,60,3.0
+2022-10,MED010,Doliprane 1000mg,Antalgique,800,1160,360,0,60,3.0
+2022-11,MED010,Doliprane 1000mg,Antalgique,885,1245,360,0,60,3.0
+2022-12,MED010,Doliprane 1000mg,Antalgique,816,1176,360,0,60,3.0
+2023-01,MED010,Doliprane 1000mg,Antalgique,652,1012,360,0,60,3.0
+2023-02,MED010,Doliprane 1000mg,Antalgique,549,909,360,0,60,3.0
+2023-03,MED010,Doliprane 1000mg,Antalgique,630,990,360,0,60,3.0
+2023-04,MED010,Doliprane 1000mg,Antalgique,588,948,360,0,60,3.0
+2023-05,MED010,Doliprane 1000mg,Antalgique,627,987,360,0,60,3.0
+2023-06,MED010,Doliprane 1000mg,Antalgique,583,943,360,0,60,3.0
+2023-07,MED010,Doliprane 1000mg,Antalgique,648,1008,360,0,60,3.0
+2023-08,MED010,Doliprane 1000mg,Antalgique,656,1016,360,0,60,3.0
+2023-09,MED010,Doliprane 1000mg,Antalgique,667,1027,360,0,60,3.0
+2023-10,MED010,Doliprane 1000mg,Antalgique,850,1210,360,0,60,3.0
+2023-11,MED010,Doliprane 1000mg,Antalgique,918,1278,360,0,60,3.0
+2023-12,MED010,Doliprane 1000mg,Antalgique,863,1223,360,0,60,3.0
+2024-01,MED010,Doliprane 1000mg,Antalgique,661,1021,360,0,60,3.0
+2024-02,MED010,Doliprane 1000mg,Antalgique,652,1012,360,0,60,3.0
+2024-03,MED010,Doliprane 1000mg,Antalgique,675,1035,360,0,60,3.0
+2024-04,MED010,Doliprane 1000mg,Antalgique,647,1007,360,0,60,3.0
+2024-05,MED010,Doliprane 1000mg,Antalgique,642,1002,360,0,60,3.0
+2024-06,MED010,Doliprane 1000mg,Antalgique,599,959,360,0,60,3.0
+2024-07,MED010,Doliprane 1000mg,Antalgique,690,1050,360,0,60,3.0
+2024-08,MED010,Doliprane 1000mg,Antalgique,710,1070,360,0,60,3.0
+2024-09,MED010,Doliprane 1000mg,Antalgique,704,1064,360,0,60,3.0
+2024-10,MED010,Doliprane 1000mg,Antalgique,813,1173,360,0,60,3.0
+2024-11,MED010,Doliprane 1000mg,Antalgique,946,1306,360,0,60,3.0
+2024-12,MED010,Doliprane 1000mg,Antalgique,932,1292,360,0,60,3.0
+2025-01,MED010,Doliprane 1000mg,Antalgique,658,1018,360,0,60,3.0
+2025-02,MED010,Doliprane 1000mg,Antalgique,584,944,360,0,60,3.0
+2025-03,MED010,Doliprane 1000mg,Antalgique,670,1030,360,0,60,3.0
+2020-01,MED011,Augmentin 875mg,Antibiotique,303,303,0,0,20,15.0
+2020-02,MED011,Augmentin 875mg,Antibiotique,129,249,120,0,20,15.0
+2020-03,MED011,Augmentin 875mg,Antibiotique,109,229,120,0,20,15.0
+2020-04,MED011,Augmentin 875mg,Antibiotique,51,171,120,0,20,15.0
+2020-05,MED011,Augmentin 875mg,Antibiotique,35,155,120,0,20,15.0
+2020-06,MED011,Augmentin 875mg,Antibiotique,16,136,120,0,20,15.0
+2020-07,MED011,Augmentin 875mg,Antibiotique,25,145,120,0,20,15.0
+2020-08,MED011,Augmentin 875mg,Antibiotique,39,159,120,0,20,15.0
+2020-09,MED011,Augmentin 875mg,Antibiotique,76,196,120,0,20,15.0
+2020-10,MED011,Augmentin 875mg,Antibiotique,124,244,120,0,20,15.0
+2020-11,MED011,Augmentin 875mg,Antibiotique,157,277,120,0,20,15.0
+2020-12,MED011,Augmentin 875mg,Antibiotique,209,329,120,0,20,15.0
+2021-01,MED011,Augmentin 875mg,Antibiotique,194,314,120,0,20,15.0
+2021-02,MED011,Augmentin 875mg,Antibiotique,135,255,120,0,20,15.0
+2021-03,MED011,Augmentin 875mg,Antibiotique,112,232,120,0,20,15.0
+2021-04,MED011,Augmentin 875mg,Antibiotique,66,186,120,0,20,15.0
+2021-05,MED011,Augmentin 875mg,Antibiotique,32,152,120,0,20,15.0
+2021-06,MED011,Augmentin 875mg,Antibiotique,20,140,120,0,20,15.0
+2021-07,MED011,Augmentin 875mg,Antibiotique,20,140,120,0,20,15.0
+2021-08,MED011,Augmentin 875mg,Antibiotique,51,171,120,0,20,15.0
+2021-09,MED011,Augmentin 875mg,Antibiotique,82,202,120,0,20,15.0
+2021-10,MED011,Augmentin 875mg,Antibiotique,141,261,120,0,20,15.0
+2021-11,MED011,Augmentin 875mg,Antibiotique,172,292,120,0,20,15.0
+2021-12,MED011,Augmentin 875mg,Antibiotique,229,349,120,0,20,15.0
+2022-01,MED011,Augmentin 875mg,Antibiotique,194,314,120,0,20,15.0
+2022-02,MED011,Augmentin 875mg,Antibiotique,154,274,120,0,20,15.0
+2022-03,MED011,Augmentin 875mg,Antibiotique,115,235,120,0,20,15.0
+2022-04,MED011,Augmentin 875mg,Antibiotique,61,181,120,0,20,15.0
+2022-05,MED011,Augmentin 875mg,Antibiotique,52,172,120,0,20,15.0
+2022-06,MED011,Augmentin 875mg,Antibiotique,18,138,120,0,20,15.0
+2022-07,MED011,Augmentin 875mg,Antibiotique,25,145,120,0,20,15.0
+2022-08,MED011,Augmentin 875mg,Antibiotique,47,167,120,0,20,15.0
+2022-09,MED011,Augmentin 875mg,Antibiotique,87,207,120,0,20,15.0
+2022-10,MED011,Augmentin 875mg,Antibiotique,139,259,120,0,20,15.0
+2022-11,MED011,Augmentin 875mg,Antibiotique,181,301,120,0,20,15.0
+2022-12,MED011,Augmentin 875mg,Antibiotique,253,373,120,0,20,15.0
+2023-01,MED011,Augmentin 875mg,Antibiotique,216,336,120,0,20,15.0
+2023-02,MED011,Augmentin 875mg,Antibiotique,124,244,120,0,20,15.0
+2023-03,MED011,Augmentin 875mg,Antibiotique,125,245,120,0,20,15.0
+2023-04,MED011,Augmentin 875mg,Antibiotique,69,189,120,0,20,15.0
+2023-05,MED011,Augmentin 875mg,Antibiotique,55,175,120,0,20,15.0
+2023-06,MED011,Augmentin 875mg,Antibiotique,19,139,120,0,20,15.0
+2023-07,MED011,Augmentin 875mg,Antibiotique,32,152,120,0,20,15.0
+2023-08,MED011,Augmentin 875mg,Antibiotique,62,182,120,0,20,15.0
+2023-09,MED011,Augmentin 875mg,Antibiotique,98,218,120,0,20,15.0
+2023-10,MED011,Augmentin 875mg,Antibiotique,137,257,120,0,20,15.0
+2023-11,MED011,Augmentin 875mg,Antibiotique,183,303,120,0,20,15.0
+2023-12,MED011,Augmentin 875mg,Antibiotique,246,366,120,0,20,15.0
+2024-01,MED011,Augmentin 875mg,Antibiotique,235,355,120,0,20,15.0
+2024-02,MED011,Augmentin 875mg,Antibiotique,150,270,120,0,20,15.0
+2024-03,MED011,Augmentin 875mg,Antibiotique,137,257,120,0,20,15.0
+2024-04,MED011,Augmentin 875mg,Antibiotique,71,191,120,0,20,15.0
+2024-05,MED011,Augmentin 875mg,Antibiotique,54,174,120,0,20,15.0
+2024-06,MED011,Augmentin 875mg,Antibiotique,35,155,120,0,20,15.0
+2024-07,MED011,Augmentin 875mg,Antibiotique,38,158,120,0,20,15.0
+2024-08,MED011,Augmentin 875mg,Antibiotique,59,179,120,0,20,15.0
+2024-09,MED011,Augmentin 875mg,Antibiotique,100,220,120,0,20,15.0
+2024-10,MED011,Augmentin 875mg,Antibiotique,152,272,120,0,20,15.0
+2024-11,MED011,Augmentin 875mg,Antibiotique,200,320,120,0,20,15.0
+2024-12,MED011,Augmentin 875mg,Antibiotique,263,383,120,0,20,15.0
+2025-01,MED011,Augmentin 875mg,Antibiotique,240,360,120,0,20,15.0
+2025-02,MED011,Augmentin 875mg,Antibiotique,152,272,120,0,20,15.0
+2025-03,MED011,Augmentin 875mg,Antibiotique,137,257,120,0,20,15.0
+2020-01,MED012,Ventoline 100mcg,Respiratoire,184,184,0,0,15,14.0
+2020-02,MED012,Ventoline 100mcg,Respiratoire,59,149,90,0,15,14.0
+2020-03,MED012,Ventoline 100mcg,Respiratoire,32,122,90,0,15,14.0
+2020-04,MED012,Ventoline 100mcg,Respiratoire,6,96,90,0,15,14.0
+2020-05,MED012,Ventoline 100mcg,Respiratoire,0,70,90,20,15,14.0
+2020-06,MED012,Ventoline 100mcg,Respiratoire,20,57,90,53,15,14.0
+2020-07,MED012,Ventoline 100mcg,Respiratoire,61,61,0,0,15,14.0
+2020-08,MED012,Ventoline 100mcg,Respiratoire,0,68,90,22,15,14.0
+2020-09,MED012,Ventoline 100mcg,Respiratoire,22,99,90,13,15,14.0
+2020-10,MED012,Ventoline 100mcg,Respiratoire,37,127,90,0,15,14.0
+2020-11,MED012,Ventoline 100mcg,Respiratoire,57,147,90,0,15,14.0
+2020-12,MED012,Ventoline 100mcg,Respiratoire,80,170,90,0,15,14.0
+2021-01,MED012,Ventoline 100mcg,Respiratoire,97,187,90,0,15,14.0
+2021-02,MED012,Ventoline 100mcg,Respiratoire,59,149,90,0,15,14.0
+2021-03,MED012,Ventoline 100mcg,Respiratoire,37,127,90,0,15,14.0
+2021-04,MED012,Ventoline 100mcg,Respiratoire,2,92,90,0,15,14.0
+2021-05,MED012,Ventoline 100mcg,Respiratoire,0,70,90,20,15,14.0
+2021-06,MED012,Ventoline 100mcg,Respiratoire,20,60,90,50,15,14.0
+2021-07,MED012,Ventoline 100mcg,Respiratoire,64,64,0,0,15,14.0
+2021-08,MED012,Ventoline 100mcg,Respiratoire,0,73,90,17,15,14.0
+2021-09,MED012,Ventoline 100mcg,Respiratoire,17,97,90,10,15,14.0
+2021-10,MED012,Ventoline 100mcg,Respiratoire,39,129,90,0,15,14.0
+2021-11,MED012,Ventoline 100mcg,Respiratoire,66,156,90,0,15,14.0
+2021-12,MED012,Ventoline 100mcg,Respiratoire,100,190,90,0,15,14.0
+2022-01,MED012,Ventoline 100mcg,Respiratoire,107,197,90,0,15,14.0
+2022-02,MED012,Ventoline 100mcg,Respiratoire,63,153,90,0,15,14.0
+2022-03,MED012,Ventoline 100mcg,Respiratoire,31,121,90,0,15,14.0
+2022-04,MED012,Ventoline 100mcg,Respiratoire,13,103,90,0,15,14.0
+2022-05,MED012,Ventoline 100mcg,Respiratoire,0,79,90,11,15,14.0
+2022-06,MED012,Ventoline 100mcg,Respiratoire,11,60,90,41,15,14.0
+2022-07,MED012,Ventoline 100mcg,Respiratoire,62,62,0,0,15,14.0
+2022-08,MED012,Ventoline 100mcg,Respiratoire,0,78,90,12,15,14.0
+2022-09,MED012,Ventoline 100mcg,Respiratoire,12,100,90,2,15,14.0
+2022-10,MED012,Ventoline 100mcg,Respiratoire,40,130,90,0,15,14.0
+2022-11,MED012,Ventoline 100mcg,Respiratoire,59,149,90,0,15,14.0
+2022-12,MED012,Ventoline 100mcg,Respiratoire,87,177,90,0,15,14.0
+2023-01,MED012,Ventoline 100mcg,Respiratoire,117,207,90,0,15,14.0
+2023-02,MED012,Ventoline 100mcg,Respiratoire,79,169,90,0,15,14.0
+2023-03,MED012,Ventoline 100mcg,Respiratoire,44,134,90,0,15,14.0
+2023-04,MED012,Ventoline 100mcg,Respiratoire,9,99,90,0,15,14.0
+2023-05,MED012,Ventoline 100mcg,Respiratoire,0,82,90,8,15,14.0
+2023-06,MED012,Ventoline 100mcg,Respiratoire,8,69,90,29,15,14.0
+2023-07,MED012,Ventoline 100mcg,Respiratoire,29,67,90,52,15,14.0
+2023-08,MED012,Ventoline 100mcg,Respiratoire,81,81,0,0,15,14.0
+2023-09,MED012,Ventoline 100mcg,Respiratoire,15,105,90,0,15,14.0
+2023-10,MED012,Ventoline 100mcg,Respiratoire,36,126,90,0,15,14.0
+2023-11,MED012,Ventoline 100mcg,Respiratoire,75,165,90,0,15,14.0
+2023-12,MED012,Ventoline 100mcg,Respiratoire,110,200,90,0,15,14.0
+2024-01,MED012,Ventoline 100mcg,Respiratoire,117,207,90,0,15,14.0
+2024-02,MED012,Ventoline 100mcg,Respiratoire,69,159,90,0,15,14.0
+2024-03,MED012,Ventoline 100mcg,Respiratoire,44,134,90,0,15,14.0
+2024-04,MED012,Ventoline 100mcg,Respiratoire,11,101,90,0,15,14.0
+2024-05,MED012,Ventoline 100mcg,Respiratoire,0,81,90,9,15,14.0
+2024-06,MED012,Ventoline 100mcg,Respiratoire,9,62,90,37,15,14.0
+2024-07,MED012,Ventoline 100mcg,Respiratoire,69,69,0,0,15,14.0
+2024-08,MED012,Ventoline 100mcg,Respiratoire,0,81,90,9,15,14.0
+2024-09,MED012,Ventoline 100mcg,Respiratoire,17,107,90,0,15,14.0
+2024-10,MED012,Ventoline 100mcg,Respiratoire,48,138,90,0,15,14.0
+2024-11,MED012,Ventoline 100mcg,Respiratoire,64,154,90,0,15,14.0
+2024-12,MED012,Ventoline 100mcg,Respiratoire,97,187,90,0,15,14.0
+2025-01,MED012,Ventoline 100mcg,Respiratoire,112,202,90,0,15,14.0
+2025-02,MED012,Ventoline 100mcg,Respiratoire,74,164,90,0,15,14.0
+2025-03,MED012,Ventoline 100mcg,Respiratoire,45,135,90,0,15,14.0
+2020-01,MED013,Atorvastatine 20mg,Cardiovasculaire,233,233,0,0,25,7.0
+2020-02,MED013,Atorvastatine 20mg,Cardiovasculaire,37,187,150,0,25,7.0
+2020-03,MED013,Atorvastatine 20mg,Cardiovasculaire,50,200,150,0,25,7.0
+2020-04,MED013,Atorvastatine 20mg,Cardiovasculaire,52,202,150,0,25,7.0
+2020-05,MED013,Atorvastatine 20mg,Cardiovasculaire,41,191,150,0,25,7.0
+2020-06,MED013,Atorvastatine 20mg,Cardiovasculaire,45,195,150,0,25,7.0
+2020-07,MED013,Atorvastatine 20mg,Cardiovasculaire,56,206,150,0,25,7.0
+2020-08,MED013,Atorvastatine 20mg,Cardiovasculaire,45,195,150,0,25,7.0
+2020-09,MED013,Atorvastatine 20mg,Cardiovasculaire,51,201,150,0,25,7.0
+2020-10,MED013,Atorvastatine 20mg,Cardiovasculaire,46,196,150,0,25,7.0
+2020-11,MED013,Atorvastatine 20mg,Cardiovasculaire,72,222,150,0,25,7.0
+2020-12,MED013,Atorvastatine 20mg,Cardiovasculaire,74,224,150,0,25,7.0
+2021-01,MED013,Atorvastatine 20mg,Cardiovasculaire,79,229,150,0,25,7.0
+2021-02,MED013,Atorvastatine 20mg,Cardiovasculaire,28,178,150,0,25,7.0
+2021-03,MED013,Atorvastatine 20mg,Cardiovasculaire,59,209,150,0,25,7.0
+2021-04,MED013,Atorvastatine 20mg,Cardiovasculaire,61,211,150,0,25,7.0
+2021-05,MED013,Atorvastatine 20mg,Cardiovasculaire,53,203,150,0,25,7.0
+2021-06,MED013,Atorvastatine 20mg,Cardiovasculaire,42,192,150,0,25,7.0
+2021-07,MED013,Atorvastatine 20mg,Cardiovasculaire,52,202,150,0,25,7.0
+2021-08,MED013,Atorvastatine 20mg,Cardiovasculaire,63,213,150,0,25,7.0
+2021-09,MED013,Atorvastatine 20mg,Cardiovasculaire,49,199,150,0,25,7.0
+2021-10,MED013,Atorvastatine 20mg,Cardiovasculaire,58,208,150,0,25,7.0
+2021-11,MED013,Atorvastatine 20mg,Cardiovasculaire,69,219,150,0,25,7.0
+2021-12,MED013,Atorvastatine 20mg,Cardiovasculaire,91,241,150,0,25,7.0
+2022-01,MED013,Atorvastatine 20mg,Cardiovasculaire,77,227,150,0,25,7.0
+2022-02,MED013,Atorvastatine 20mg,Cardiovasculaire,38,188,150,0,25,7.0
+2022-03,MED013,Atorvastatine 20mg,Cardiovasculaire,68,218,150,0,25,7.0
+2022-04,MED013,Atorvastatine 20mg,Cardiovasculaire,64,214,150,0,25,7.0
+2022-05,MED013,Atorvastatine 20mg,Cardiovasculaire,59,209,150,0,25,7.0
+2022-06,MED013,Atorvastatine 20mg,Cardiovasculaire,53,203,150,0,25,7.0
+2022-07,MED013,Atorvastatine 20mg,Cardiovasculaire,64,214,150,0,25,7.0
+2022-08,MED013,Atorvastatine 20mg,Cardiovasculaire,67,217,150,0,25,7.0
+2022-09,MED013,Atorvastatine 20mg,Cardiovasculaire,59,209,150,0,25,7.0
+2022-10,MED013,Atorvastatine 20mg,Cardiovasculaire,69,219,150,0,25,7.0
+2022-11,MED013,Atorvastatine 20mg,Cardiovasculaire,81,231,150,0,25,7.0
+2022-12,MED013,Atorvastatine 20mg,Cardiovasculaire,81,231,150,0,25,7.0
+2023-01,MED013,Atorvastatine 20mg,Cardiovasculaire,81,231,150,0,25,7.0
+2023-02,MED013,Atorvastatine 20mg,Cardiovasculaire,54,204,150,0,25,7.0
+2023-03,MED013,Atorvastatine 20mg,Cardiovasculaire,67,217,150,0,25,7.0
+2023-04,MED013,Atorvastatine 20mg,Cardiovasculaire,53,203,150,0,25,7.0
+2023-05,MED013,Atorvastatine 20mg,Cardiovasculaire,63,213,150,0,25,7.0
+2023-06,MED013,Atorvastatine 20mg,Cardiovasculaire,57,207,150,0,25,7.0
+2023-07,MED013,Atorvastatine 20mg,Cardiovasculaire,71,221,150,0,25,7.0
+2023-08,MED013,Atorvastatine 20mg,Cardiovasculaire,72,222,150,0,25,7.0
+2023-09,MED013,Atorvastatine 20mg,Cardiovasculaire,56,206,150,0,25,7.0
+2023-10,MED013,Atorvastatine 20mg,Cardiovasculaire,71,221,150,0,25,7.0
+2023-11,MED013,Atorvastatine 20mg,Cardiovasculaire,83,233,150,0,25,7.0
+2023-12,MED013,Atorvastatine 20mg,Cardiovasculaire,92,242,150,0,25,7.0
+2024-01,MED013,Atorvastatine 20mg,Cardiovasculaire,101,251,150,0,25,7.0
+2024-02,MED013,Atorvastatine 20mg,Cardiovasculaire,53,203,150,0,25,7.0
+2024-03,MED013,Atorvastatine 20mg,Cardiovasculaire,79,229,150,0,25,7.0
+2024-04,MED013,Atorvastatine 20mg,Cardiovasculaire,65,215,150,0,25,7.0
+2024-05,MED013,Atorvastatine 20mg,Cardiovasculaire,86,236,150,0,25,7.0
+2024-06,MED013,Atorvastatine 20mg,Cardiovasculaire,65,215,150,0,25,7.0
+2024-07,MED013,Atorvastatine 20mg,Cardiovasculaire,80,230,150,0,25,7.0
+2024-08,MED013,Atorvastatine 20mg,Cardiovasculaire,80,230,150,0,25,7.0
+2024-09,MED013,Atorvastatine 20mg,Cardiovasculaire,68,218,150,0,25,7.0
+2024-10,MED013,Atorvastatine 20mg,Cardiovasculaire,77,227,150,0,25,7.0
+2024-11,MED013,Atorvastatine 20mg,Cardiovasculaire,79,229,150,0,25,7.0
+2024-12,MED013,Atorvastatine 20mg,Cardiovasculaire,106,256,150,0,25,7.0
+2025-01,MED013,Atorvastatine 20mg,Cardiovasculaire,102,252,150,0,25,7.0
+2025-02,MED013,Atorvastatine 20mg,Cardiovasculaire,48,198,150,0,25,7.0
+2025-03,MED013,Atorvastatine 20mg,Cardiovasculaire,74,224,150,0,25,7.0
+2020-01,MED014,Lévothyroxine 50mcg,Thyroïde,133,133,0,0,20,5.5
+2020-02,MED014,Lévothyroxine 50mcg,Thyroïde,1,121,120,0,20,5.5
+2020-03,MED014,Lévothyroxine 50mcg,Thyroïde,15,135,120,0,20,5.5
+2020-04,MED014,Lévothyroxine 50mcg,Thyroïde,19,139,120,0,20,5.5
+2020-05,MED014,Lévothyroxine 50mcg,Thyroïde,14,134,120,0,20,5.5
+2020-06,MED014,Lévothyroxine 50mcg,Thyroïde,14,134,120,0,20,5.5
+2020-07,MED014,Lévothyroxine 50mcg,Thyroïde,23,143,120,0,20,5.5
+2020-08,MED014,Lévothyroxine 50mcg,Thyroïde,18,138,120,0,20,5.5
+2020-09,MED014,Lévothyroxine 50mcg,Thyroïde,20,140,120,0,20,5.5
+2020-10,MED014,Lévothyroxine 50mcg,Thyroïde,29,149,120,0,20,5.5
+2020-11,MED014,Lévothyroxine 50mcg,Thyroïde,15,135,120,0,20,5.5
+2020-12,MED014,Lévothyroxine 50mcg,Thyroïde,19,139,120,0,20,5.5
+2021-01,MED014,Lévothyroxine 50mcg,Thyroïde,28,148,120,0,20,5.5
+2021-02,MED014,Lévothyroxine 50mcg,Thyroïde,12,132,120,0,20,5.5
+2021-03,MED014,Lévothyroxine 50mcg,Thyroïde,28,148,120,0,20,5.5
+2021-04,MED014,Lévothyroxine 50mcg,Thyroïde,21,141,120,0,20,5.5
+2021-05,MED014,Lévothyroxine 50mcg,Thyroïde,27,147,120,0,20,5.5
+2021-06,MED014,Lévothyroxine 50mcg,Thyroïde,13,133,120,0,20,5.5
+2021-07,MED014,Lévothyroxine 50mcg,Thyroïde,28,148,120,0,20,5.5
+2021-08,MED014,Lévothyroxine 50mcg,Thyroïde,17,137,120,0,20,5.5
+2021-09,MED014,Lévothyroxine 50mcg,Thyroïde,16,136,120,0,20,5.5
+2021-10,MED014,Lévothyroxine 50mcg,Thyroïde,27,147,120,0,20,5.5
+2021-11,MED014,Lévothyroxine 50mcg,Thyroïde,16,136,120,0,20,5.5
+2021-12,MED014,Lévothyroxine 50mcg,Thyroïde,31,151,120,0,20,5.5
+2022-01,MED014,Lévothyroxine 50mcg,Thyroïde,23,143,120,0,20,5.5
+2022-02,MED014,Lévothyroxine 50mcg,Thyroïde,8,128,120,0,20,5.5
+2022-03,MED014,Lévothyroxine 50mcg,Thyroïde,30,150,120,0,20,5.5
+2022-04,MED014,Lévothyroxine 50mcg,Thyroïde,23,143,120,0,20,5.5
+2022-05,MED014,Lévothyroxine 50mcg,Thyroïde,30,150,120,0,20,5.5
+2022-06,MED014,Lévothyroxine 50mcg,Thyroïde,19,139,120,0,20,5.5
+2022-07,MED014,Lévothyroxine 50mcg,Thyroïde,27,147,120,0,20,5.5
+2022-08,MED014,Lévothyroxine 50mcg,Thyroïde,30,150,120,0,20,5.5
+2022-09,MED014,Lévothyroxine 50mcg,Thyroïde,26,146,120,0,20,5.5
+2022-10,MED014,Lévothyroxine 50mcg,Thyroïde,37,157,120,0,20,5.5
+2022-11,MED014,Lévothyroxine 50mcg,Thyroïde,31,151,120,0,20,5.5
+2022-12,MED014,Lévothyroxine 50mcg,Thyroïde,36,156,120,0,20,5.5
+2023-01,MED014,Lévothyroxine 50mcg,Thyroïde,21,141,120,0,20,5.5
+2023-02,MED014,Lévothyroxine 50mcg,Thyroïde,15,135,120,0,20,5.5
+2023-03,MED014,Lévothyroxine 50mcg,Thyroïde,34,154,120,0,20,5.5
+2023-04,MED014,Lévothyroxine 50mcg,Thyroïde,26,146,120,0,20,5.5
+2023-05,MED014,Lévothyroxine 50mcg,Thyroïde,35,155,120,0,20,5.5
+2023-06,MED014,Lévothyroxine 50mcg,Thyroïde,35,155,120,0,20,5.5
+2023-07,MED014,Lévothyroxine 50mcg,Thyroïde,33,153,120,0,20,5.5
+2023-08,MED014,Lévothyroxine 50mcg,Thyroïde,31,151,120,0,20,5.5
+2023-09,MED014,Lévothyroxine 50mcg,Thyroïde,36,156,120,0,20,5.5
+2023-10,MED014,Lévothyroxine 50mcg,Thyroïde,29,149,120,0,20,5.5
+2023-11,MED014,Lévothyroxine 50mcg,Thyroïde,32,152,120,0,20,5.5
+2023-12,MED014,Lévothyroxine 50mcg,Thyroïde,40,160,120,0,20,5.5
+2024-01,MED014,Lévothyroxine 50mcg,Thyroïde,35,155,120,0,20,5.5
+2024-02,MED014,Lévothyroxine 50mcg,Thyroïde,28,148,120,0,20,5.5
+2024-03,MED014,Lévothyroxine 50mcg,Thyroïde,37,157,120,0,20,5.5
+2024-04,MED014,Lévothyroxine 50mcg,Thyroïde,38,158,120,0,20,5.5
+2024-05,MED014,Lévothyroxine 50mcg,Thyroïde,34,154,120,0,20,5.5
+2024-06,MED014,Lévothyroxine 50mcg,Thyroïde,29,149,120,0,20,5.5
+2024-07,MED014,Lévothyroxine 50mcg,Thyroïde,36,156,120,0,20,5.5
+2024-08,MED014,Lévothyroxine 50mcg,Thyroïde,33,153,120,0,20,5.5
+2024-09,MED014,Lévothyroxine 50mcg,Thyroïde,31,151,120,0,20,5.5
+2024-10,MED014,Lévothyroxine 50mcg,Thyroïde,53,173,120,0,20,5.5
+2024-11,MED014,Lévothyroxine 50mcg,Thyroïde,32,152,120,0,20,5.5
+2024-12,MED014,Lévothyroxine 50mcg,Thyroïde,37,157,120,0,20,5.5
+2025-01,MED014,Lévothyroxine 50mcg,Thyroïde,47,167,120,0,20,5.5
+2025-02,MED014,Lévothyroxine 50mcg,Thyroïde,26,146,120,0,20,5.5
+2025-03,MED014,Lévothyroxine 50mcg,Thyroïde,41,161,120,0,20,5.5
+2020-01,MED015,Pantoprazole 40mg,Gastrique,234,234,0,0,30,6.0
+2020-02,MED015,Pantoprazole 40mg,Gastrique,42,222,180,0,30,6.0
+2020-03,MED015,Pantoprazole 40mg,Gastrique,49,229,180,0,30,6.0
+2020-04,MED015,Pantoprazole 40mg,Gastrique,52,232,180,0,30,6.0
+2020-05,MED015,Pantoprazole 40mg,Gastrique,90,270,180,0,30,6.0
+2020-06,MED015,Pantoprazole 40mg,Gastrique,86,266,180,0,30,6.0
+2020-07,MED015,Pantoprazole 40mg,Gastrique,57,237,180,0,30,6.0
+2020-08,MED015,Pantoprazole 40mg,Gastrique,61,241,180,0,30,6.0
+2020-09,MED015,Pantoprazole 40mg,Gastrique,52,232,180,0,30,6.0
+2020-10,MED015,Pantoprazole 40mg,Gastrique,59,239,180,0,30,6.0
+2020-11,MED015,Pantoprazole 40mg,Gastrique,43,223,180,0,30,6.0
+2020-12,MED015,Pantoprazole 40mg,Gastrique,56,236,180,0,30,6.0
+2021-01,MED015,Pantoprazole 40mg,Gastrique,61,241,180,0,30,6.0
+2021-02,MED015,Pantoprazole 40mg,Gastrique,24,204,180,0,30,6.0
+2021-03,MED015,Pantoprazole 40mg,Gastrique,63,243,180,0,30,6.0
+2021-04,MED015,Pantoprazole 40mg,Gastrique,59,239,180,0,30,6.0
+2021-05,MED015,Pantoprazole 40mg,Gastrique,88,268,180,0,30,6.0
+2021-06,MED015,Pantoprazole 40mg,Gastrique,85,265,180,0,30,6.0
+2021-07,MED015,Pantoprazole 40mg,Gastrique,57,237,180,0,30,6.0
+2021-08,MED015,Pantoprazole 40mg,Gastrique,44,224,180,0,30,6.0
+2021-09,MED015,Pantoprazole 40mg,Gastrique,62,242,180,0,30,6.0
+2021-10,MED015,Pantoprazole 40mg,Gastrique,64,244,180,0,30,6.0
+2021-11,MED015,Pantoprazole 40mg,Gastrique,55,235,180,0,30,6.0
+2021-12,MED015,Pantoprazole 40mg,Gastrique,71,251,180,0,30,6.0
+2022-01,MED015,Pantoprazole 40mg,Gastrique,68,248,180,0,30,6.0
+2022-02,MED015,Pantoprazole 40mg,Gastrique,41,221,180,0,30,6.0
+2022-03,MED015,Pantoprazole 40mg,Gastrique,65,245,180,0,30,6.0
+2022-04,MED015,Pantoprazole 40mg,Gastrique,81,261,180,0,30,6.0
+2022-05,MED015,Pantoprazole 40mg,Gastrique,106,286,180,0,30,6.0
+2022-06,MED015,Pantoprazole 40mg,Gastrique,73,253,180,0,30,6.0
+2022-07,MED015,Pantoprazole 40mg,Gastrique,74,254,180,0,30,6.0
+2022-08,MED015,Pantoprazole 40mg,Gastrique,73,253,180,0,30,6.0
+2022-09,MED015,Pantoprazole 40mg,Gastrique,62,242,180,0,30,6.0
+2022-10,MED015,Pantoprazole 40mg,Gastrique,70,250,180,0,30,6.0
+2022-11,MED015,Pantoprazole 40mg,Gastrique,60,240,180,0,30,6.0
+2022-12,MED015,Pantoprazole 40mg,Gastrique,66,246,180,0,30,6.0
+2023-01,MED015,Pantoprazole 40mg,Gastrique,72,252,180,0,30,6.0
+2023-02,MED015,Pantoprazole 40mg,Gastrique,51,231,180,0,30,6.0
+2023-03,MED015,Pantoprazole 40mg,Gastrique,76,256,180,0,30,6.0
+2023-04,MED015,Pantoprazole 40mg,Gastrique,98,278,180,0,30,6.0
+2023-05,MED015,Pantoprazole 40mg,Gastrique,133,313,180,0,30,6.0
+2023-06,MED015,Pantoprazole 40mg,Gastrique,89,269,180,0,30,6.0
+2023-07,MED015,Pantoprazole 40mg,Gastrique,63,243,180,0,30,6.0
+2023-08,MED015,Pantoprazole 40mg,Gastrique,83,263,180,0,30,6.0
+2023-09,MED015,Pantoprazole 40mg,Gastrique,66,246,180,0,30,6.0
+2023-10,MED015,Pantoprazole 40mg,Gastrique,77,257,180,0,30,6.0
+2023-11,MED015,Pantoprazole 40mg,Gastrique,70,250,180,0,30,6.0
+2023-12,MED015,Pantoprazole 40mg,Gastrique,78,258,180,0,30,6.0
+2024-01,MED015,Pantoprazole 40mg,Gastrique,86,266,180,0,30,6.0
+2024-02,MED015,Pantoprazole 40mg,Gastrique,64,244,180,0,30,6.0
+2024-03,MED015,Pantoprazole 40mg,Gastrique,87,267,180,0,30,6.0
+2024-04,MED015,Pantoprazole 40mg,Gastrique,94,274,180,0,30,6.0
+2024-05,MED015,Pantoprazole 40mg,Gastrique,126,306,180,0,30,6.0
+2024-06,MED015,Pantoprazole 40mg,Gastrique,113,293,180,0,30,6.0
+2024-07,MED015,Pantoprazole 40mg,Gastrique,83,263,180,0,30,6.0
+2024-08,MED015,Pantoprazole 40mg,Gastrique,74,254,180,0,30,6.0
+2024-09,MED015,Pantoprazole 40mg,Gastrique,70,250,180,0,30,6.0
+2024-10,MED015,Pantoprazole 40mg,Gastrique,93,273,180,0,30,6.0
+2024-11,MED015,Pantoprazole 40mg,Gastrique,75,255,180,0,30,6.0
+2024-12,MED015,Pantoprazole 40mg,Gastrique,86,266,180,0,30,6.0
+2025-01,MED015,Pantoprazole 40mg,Gastrique,94,274,180,0,30,6.0
+2025-02,MED015,Pantoprazole 40mg,Gastrique,64,244,180,0,30,6.0
+2025-03,MED015,Pantoprazole 40mg,Gastrique,89,269,180,0,30,6.0
+2020-01,MED016,Sertraline 50mg,Psychiatrique,110,110,0,0,15,9.0
+2020-02,MED016,Sertraline 50mg,Psychiatrique,9,99,90,0,15,9.0
+2020-03,MED016,Sertraline 50mg,Psychiatrique,16,106,90,0,15,9.0
+2020-04,MED016,Sertraline 50mg,Psychiatrique,11,101,90,0,15,9.0
+2020-05,MED016,Sertraline 50mg,Psychiatrique,15,105,90,0,15,9.0
+2020-06,MED016,Sertraline 50mg,Psychiatrique,0,90,90,0,15,9.0
+2020-07,MED016,Sertraline 50mg,Psychiatrique,5,95,90,0,15,9.0
+2020-08,MED016,Sertraline 50mg,Psychiatrique,14,104,90,0,15,9.0
+2020-09,MED016,Sertraline 50mg,Psychiatrique,18,108,90,0,15,9.0
+2020-10,MED016,Sertraline 50mg,Psychiatrique,22,112,90,0,15,9.0
+2020-11,MED016,Sertraline 50mg,Psychiatrique,15,105,90,0,15,9.0
+2020-12,MED016,Sertraline 50mg,Psychiatrique,30,120,90,0,15,9.0
+2021-01,MED016,Sertraline 50mg,Psychiatrique,20,110,90,0,15,9.0
+2021-02,MED016,Sertraline 50mg,Psychiatrique,13,103,90,0,15,9.0
+2021-03,MED016,Sertraline 50mg,Psychiatrique,25,115,90,0,15,9.0
+2021-04,MED016,Sertraline 50mg,Psychiatrique,16,106,90,0,15,9.0
+2021-05,MED016,Sertraline 50mg,Psychiatrique,22,112,90,0,15,9.0
+2021-06,MED016,Sertraline 50mg,Psychiatrique,7,97,90,0,15,9.0
+2021-07,MED016,Sertraline 50mg,Psychiatrique,14,104,90,0,15,9.0
+2021-08,MED016,Sertraline 50mg,Psychiatrique,22,112,90,0,15,9.0
+2021-09,MED016,Sertraline 50mg,Psychiatrique,18,108,90,0,15,9.0
+2021-10,MED016,Sertraline 50mg,Psychiatrique,21,111,90,0,15,9.0
+2021-11,MED016,Sertraline 50mg,Psychiatrique,26,116,90,0,15,9.0
+2021-12,MED016,Sertraline 50mg,Psychiatrique,41,131,90,0,15,9.0
+2022-01,MED016,Sertraline 50mg,Psychiatrique,24,114,90,0,15,9.0
+2022-02,MED016,Sertraline 50mg,Psychiatrique,16,106,90,0,15,9.0
+2022-03,MED016,Sertraline 50mg,Psychiatrique,27,117,90,0,15,9.0
+2022-04,MED016,Sertraline 50mg,Psychiatrique,20,110,90,0,15,9.0
+2022-05,MED016,Sertraline 50mg,Psychiatrique,23,113,90,0,15,9.0
+2022-06,MED016,Sertraline 50mg,Psychiatrique,4,94,90,0,15,9.0
+2022-07,MED016,Sertraline 50mg,Psychiatrique,13,103,90,0,15,9.0
+2022-08,MED016,Sertraline 50mg,Psychiatrique,29,119,90,0,15,9.0
+2022-09,MED016,Sertraline 50mg,Psychiatrique,23,113,90,0,15,9.0
+2022-10,MED016,Sertraline 50mg,Psychiatrique,26,116,90,0,15,9.0
+2022-11,MED016,Sertraline 50mg,Psychiatrique,38,128,90,0,15,9.0
+2022-12,MED016,Sertraline 50mg,Psychiatrique,38,128,90,0,15,9.0
+2023-01,MED016,Sertraline 50mg,Psychiatrique,28,118,90,0,15,9.0
+2023-02,MED016,Sertraline 50mg,Psychiatrique,13,103,90,0,15,9.0
+2023-03,MED016,Sertraline 50mg,Psychiatrique,31,121,90,0,15,9.0
+2023-04,MED016,Sertraline 50mg,Psychiatrique,24,114,90,0,15,9.0
+2023-05,MED016,Sertraline 50mg,Psychiatrique,24,114,90,0,15,9.0
+2023-06,MED016,Sertraline 50mg,Psychiatrique,10,100,90,0,15,9.0
+2023-07,MED016,Sertraline 50mg,Psychiatrique,17,107,90,0,15,9.0
+2023-08,MED016,Sertraline 50mg,Psychiatrique,32,122,90,0,15,9.0
+2023-09,MED016,Sertraline 50mg,Psychiatrique,30,120,90,0,15,9.0
+2023-10,MED016,Sertraline 50mg,Psychiatrique,30,120,90,0,15,9.0
+2023-11,MED016,Sertraline 50mg,Psychiatrique,42,132,90,0,15,9.0
+2023-12,MED016,Sertraline 50mg,Psychiatrique,41,131,90,0,15,9.0
+2024-01,MED016,Sertraline 50mg,Psychiatrique,30,120,90,0,15,9.0
+2024-02,MED016,Sertraline 50mg,Psychiatrique,22,112,90,0,15,9.0
+2024-03,MED016,Sertraline 50mg,Psychiatrique,27,117,90,0,15,9.0
+2024-04,MED016,Sertraline 50mg,Psychiatrique,25,115,90,0,15,9.0
+2024-05,MED016,Sertraline 50mg,Psychiatrique,34,124,90,0,15,9.0
+2024-06,MED016,Sertraline 50mg,Psychiatrique,16,106,90,0,15,9.0
+2024-07,MED016,Sertraline 50mg,Psychiatrique,20,110,90,0,15,9.0
+2024-08,MED016,Sertraline 50mg,Psychiatrique,34,124,90,0,15,9.0
+2024-09,MED016,Sertraline 50mg,Psychiatrique,30,120,90,0,15,9.0
+2024-10,MED016,Sertraline 50mg,Psychiatrique,33,123,90,0,15,9.0
+2024-11,MED016,Sertraline 50mg,Psychiatrique,41,131,90,0,15,9.0
+2024-12,MED016,Sertraline 50mg,Psychiatrique,53,143,90,0,15,9.0
+2025-01,MED016,Sertraline 50mg,Psychiatrique,30,120,90,0,15,9.0
+2025-02,MED016,Sertraline 50mg,Psychiatrique,22,112,90,0,15,9.0
+2025-03,MED016,Sertraline 50mg,Psychiatrique,37,127,90,0,15,9.0
+2020-01,MED017,Lansoprazole 30mg,Gastrique,168,168,0,0,20,5.5
+2020-02,MED017,Lansoprazole 30mg,Gastrique,31,151,120,0,20,5.5
+2020-03,MED017,Lansoprazole 30mg,Gastrique,48,168,120,0,20,5.5
+2020-04,MED017,Lansoprazole 30mg,Gastrique,59,179,120,0,20,5.5
+2020-05,MED017,Lansoprazole 30mg,Gastrique,75,195,120,0,20,5.5
+2020-06,MED017,Lansoprazole 30mg,Gastrique,59,179,120,0,20,5.5
+2020-07,MED017,Lansoprazole 30mg,Gastrique,55,175,120,0,20,5.5
+2020-08,MED017,Lansoprazole 30mg,Gastrique,53,173,120,0,20,5.5
+2020-09,MED017,Lansoprazole 30mg,Gastrique,42,162,120,0,20,5.5
+2020-10,MED017,Lansoprazole 30mg,Gastrique,56,176,120,0,20,5.5
+2020-11,MED017,Lansoprazole 30mg,Gastrique,46,166,120,0,20,5.5
+2020-12,MED017,Lansoprazole 30mg,Gastrique,52,172,120,0,20,5.5
+2021-01,MED017,Lansoprazole 30mg,Gastrique,50,170,120,0,20,5.5
+2021-02,MED017,Lansoprazole 30mg,Gastrique,50,170,120,0,20,5.5
+2021-03,MED017,Lansoprazole 30mg,Gastrique,61,181,120,0,20,5.5
+2021-04,MED017,Lansoprazole 30mg,Gastrique,70,190,120,0,20,5.5
+2021-05,MED017,Lansoprazole 30mg,Gastrique,100,220,120,0,20,5.5
+2021-06,MED017,Lansoprazole 30mg,Gastrique,66,186,120,0,20,5.5
+2021-07,MED017,Lansoprazole 30mg,Gastrique,59,179,120,0,20,5.5
+2021-08,MED017,Lansoprazole 30mg,Gastrique,55,175,120,0,20,5.5
+2021-09,MED017,Lansoprazole 30mg,Gastrique,51,171,120,0,20,5.5
+2021-10,MED017,Lansoprazole 30mg,Gastrique,62,182,120,0,20,5.5
+2021-11,MED017,Lansoprazole 30mg,Gastrique,47,167,120,0,20,5.5
+2021-12,MED017,Lansoprazole 30mg,Gastrique,66,186,120,0,20,5.5
+2022-01,MED017,Lansoprazole 30mg,Gastrique,51,171,120,0,20,5.5
+2022-02,MED017,Lansoprazole 30mg,Gastrique,45,165,120,0,20,5.5
+2022-03,MED017,Lansoprazole 30mg,Gastrique,64,184,120,0,20,5.5
+2022-04,MED017,Lansoprazole 30mg,Gastrique,66,186,120,0,20,5.5
+2022-05,MED017,Lansoprazole 30mg,Gastrique,106,226,120,0,20,5.5
+2022-06,MED017,Lansoprazole 30mg,Gastrique,71,191,120,0,20,5.5
+2022-07,MED017,Lansoprazole 30mg,Gastrique,71,191,120,0,20,5.5
+2022-08,MED017,Lansoprazole 30mg,Gastrique,67,187,120,0,20,5.5
+2022-09,MED017,Lansoprazole 30mg,Gastrique,63,183,120,0,20,5.5
+2022-10,MED017,Lansoprazole 30mg,Gastrique,61,181,120,0,20,5.5
+2022-11,MED017,Lansoprazole 30mg,Gastrique,58,178,120,0,20,5.5
+2022-12,MED017,Lansoprazole 30mg,Gastrique,59,179,120,0,20,5.5
+2023-01,MED017,Lansoprazole 30mg,Gastrique,74,194,120,0,20,5.5
+2023-02,MED017,Lansoprazole 30mg,Gastrique,44,164,120,0,20,5.5
+2023-03,MED017,Lansoprazole 30mg,Gastrique,68,188,120,0,20,5.5
+2023-04,MED017,Lansoprazole 30mg,Gastrique,77,197,120,0,20,5.5
+2023-05,MED017,Lansoprazole 30mg,Gastrique,113,233,120,0,20,5.5
+2023-06,MED017,Lansoprazole 30mg,Gastrique,76,196,120,0,20,5.5
+2023-07,MED017,Lansoprazole 30mg,Gastrique,72,192,120,0,20,5.5
+2023-08,MED017,Lansoprazole 30mg,Gastrique,62,182,120,0,20,5.5
+2023-09,MED017,Lansoprazole 30mg,Gastrique,70,190,120,0,20,5.5
+2023-10,MED017,Lansoprazole 30mg,Gastrique,65,185,120,0,20,5.5
+2023-11,MED017,Lansoprazole 30mg,Gastrique,67,187,120,0,20,5.5
+2023-12,MED017,Lansoprazole 30mg,Gastrique,68,188,120,0,20,5.5
+2024-01,MED017,Lansoprazole 30mg,Gastrique,74,194,120,0,20,5.5
+2024-02,MED017,Lansoprazole 30mg,Gastrique,55,175,120,0,20,5.5
+2024-03,MED017,Lansoprazole 30mg,Gastrique,66,186,120,0,20,5.5
+2024-04,MED017,Lansoprazole 30mg,Gastrique,84,204,120,0,20,5.5
+2024-05,MED017,Lansoprazole 30mg,Gastrique,116,236,120,0,20,5.5
+2024-06,MED017,Lansoprazole 30mg,Gastrique,83,203,120,0,20,5.5
+2024-07,MED017,Lansoprazole 30mg,Gastrique,82,202,120,0,20,5.5
+2024-08,MED017,Lansoprazole 30mg,Gastrique,80,200,120,0,20,5.5
+2024-09,MED017,Lansoprazole 30mg,Gastrique,64,184,120,0,20,5.5
+2024-10,MED017,Lansoprazole 30mg,Gastrique,78,198,120,0,20,5.5
+2024-11,MED017,Lansoprazole 30mg,Gastrique,64,184,120,0,20,5.5
+2024-12,MED017,Lansoprazole 30mg,Gastrique,66,186,120,0,20,5.5
+2025-01,MED017,Lansoprazole 30mg,Gastrique,74,194,120,0,20,5.5
+2025-02,MED017,Lansoprazole 30mg,Gastrique,41,161,120,0,20,5.5
+2025-03,MED017,Lansoprazole 30mg,Gastrique,79,199,120,0,20,5.5
+2020-01,MED018,Cétirizine 10mg,Antihistaminique,227,227,0,0,35,3.5
+2020-02,MED018,Cétirizine 10mg,Antihistaminique,0,201,210,9,35,3.5
+2020-03,MED018,Cétirizine 10mg,Antihistaminique,111,321,210,0,35,3.5
+2020-04,MED018,Cétirizine 10mg,Antihistaminique,256,466,210,0,35,3.5
+2020-05,MED018,Cétirizine 10mg,Antihistaminique,454,664,210,0,35,3.5
+2020-06,MED018,Cétirizine 10mg,Antihistaminique,385,595,210,0,35,3.5
+2020-07,MED018,Cétirizine 10mg,Antihistaminique,288,498,210,0,35,3.5
+2020-08,MED018,Cétirizine 10mg,Antihistaminique,216,426,210,0,35,3.5
+2020-09,MED018,Cétirizine 10mg,Antihistaminique,102,312,210,0,35,3.5
+2020-10,MED018,Cétirizine 10mg,Antihistaminique,55,265,210,0,35,3.5
+2020-11,MED018,Cétirizine 10mg,Antihistaminique,1,211,210,0,35,3.5
+2020-12,MED018,Cétirizine 10mg,Antihistaminique,26,236,210,0,35,3.5
+2021-01,MED018,Cétirizine 10mg,Antihistaminique,12,222,210,0,35,3.5
+2021-02,MED018,Cétirizine 10mg,Antihistaminique,0,209,210,1,35,3.5
+2021-03,MED018,Cétirizine 10mg,Antihistaminique,114,324,210,0,35,3.5
+2021-04,MED018,Cétirizine 10mg,Antihistaminique,269,479,210,0,35,3.5
+2021-05,MED018,Cétirizine 10mg,Antihistaminique,480,690,210,0,35,3.5
+2021-06,MED018,Cétirizine 10mg,Antihistaminique,396,606,210,0,35,3.5
+2021-07,MED018,Cétirizine 10mg,Antihistaminique,307,517,210,0,35,3.5
+2021-08,MED018,Cétirizine 10mg,Antihistaminique,184,394,210,0,35,3.5
+2021-09,MED018,Cétirizine 10mg,Antihistaminique,115,325,210,0,35,3.5
+2021-10,MED018,Cétirizine 10mg,Antihistaminique,65,275,210,0,35,3.5
+2021-11,MED018,Cétirizine 10mg,Antihistaminique,18,228,210,0,35,3.5
+2021-12,MED018,Cétirizine 10mg,Antihistaminique,30,240,210,0,35,3.5
+2022-01,MED018,Cétirizine 10mg,Antihistaminique,26,236,210,0,35,3.5
+2022-02,MED018,Cétirizine 10mg,Antihistaminique,8,218,210,0,35,3.5
+2022-03,MED018,Cétirizine 10mg,Antihistaminique,136,346,210,0,35,3.5
+2022-04,MED018,Cétirizine 10mg,Antihistaminique,300,510,210,0,35,3.5
+2022-05,MED018,Cétirizine 10mg,Antihistaminique,485,695,210,0,35,3.5
+2022-06,MED018,Cétirizine 10mg,Antihistaminique,386,596,210,0,35,3.5
+2022-07,MED018,Cétirizine 10mg,Antihistaminique,310,520,210,0,35,3.5
+2022-08,MED018,Cétirizine 10mg,Antihistaminique,216,426,210,0,35,3.5
+2022-09,MED018,Cétirizine 10mg,Antihistaminique,135,345,210,0,35,3.5
+2022-10,MED018,Cétirizine 10mg,Antihistaminique,69,279,210,0,35,3.5
+2022-11,MED018,Cétirizine 10mg,Antihistaminique,22,232,210,0,35,3.5
+2022-12,MED018,Cétirizine 10mg,Antihistaminique,22,232,210,0,35,3.5
+2023-01,MED018,Cétirizine 10mg,Antihistaminique,22,232,210,0,35,3.5
+2023-02,MED018,Cétirizine 10mg,Antihistaminique,8,218,210,0,35,3.5
+2023-03,MED018,Cétirizine 10mg,Antihistaminique,132,342,210,0,35,3.5
+2023-04,MED018,Cétirizine 10mg,Antihistaminique,302,512,210,0,35,3.5
+2023-05,MED018,Cétirizine 10mg,Antihistaminique,563,773,210,0,35,3.5
+2023-06,MED018,Cétirizine 10mg,Antihistaminique,443,653,210,0,35,3.5
+2023-07,MED018,Cétirizine 10mg,Antihistaminique,353,563,210,0,35,3.5
+2023-08,MED018,Cétirizine 10mg,Antihistaminique,218,428,210,0,35,3.5
+2023-09,MED018,Cétirizine 10mg,Antihistaminique,148,358,210,0,35,3.5
+2023-10,MED018,Cétirizine 10mg,Antihistaminique,73,283,210,0,35,3.5
+2023-11,MED018,Cétirizine 10mg,Antihistaminique,33,243,210,0,35,3.5
+2023-12,MED018,Cétirizine 10mg,Antihistaminique,33,243,210,0,35,3.5
+2024-01,MED018,Cétirizine 10mg,Antihistaminique,46,256,210,0,35,3.5
+2024-02,MED018,Cétirizine 10mg,Antihistaminique,20,230,210,0,35,3.5
+2024-03,MED018,Cétirizine 10mg,Antihistaminique,129,339,210,0,35,3.5
+2024-04,MED018,Cétirizine 10mg,Antihistaminique,302,512,210,0,35,3.5
+2024-05,MED018,Cétirizine 10mg,Antihistaminique,538,748,210,0,35,3.5
+2024-06,MED018,Cétirizine 10mg,Antihistaminique,442,652,210,0,35,3.5
+2024-07,MED018,Cétirizine 10mg,Antihistaminique,351,561,210,0,35,3.5
+2024-08,MED018,Cétirizine 10mg,Antihistaminique,242,452,210,0,35,3.5
+2024-09,MED018,Cétirizine 10mg,Antihistaminique,145,355,210,0,35,3.5
+2024-10,MED018,Cétirizine 10mg,Antihistaminique,77,287,210,0,35,3.5
+2024-11,MED018,Cétirizine 10mg,Antihistaminique,37,247,210,0,35,3.5
+2024-12,MED018,Cétirizine 10mg,Antihistaminique,46,256,210,0,35,3.5
+2025-01,MED018,Cétirizine 10mg,Antihistaminique,43,253,210,0,35,3.5
+2025-02,MED018,Cétirizine 10mg,Antihistaminique,20,230,210,0,35,3.5
+2025-03,MED018,Cétirizine 10mg,Antihistaminique,161,371,210,0,35,3.5
+2020-01,MED019,Diclofénac 50mg,Anti-inflammatoire,317,317,0,0,30,4.0
+2020-02,MED019,Diclofénac 50mg,Anti-inflammatoire,102,282,180,0,30,4.0
+2020-03,MED019,Diclofénac 50mg,Anti-inflammatoire,73,253,180,0,30,4.0
+2020-04,MED019,Diclofénac 50mg,Anti-inflammatoire,83,263,180,0,30,4.0
+2020-05,MED019,Diclofénac 50mg,Anti-inflammatoire,51,231,180,0,30,4.0
+2020-06,MED019,Diclofénac 50mg,Anti-inflammatoire,45,225,180,0,30,4.0
+2020-07,MED019,Diclofénac 50mg,Anti-inflammatoire,54,234,180,0,30,4.0
+2020-08,MED019,Diclofénac 50mg,Anti-inflammatoire,82,262,180,0,30,4.0
+2020-09,MED019,Diclofénac 50mg,Anti-inflammatoire,102,282,180,0,30,4.0
+2020-10,MED019,Diclofénac 50mg,Anti-inflammatoire,155,335,180,0,30,4.0
+2020-11,MED019,Diclofénac 50mg,Anti-inflammatoire,127,307,180,0,30,4.0
+2020-12,MED019,Diclofénac 50mg,Anti-inflammatoire,160,340,180,0,30,4.0
+2021-01,MED019,Diclofénac 50mg,Anti-inflammatoire,149,329,180,0,30,4.0
+2021-02,MED019,Diclofénac 50mg,Anti-inflammatoire,96,276,180,0,30,4.0
+2021-03,MED019,Diclofénac 50mg,Anti-inflammatoire,100,280,180,0,30,4.0
+2021-04,MED019,Diclofénac 50mg,Anti-inflammatoire,89,269,180,0,30,4.0
+2021-05,MED019,Diclofénac 50mg,Anti-inflammatoire,58,238,180,0,30,4.0
+2021-06,MED019,Diclofénac 50mg,Anti-inflammatoire,50,230,180,0,30,4.0
+2021-07,MED019,Diclofénac 50mg,Anti-inflammatoire,77,257,180,0,30,4.0
+2021-08,MED019,Diclofénac 50mg,Anti-inflammatoire,93,273,180,0,30,4.0
+2021-09,MED019,Diclofénac 50mg,Anti-inflammatoire,95,275,180,0,30,4.0
+2021-10,MED019,Diclofénac 50mg,Anti-inflammatoire,148,328,180,0,30,4.0
+2021-11,MED019,Diclofénac 50mg,Anti-inflammatoire,144,324,180,0,30,4.0
+2021-12,MED019,Diclofénac 50mg,Anti-inflammatoire,211,391,180,0,30,4.0
+2022-01,MED019,Diclofénac 50mg,Anti-inflammatoire,149,329,180,0,30,4.0
+2022-02,MED019,Diclofénac 50mg,Anti-inflammatoire,87,267,180,0,30,4.0
+2022-03,MED019,Diclofénac 50mg,Anti-inflammatoire,98,278,180,0,30,4.0
+2022-04,MED019,Diclofénac 50mg,Anti-inflammatoire,100,280,180,0,30,4.0
+2022-05,MED019,Diclofénac 50mg,Anti-inflammatoire,61,241,180,0,30,4.0
+2022-06,MED019,Diclofénac 50mg,Anti-inflammatoire,66,246,180,0,30,4.0
+2022-07,MED019,Diclofénac 50mg,Anti-inflammatoire,78,258,180,0,30,4.0
+2022-08,MED019,Diclofénac 50mg,Anti-inflammatoire,99,279,180,0,30,4.0
+2022-09,MED019,Diclofénac 50mg,Anti-inflammatoire,124,304,180,0,30,4.0
+2022-10,MED019,Diclofénac 50mg,Anti-inflammatoire,154,334,180,0,30,4.0
+2022-11,MED019,Diclofénac 50mg,Anti-inflammatoire,162,342,180,0,30,4.0
+2022-12,MED019,Diclofénac 50mg,Anti-inflammatoire,198,378,180,0,30,4.0
+2023-01,MED019,Diclofénac 50mg,Anti-inflammatoire,170,350,180,0,30,4.0
+2023-02,MED019,Diclofénac 50mg,Anti-inflammatoire,99,279,180,0,30,4.0
+2023-03,MED019,Diclofénac 50mg,Anti-inflammatoire,92,272,180,0,30,4.0
+2023-04,MED019,Diclofénac 50mg,Anti-inflammatoire,89,269,180,0,30,4.0
+2023-05,MED019,Diclofénac 50mg,Anti-inflammatoire,84,264,180,0,30,4.0
+2023-06,MED019,Diclofénac 50mg,Anti-inflammatoire,72,252,180,0,30,4.0
+2023-07,MED019,Diclofénac 50mg,Anti-inflammatoire,70,250,180,0,30,4.0
+2023-08,MED019,Diclofénac 50mg,Anti-inflammatoire,114,294,180,0,30,4.0
+2023-09,MED019,Diclofénac 50mg,Anti-inflammatoire,147,327,180,0,30,4.0
+2023-10,MED019,Diclofénac 50mg,Anti-inflammatoire,167,347,180,0,30,4.0
+2023-11,MED019,Diclofénac 50mg,Anti-inflammatoire,159,339,180,0,30,4.0
+2023-12,MED019,Diclofénac 50mg,Anti-inflammatoire,208,388,180,0,30,4.0
+2024-01,MED019,Diclofénac 50mg,Anti-inflammatoire,172,352,180,0,30,4.0
+2024-02,MED019,Diclofénac 50mg,Anti-inflammatoire,140,320,180,0,30,4.0
+2024-03,MED019,Diclofénac 50mg,Anti-inflammatoire,110,290,180,0,30,4.0
+2024-04,MED019,Diclofénac 50mg,Anti-inflammatoire,110,290,180,0,30,4.0
+2024-05,MED019,Diclofénac 50mg,Anti-inflammatoire,79,259,180,0,30,4.0
+2024-06,MED019,Diclofénac 50mg,Anti-inflammatoire,74,254,180,0,30,4.0
+2024-07,MED019,Diclofénac 50mg,Anti-inflammatoire,111,291,180,0,30,4.0
+2024-08,MED019,Diclofénac 50mg,Anti-inflammatoire,121,301,180,0,30,4.0
+2024-09,MED019,Diclofénac 50mg,Anti-inflammatoire,139,319,180,0,30,4.0
+2024-10,MED019,Diclofénac 50mg,Anti-inflammatoire,193,373,180,0,30,4.0
+2024-11,MED019,Diclofénac 50mg,Anti-inflammatoire,180,360,180,0,30,4.0
+2024-12,MED019,Diclofénac 50mg,Anti-inflammatoire,229,409,180,0,30,4.0
+2025-01,MED019,Diclofénac 50mg,Anti-inflammatoire,172,352,180,0,30,4.0
+2025-02,MED019,Diclofénac 50mg,Anti-inflammatoire,104,284,180,0,30,4.0
+2025-03,MED019,Diclofénac 50mg,Anti-inflammatoire,106,286,180,0,30,4.0
+2020-01,MED020,Tramadol 50mg,Antalgique,132,132,0,0,20,6.0
+2020-02,MED020,Tramadol 50mg,Antalgique,20,140,120,0,20,6.0
+2020-03,MED020,Tramadol 50mg,Antalgique,17,137,120,0,20,6.0
+2020-04,MED020,Tramadol 50mg,Antalgique,16,136,120,0,20,6.0
+2020-05,MED020,Tramadol 50mg,Antalgique,15,135,120,0,20,6.0
+2020-06,MED020,Tramadol 50mg,Antalgique,9,129,120,0,20,6.0
+2020-07,MED020,Tramadol 50mg,Antalgique,19,139,120,0,20,6.0
+2020-08,MED020,Tramadol 50mg,Antalgique,10,130,120,0,20,6.0
+2020-09,MED020,Tramadol 50mg,Antalgique,30,150,120,0,20,6.0
+2020-10,MED020,Tramadol 50mg,Antalgique,51,171,120,0,20,6.0
+2020-11,MED020,Tramadol 50mg,Antalgique,58,178,120,0,20,6.0
+2020-12,MED020,Tramadol 50mg,Antalgique,55,175,120,0,20,6.0
+2021-01,MED020,Tramadol 50mg,Antalgique,28,148,120,0,20,6.0
+2021-02,MED020,Tramadol 50mg,Antalgique,9,129,120,0,20,6.0
+2021-03,MED020,Tramadol 50mg,Antalgique,18,138,120,0,20,6.0
+2021-04,MED020,Tramadol 50mg,Antalgique,16,136,120,0,20,6.0
+2021-05,MED020,Tramadol 50mg,Antalgique,21,141,120,0,20,6.0
+2021-06,MED020,Tramadol 50mg,Antalgique,25,145,120,0,20,6.0
+2021-07,MED020,Tramadol 50mg,Antalgique,35,155,120,0,20,6.0
+2021-08,MED020,Tramadol 50mg,Antalgique,22,142,120,0,20,6.0
+2021-09,MED020,Tramadol 50mg,Antalgique,40,160,120,0,20,6.0
+2021-10,MED020,Tramadol 50mg,Antalgique,48,168,120,0,20,6.0
+2021-11,MED020,Tramadol 50mg,Antalgique,63,183,120,0,20,6.0
+2021-12,MED020,Tramadol 50mg,Antalgique,50,170,120,0,20,6.0
+2022-01,MED020,Tramadol 50mg,Antalgique,19,139,120,0,20,6.0
+2022-02,MED020,Tramadol 50mg,Antalgique,19,139,120,0,20,6.0
+2022-03,MED020,Tramadol 50mg,Antalgique,32,152,120,0,20,6.0
+2022-04,MED020,Tramadol 50mg,Antalgique,24,144,120,0,20,6.0
+2022-05,MED020,Tramadol 50mg,Antalgique,28,148,120,0,20,6.0
+2022-06,MED020,Tramadol 50mg,Antalgique,25,145,120,0,20,6.0
+2022-07,MED020,Tramadol 50mg,Antalgique,24,144,120,0,20,6.0
+2022-08,MED020,Tramadol 50mg,Antalgique,26,146,120,0,20,6.0
+2022-09,MED020,Tramadol 50mg,Antalgique,43,163,120,0,20,6.0
+2022-10,MED020,Tramadol 50mg,Antalgique,78,198,120,0,20,6.0
+2022-11,MED020,Tramadol 50mg,Antalgique,83,203,120,0,20,6.0
+2022-12,MED020,Tramadol 50mg,Antalgique,62,182,120,0,20,6.0
+2023-01,MED020,Tramadol 50mg,Antalgique,20,140,120,0,20,6.0
+2023-02,MED020,Tramadol 50mg,Antalgique,22,142,120,0,20,6.0
+2023-03,MED020,Tramadol 50mg,Antalgique,27,147,120,0,20,6.0
+2023-04,MED020,Tramadol 50mg,Antalgique,25,145,120,0,20,6.0
+2023-05,MED020,Tramadol 50mg,Antalgique,36,156,120,0,20,6.0
+2023-06,MED020,Tramadol 50mg,Antalgique,24,144,120,0,20,6.0
+2023-07,MED020,Tramadol 50mg,Antalgique,34,154,120,0,20,6.0
+2023-08,MED020,Tramadol 50mg,Antalgique,30,150,120,0,20,6.0
+2023-09,MED020,Tramadol 50mg,Antalgique,43,163,120,0,20,6.0
+2023-10,MED020,Tramadol 50mg,Antalgique,61,181,120,0,20,6.0
+2023-11,MED020,Tramadol 50mg,Antalgique,72,192,120,0,20,6.0
+2023-12,MED020,Tramadol 50mg,Antalgique,74,194,120,0,20,6.0
+2024-01,MED020,Tramadol 50mg,Antalgique,41,161,120,0,20,6.0
+2024-02,MED020,Tramadol 50mg,Antalgique,30,150,120,0,20,6.0
+2024-03,MED020,Tramadol 50mg,Antalgique,40,160,120,0,20,6.0
+2024-04,MED020,Tramadol 50mg,Antalgique,30,150,120,0,20,6.0
+2024-05,MED020,Tramadol 50mg,Antalgique,41,161,120,0,20,6.0
+2024-06,MED020,Tramadol 50mg,Antalgique,32,152,120,0,20,6.0
+2024-07,MED020,Tramadol 50mg,Antalgique,42,162,120,0,20,6.0
+2024-08,MED020,Tramadol 50mg,Antalgique,36,156,120,0,20,6.0
+2024-09,MED020,Tramadol 50mg,Antalgique,55,175,120,0,20,6.0
+2024-10,MED020,Tramadol 50mg,Antalgique,74,194,120,0,20,6.0
+2024-11,MED020,Tramadol 50mg,Antalgique,88,208,120,0,20,6.0
+2024-12,MED020,Tramadol 50mg,Antalgique,76,196,120,0,20,6.0
+2025-01,MED020,Tramadol 50mg,Antalgique,34,154,120,0,20,6.0
+2025-02,MED020,Tramadol 50mg,Antalgique,17,137,120,0,20,6.0
+2025-03,MED020,Tramadol 50mg,Antalgique,46,166,120,0,20,6.0
+2020-01,MED021,Fluconazole 150mg,Antifongique,75,68,0,7,15,10.0
+2020-02,MED021,Fluconazole 150mg,Antifongique,7,63,90,34,15,10.0
+2020-03,MED021,Fluconazole 150mg,Antifongique,75,75,0,0,15,10.0
+2020-04,MED021,Fluconazole 150mg,Antifongique,0,86,90,4,15,10.0
+2020-05,MED021,Fluconazole 150mg,Antifongique,6,96,90,0,15,10.0
+2020-06,MED021,Fluconazole 150mg,Antifongique,11,101,90,0,15,10.0
+2020-07,MED021,Fluconazole 150mg,Antifongique,24,114,90,0,15,10.0
+2020-08,MED021,Fluconazole 150mg,Antifongique,0,90,90,0,15,10.0
+2020-09,MED021,Fluconazole 150mg,Antifongique,0,84,90,6,15,10.0
+2020-10,MED021,Fluconazole 150mg,Antifongique,6,82,90,14,15,10.0
+2020-11,MED021,Fluconazole 150mg,Antifongique,14,64,90,40,15,10.0
+2020-12,MED021,Fluconazole 150mg,Antifongique,64,64,0,0,15,10.0
+2021-01,MED021,Fluconazole 150mg,Antifongique,0,70,90,20,15,10.0
+2021-02,MED021,Fluconazole 150mg,Antifongique,20,65,90,45,15,10.0
+2021-03,MED021,Fluconazole 150mg,Antifongique,78,78,0,0,15,10.0
+2021-04,MED021,Fluconazole 150mg,Antifongique,0,85,90,5,15,10.0
+2021-05,MED021,Fluconazole 150mg,Antifongique,16,106,90,0,15,10.0
+2021-06,MED021,Fluconazole 150mg,Antifongique,15,105,90,0,15,10.0
+2021-07,MED021,Fluconazole 150mg,Antifongique,17,107,90,0,15,10.0
+2021-08,MED021,Fluconazole 150mg,Antifongique,11,101,90,0,15,10.0
+2021-09,MED021,Fluconazole 150mg,Antifongique,0,88,90,2,15,10.0
+2021-10,MED021,Fluconazole 150mg,Antifongique,2,87,90,5,15,10.0
+2021-11,MED021,Fluconazole 150mg,Antifongique,5,65,90,30,15,10.0
+2021-12,MED021,Fluconazole 150mg,Antifongique,79,79,0,0,15,10.0
+2022-01,MED021,Fluconazole 150mg,Antifongique,0,73,90,17,15,10.0
+2022-02,MED021,Fluconazole 150mg,Antifongique,17,70,90,37,15,10.0
+2022-03,MED021,Fluconazole 150mg,Antifongique,79,79,0,0,15,10.0
+2022-04,MED021,Fluconazole 150mg,Antifongique,0,88,90,2,15,10.0
+2022-05,MED021,Fluconazole 150mg,Antifongique,7,97,90,0,15,10.0
+2022-06,MED021,Fluconazole 150mg,Antifongique,19,109,90,0,15,10.0
+2022-07,MED021,Fluconazole 150mg,Antifongique,17,107,90,0,15,10.0
+2022-08,MED021,Fluconazole 150mg,Antifongique,7,97,90,0,15,10.0
+2022-09,MED021,Fluconazole 150mg,Antifongique,0,90,90,0,15,10.0
+2022-10,MED021,Fluconazole 150mg,Antifongique,0,81,90,9,15,10.0
+2022-11,MED021,Fluconazole 150mg,Antifongique,9,70,90,29,15,10.0
+2022-12,MED021,Fluconazole 150mg,Antifongique,29,74,90,45,15,10.0
+2023-01,MED021,Fluconazole 150mg,Antifongique,76,76,0,0,15,10.0
+2023-02,MED021,Fluconazole 150mg,Antifongique,0,68,90,22,15,10.0
+2023-03,MED021,Fluconazole 150mg,Antifongique,22,80,90,32,15,10.0
+2023-04,MED021,Fluconazole 150mg,Antifongique,95,95,0,0,15,10.0
+2023-05,MED021,Fluconazole 150mg,Antifongique,23,113,90,0,15,10.0
+2023-06,MED021,Fluconazole 150mg,Antifongique,24,114,90,0,15,10.0
+2023-07,MED021,Fluconazole 150mg,Antifongique,21,111,90,0,15,10.0
+2023-08,MED021,Fluconazole 150mg,Antifongique,21,111,90,0,15,10.0
+2023-09,MED021,Fluconazole 150mg,Antifongique,3,93,90,0,15,10.0
+2023-10,MED021,Fluconazole 150mg,Antifongique,0,88,90,2,15,10.0
+2023-11,MED021,Fluconazole 150mg,Antifongique,2,76,90,16,15,10.0
+2023-12,MED021,Fluconazole 150mg,Antifongique,16,85,90,21,15,10.0
+2024-01,MED021,Fluconazole 150mg,Antifongique,21,78,90,33,15,10.0
+2024-02,MED021,Fluconazole 150mg,Antifongique,67,67,0,0,15,10.0
+2024-03,MED021,Fluconazole 150mg,Antifongique,0,86,90,4,15,10.0
+2024-04,MED021,Fluconazole 150mg,Antifongique,8,98,90,0,15,10.0
+2024-05,MED021,Fluconazole 150mg,Antifongique,14,104,90,0,15,10.0
+2024-06,MED021,Fluconazole 150mg,Antifongique,28,118,90,0,15,10.0
+2024-07,MED021,Fluconazole 150mg,Antifongique,32,122,90,0,15,10.0
+2024-08,MED021,Fluconazole 150mg,Antifongique,19,109,90,0,15,10.0
+2024-09,MED021,Fluconazole 150mg,Antifongique,2,92,90,0,15,10.0
+2024-10,MED021,Fluconazole 150mg,Antifongique,3,93,90,0,15,10.0
+2024-11,MED021,Fluconazole 150mg,Antifongique,0,76,90,14,15,10.0
+2024-12,MED021,Fluconazole 150mg,Antifongique,14,81,90,23,15,10.0
+2025-01,MED021,Fluconazole 150mg,Antifongique,23,78,90,35,15,10.0
+2025-02,MED021,Fluconazole 150mg,Antifongique,74,74,0,0,15,10.0
+2025-03,MED021,Fluconazole 150mg,Antifongique,1,91,90,0,15,10.0
+2020-01,MED022,Ciprofloxacine 500mg,Antibiotique,251,251,0,0,20,12.0
+2020-02,MED022,Ciprofloxacine 500mg,Antibiotique,101,221,120,0,20,12.0
+2020-03,MED022,Ciprofloxacine 500mg,Antibiotique,67,187,120,0,20,12.0
+2020-04,MED022,Ciprofloxacine 500mg,Antibiotique,16,136,120,0,20,12.0
+2020-05,MED022,Ciprofloxacine 500mg,Antibiotique,7,127,120,0,20,12.0
+2020-06,MED022,Ciprofloxacine 500mg,Antibiotique,0,109,120,11,20,12.0
+2020-07,MED022,Ciprofloxacine 500mg,Antibiotique,11,116,120,15,20,12.0
+2020-08,MED022,Ciprofloxacine 500mg,Antibiotique,15,131,120,4,20,12.0
+2020-09,MED022,Ciprofloxacine 500mg,Antibiotique,45,165,120,0,20,12.0
+2020-10,MED022,Ciprofloxacine 500mg,Antibiotique,102,222,120,0,20,12.0
+2020-11,MED022,Ciprofloxacine 500mg,Antibiotique,120,240,120,0,20,12.0
+2020-12,MED022,Ciprofloxacine 500mg,Antibiotique,163,283,120,0,20,12.0
+2021-01,MED022,Ciprofloxacine 500mg,Antibiotique,143,263,120,0,20,12.0
+2021-02,MED022,Ciprofloxacine 500mg,Antibiotique,94,214,120,0,20,12.0
+2021-03,MED022,Ciprofloxacine 500mg,Antibiotique,73,193,120,0,20,12.0
+2021-04,MED022,Ciprofloxacine 500mg,Antibiotique,31,151,120,0,20,12.0
+2021-05,MED022,Ciprofloxacine 500mg,Antibiotique,21,141,120,0,20,12.0
+2021-06,MED022,Ciprofloxacine 500mg,Antibiotique,0,115,120,5,20,12.0
+2021-07,MED022,Ciprofloxacine 500mg,Antibiotique,5,118,120,7,20,12.0
+2021-08,MED022,Ciprofloxacine 500mg,Antibiotique,20,140,120,0,20,12.0
+2021-09,MED022,Ciprofloxacine 500mg,Antibiotique,50,170,120,0,20,12.0
+2021-10,MED022,Ciprofloxacine 500mg,Antibiotique,94,214,120,0,20,12.0
+2021-11,MED022,Ciprofloxacine 500mg,Antibiotique,117,237,120,0,20,12.0
+2021-12,MED022,Ciprofloxacine 500mg,Antibiotique,166,286,120,0,20,12.0
+2022-01,MED022,Ciprofloxacine 500mg,Antibiotique,153,273,120,0,20,12.0
+2022-02,MED022,Ciprofloxacine 500mg,Antibiotique,98,218,120,0,20,12.0
+2022-03,MED022,Ciprofloxacine 500mg,Antibiotique,85,205,120,0,20,12.0
+2022-04,MED022,Ciprofloxacine 500mg,Antibiotique,37,157,120,0,20,12.0
+2022-05,MED022,Ciprofloxacine 500mg,Antibiotique,23,143,120,0,20,12.0
+2022-06,MED022,Ciprofloxacine 500mg,Antibiotique,0,114,120,6,20,12.0
+2022-07,MED022,Ciprofloxacine 500mg,Antibiotique,6,124,120,2,20,12.0
+2022-08,MED022,Ciprofloxacine 500mg,Antibiotique,19,139,120,0,20,12.0
+2022-09,MED022,Ciprofloxacine 500mg,Antibiotique,56,176,120,0,20,12.0
+2022-10,MED022,Ciprofloxacine 500mg,Antibiotique,102,222,120,0,20,12.0
+2022-11,MED022,Ciprofloxacine 500mg,Antibiotique,123,243,120,0,20,12.0
+2022-12,MED022,Ciprofloxacine 500mg,Antibiotique,167,287,120,0,20,12.0
+2023-01,MED022,Ciprofloxacine 500mg,Antibiotique,164,284,120,0,20,12.0
+2023-02,MED022,Ciprofloxacine 500mg,Antibiotique,93,213,120,0,20,12.0
+2023-03,MED022,Ciprofloxacine 500mg,Antibiotique,91,211,120,0,20,12.0
+2023-04,MED022,Ciprofloxacine 500mg,Antibiotique,37,157,120,0,20,12.0
+2023-05,MED022,Ciprofloxacine 500mg,Antibiotique,30,150,120,0,20,12.0
+2023-06,MED022,Ciprofloxacine 500mg,Antibiotique,0,120,120,0,20,12.0
+2023-07,MED022,Ciprofloxacine 500mg,Antibiotique,4,124,120,0,20,12.0
+2023-08,MED022,Ciprofloxacine 500mg,Antibiotique,28,148,120,0,20,12.0
+2023-09,MED022,Ciprofloxacine 500mg,Antibiotique,61,181,120,0,20,12.0
+2023-10,MED022,Ciprofloxacine 500mg,Antibiotique,109,229,120,0,20,12.0
+2023-11,MED022,Ciprofloxacine 500mg,Antibiotique,141,261,120,0,20,12.0
+2023-12,MED022,Ciprofloxacine 500mg,Antibiotique,198,318,120,0,20,12.0
+2024-01,MED022,Ciprofloxacine 500mg,Antibiotique,174,294,120,0,20,12.0
+2024-02,MED022,Ciprofloxacine 500mg,Antibiotique,112,232,120,0,20,12.0
+2024-03,MED022,Ciprofloxacine 500mg,Antibiotique,97,217,120,0,20,12.0
+2024-04,MED022,Ciprofloxacine 500mg,Antibiotique,41,161,120,0,20,12.0
+2024-05,MED022,Ciprofloxacine 500mg,Antibiotique,32,152,120,0,20,12.0
+2024-06,MED022,Ciprofloxacine 500mg,Antibiotique,1,121,120,0,20,12.0
+2024-07,MED022,Ciprofloxacine 500mg,Antibiotique,13,133,120,0,20,12.0
+2024-08,MED022,Ciprofloxacine 500mg,Antibiotique,39,159,120,0,20,12.0
+2024-09,MED022,Ciprofloxacine 500mg,Antibiotique,63,183,120,0,20,12.0
+2024-10,MED022,Ciprofloxacine 500mg,Antibiotique,119,239,120,0,20,12.0
+2024-11,MED022,Ciprofloxacine 500mg,Antibiotique,162,282,120,0,20,12.0
+2024-12,MED022,Ciprofloxacine 500mg,Antibiotique,208,328,120,0,20,12.0
+2025-01,MED022,Ciprofloxacine 500mg,Antibiotique,185,305,120,0,20,12.0
+2025-02,MED022,Ciprofloxacine 500mg,Antibiotique,116,236,120,0,20,12.0
+2025-03,MED022,Ciprofloxacine 500mg,Antibiotique,83,203,120,0,20,12.0
+2020-01,MED023,Doxycycline 100mg,Antibiotique,206,206,0,0,20,8.5
+2020-02,MED023,Doxycycline 100mg,Antibiotique,54,174,120,0,20,8.5
+2020-03,MED023,Doxycycline 100mg,Antibiotique,29,149,120,0,20,8.5
+2020-04,MED023,Doxycycline 100mg,Antibiotique,0,113,120,7,20,8.5
+2020-05,MED023,Doxycycline 100mg,Antibiotique,7,111,120,16,20,8.5
+2020-06,MED023,Doxycycline 100mg,Antibiotique,16,88,120,48,20,8.5
+2020-07,MED023,Doxycycline 100mg,Antibiotique,95,95,0,0,20,8.5
+2020-08,MED023,Doxycycline 100mg,Antibiotique,0,104,120,16,20,8.5
+2020-09,MED023,Doxycycline 100mg,Antibiotique,16,132,120,4,20,8.5
+2020-10,MED023,Doxycycline 100mg,Antibiotique,59,179,120,0,20,8.5
+2020-11,MED023,Doxycycline 100mg,Antibiotique,61,181,120,0,20,8.5
+2020-12,MED023,Doxycycline 100mg,Antibiotique,108,228,120,0,20,8.5
+2021-01,MED023,Doxycycline 100mg,Antibiotique,94,214,120,0,20,8.5
+2021-02,MED023,Doxycycline 100mg,Antibiotique,43,163,120,0,20,8.5
+2021-03,MED023,Doxycycline 100mg,Antibiotique,41,161,120,0,20,8.5
+2021-04,MED023,Doxycycline 100mg,Antibiotique,3,123,120,0,20,8.5
+2021-05,MED023,Doxycycline 100mg,Antibiotique,0,112,120,8,20,8.5
+2021-06,MED023,Doxycycline 100mg,Antibiotique,8,94,120,34,20,8.5
+2021-07,MED023,Doxycycline 100mg,Antibiotique,34,93,120,61,20,8.5
+2021-08,MED023,Doxycycline 100mg,Antibiotique,115,115,0,0,20,8.5
+2021-09,MED023,Doxycycline 100mg,Antibiotique,13,133,120,0,20,8.5
+2021-10,MED023,Doxycycline 100mg,Antibiotique,52,172,120,0,20,8.5
+2021-11,MED023,Doxycycline 100mg,Antibiotique,86,206,120,0,20,8.5
+2021-12,MED023,Doxycycline 100mg,Antibiotique,126,246,120,0,20,8.5
+2022-01,MED023,Doxycycline 100mg,Antibiotique,108,228,120,0,20,8.5
+2022-02,MED023,Doxycycline 100mg,Antibiotique,63,183,120,0,20,8.5
+2022-03,MED023,Doxycycline 100mg,Antibiotique,49,169,120,0,20,8.5
+2022-04,MED023,Doxycycline 100mg,Antibiotique,12,132,120,0,20,8.5
+2022-05,MED023,Doxycycline 100mg,Antibiotique,0,119,120,1,20,8.5
+2022-06,MED023,Doxycycline 100mg,Antibiotique,1,98,120,23,20,8.5
+2022-07,MED023,Doxycycline 100mg,Antibiotique,23,96,120,47,20,8.5
+2022-08,MED023,Doxycycline 100mg,Antibiotique,122,122,0,0,20,8.5
+2022-09,MED023,Doxycycline 100mg,Antibiotique,18,138,120,0,20,8.5
+2022-10,MED023,Doxycycline 100mg,Antibiotique,66,186,120,0,20,8.5
+2022-11,MED023,Doxycycline 100mg,Antibiotique,94,214,120,0,20,8.5
+2022-12,MED023,Doxycycline 100mg,Antibiotique,121,241,120,0,20,8.5
+2023-01,MED023,Doxycycline 100mg,Antibiotique,110,230,120,0,20,8.5
+2023-02,MED023,Doxycycline 100mg,Antibiotique,51,171,120,0,20,8.5
+2023-03,MED023,Doxycycline 100mg,Antibiotique,46,166,120,0,20,8.5
+2023-04,MED023,Doxycycline 100mg,Antibiotique,17,137,120,0,20,8.5
+2023-05,MED023,Doxycycline 100mg,Antibiotique,0,116,120,4,20,8.5
+2023-06,MED023,Doxycycline 100mg,Antibiotique,4,98,120,26,20,8.5
+2023-07,MED023,Doxycycline 100mg,Antibiotique,26,101,120,45,20,8.5
+2023-08,MED023,Doxycycline 100mg,Antibiotique,125,125,0,0,20,8.5
+2023-09,MED023,Doxycycline 100mg,Antibiotique,32,152,120,0,20,8.5
+2023-10,MED023,Doxycycline 100mg,Antibiotique,61,181,120,0,20,8.5
+2023-11,MED023,Doxycycline 100mg,Antibiotique,118,238,120,0,20,8.5
+2023-12,MED023,Doxycycline 100mg,Antibiotique,125,245,120,0,20,8.5
+2024-01,MED023,Doxycycline 100mg,Antibiotique,123,243,120,0,20,8.5
+2024-02,MED023,Doxycycline 100mg,Antibiotique,84,204,120,0,20,8.5
+2024-03,MED023,Doxycycline 100mg,Antibiotique,50,170,120,0,20,8.5
+2024-04,MED023,Doxycycline 100mg,Antibiotique,15,135,120,0,20,8.5
+2024-05,MED023,Doxycycline 100mg,Antibiotique,7,127,120,0,20,8.5
+2024-06,MED023,Doxycycline 100mg,Antibiotique,0,105,120,15,20,8.5
+2024-07,MED023,Doxycycline 100mg,Antibiotique,15,107,120,28,20,8.5
+2024-08,MED023,Doxycycline 100mg,Antibiotique,28,125,120,23,20,8.5
+2024-09,MED023,Doxycycline 100mg,Antibiotique,30,150,120,0,20,8.5
+2024-10,MED023,Doxycycline 100mg,Antibiotique,68,188,120,0,20,8.5
+2024-11,MED023,Doxycycline 100mg,Antibiotique,108,228,120,0,20,8.5
+2024-12,MED023,Doxycycline 100mg,Antibiotique,147,267,120,0,20,8.5
+2025-01,MED023,Doxycycline 100mg,Antibiotique,135,255,120,0,20,8.5
+2025-02,MED023,Doxycycline 100mg,Antibiotique,72,192,120,0,20,8.5
+2025-03,MED023,Doxycycline 100mg,Antibiotique,43,163,120,0,20,8.5
+2020-01,MED024,Prednisolone 5mg,Corticoïde,275,275,0,0,25,4.5
+2020-02,MED024,Prednisolone 5mg,Corticoïde,72,222,150,0,25,4.5
+2020-03,MED024,Prednisolone 5mg,Corticoïde,45,195,150,0,25,4.5
+2020-04,MED024,Prednisolone 5mg,Corticoïde,44,194,150,0,25,4.5
+2020-05,MED024,Prednisolone 5mg,Corticoïde,24,174,150,0,25,4.5
+2020-06,MED024,Prednisolone 5mg,Corticoïde,5,155,150,0,25,4.5
+2020-07,MED024,Prednisolone 5mg,Corticoïde,4,154,150,0,25,4.5
+2020-08,MED024,Prednisolone 5mg,Corticoïde,27,177,150,0,25,4.5
+2020-09,MED024,Prednisolone 5mg,Corticoïde,42,192,150,0,25,4.5
+2020-10,MED024,Prednisolone 5mg,Corticoïde,77,227,150,0,25,4.5
+2020-11,MED024,Prednisolone 5mg,Corticoïde,78,228,150,0,25,4.5
+2020-12,MED024,Prednisolone 5mg,Corticoïde,113,263,150,0,25,4.5
+2021-01,MED024,Prednisolone 5mg,Corticoïde,108,258,150,0,25,4.5
+2021-02,MED024,Prednisolone 5mg,Corticoïde,79,229,150,0,25,4.5
+2021-03,MED024,Prednisolone 5mg,Corticoïde,48,198,150,0,25,4.5
+2021-04,MED024,Prednisolone 5mg,Corticoïde,34,184,150,0,25,4.5
+2021-05,MED024,Prednisolone 5mg,Corticoïde,33,183,150,0,25,4.5
+2021-06,MED024,Prednisolone 5mg,Corticoïde,9,159,150,0,25,4.5
+2021-07,MED024,Prednisolone 5mg,Corticoïde,15,165,150,0,25,4.5
+2021-08,MED024,Prednisolone 5mg,Corticoïde,37,187,150,0,25,4.5
+2021-09,MED024,Prednisolone 5mg,Corticoïde,55,205,150,0,25,4.5
+2021-10,MED024,Prednisolone 5mg,Corticoïde,87,237,150,0,25,4.5
+2021-11,MED024,Prednisolone 5mg,Corticoïde,103,253,150,0,25,4.5
+2021-12,MED024,Prednisolone 5mg,Corticoïde,126,276,150,0,25,4.5
+2022-01,MED024,Prednisolone 5mg,Corticoïde,120,270,150,0,25,4.5
+2022-02,MED024,Prednisolone 5mg,Corticoïde,75,225,150,0,25,4.5
+2022-03,MED024,Prednisolone 5mg,Corticoïde,57,207,150,0,25,4.5
+2022-04,MED024,Prednisolone 5mg,Corticoïde,63,213,150,0,25,4.5
+2022-05,MED024,Prednisolone 5mg,Corticoïde,40,190,150,0,25,4.5
+2022-06,MED024,Prednisolone 5mg,Corticoïde,14,164,150,0,25,4.5
+2022-07,MED024,Prednisolone 5mg,Corticoïde,10,160,150,0,25,4.5
+2022-08,MED024,Prednisolone 5mg,Corticoïde,49,199,150,0,25,4.5
+2022-09,MED024,Prednisolone 5mg,Corticoïde,56,206,150,0,25,4.5
+2022-10,MED024,Prednisolone 5mg,Corticoïde,78,228,150,0,25,4.5
+2022-11,MED024,Prednisolone 5mg,Corticoïde,103,253,150,0,25,4.5
+2022-12,MED024,Prednisolone 5mg,Corticoïde,137,287,150,0,25,4.5
+2023-01,MED024,Prednisolone 5mg,Corticoïde,129,279,150,0,25,4.5
+2023-02,MED024,Prednisolone 5mg,Corticoïde,100,250,150,0,25,4.5
+2023-03,MED024,Prednisolone 5mg,Corticoïde,67,217,150,0,25,4.5
+2023-04,MED024,Prednisolone 5mg,Corticoïde,52,202,150,0,25,4.5
+2023-05,MED024,Prednisolone 5mg,Corticoïde,44,194,150,0,25,4.5
+2023-06,MED024,Prednisolone 5mg,Corticoïde,22,172,150,0,25,4.5
+2023-07,MED024,Prednisolone 5mg,Corticoïde,27,177,150,0,25,4.5
+2023-08,MED024,Prednisolone 5mg,Corticoïde,56,206,150,0,25,4.5
+2023-09,MED024,Prednisolone 5mg,Corticoïde,63,213,150,0,25,4.5
+2023-10,MED024,Prednisolone 5mg,Corticoïde,110,260,150,0,25,4.5
+2023-11,MED024,Prednisolone 5mg,Corticoïde,100,250,150,0,25,4.5
+2023-12,MED024,Prednisolone 5mg,Corticoïde,137,287,150,0,25,4.5
+2024-01,MED024,Prednisolone 5mg,Corticoïde,152,302,150,0,25,4.5
+2024-02,MED024,Prednisolone 5mg,Corticoïde,104,254,150,0,25,4.5
+2024-03,MED024,Prednisolone 5mg,Corticoïde,77,227,150,0,25,4.5
+2024-04,MED024,Prednisolone 5mg,Corticoïde,71,221,150,0,25,4.5
+2024-05,MED024,Prednisolone 5mg,Corticoïde,50,200,150,0,25,4.5
+2024-06,MED024,Prednisolone 5mg,Corticoïde,21,171,150,0,25,4.5
+2024-07,MED024,Prednisolone 5mg,Corticoïde,31,181,150,0,25,4.5
+2024-08,MED024,Prednisolone 5mg,Corticoïde,54,204,150,0,25,4.5
+2024-09,MED024,Prednisolone 5mg,Corticoïde,59,209,150,0,25,4.5
+2024-10,MED024,Prednisolone 5mg,Corticoïde,106,256,150,0,25,4.5
+2024-11,MED024,Prednisolone 5mg,Corticoïde,137,287,150,0,25,4.5
+2024-12,MED024,Prednisolone 5mg,Corticoïde,149,299,150,0,25,4.5
+2025-01,MED024,Prednisolone 5mg,Corticoïde,137,287,150,0,25,4.5
+2025-02,MED024,Prednisolone 5mg,Corticoïde,111,261,150,0,25,4.5
+2025-03,MED024,Prednisolone 5mg,Corticoïde,74,224,150,0,25,4.5
+2020-01,MED025,Vitamine D3 1000UI,Supplément,440,440,0,0,40,3.5
+2020-02,MED025,Vitamine D3 1000UI,Supplément,148,388,240,0,40,3.5
+2020-03,MED025,Vitamine D3 1000UI,Supplément,120,360,240,0,40,3.5
+2020-04,MED025,Vitamine D3 1000UI,Supplément,117,357,240,0,40,3.5
+2020-05,MED025,Vitamine D3 1000UI,Supplément,60,300,240,0,40,3.5
+2020-06,MED025,Vitamine D3 1000UI,Supplément,42,282,240,0,40,3.5
+2020-07,MED025,Vitamine D3 1000UI,Supplément,43,283,240,0,40,3.5
+2020-08,MED025,Vitamine D3 1000UI,Supplément,57,297,240,0,40,3.5
+2020-09,MED025,Vitamine D3 1000UI,Supplément,120,360,240,0,40,3.5
+2020-10,MED025,Vitamine D3 1000UI,Supplément,159,399,240,0,40,3.5
+2020-11,MED025,Vitamine D3 1000UI,Supplément,176,416,240,0,40,3.5
+2020-12,MED025,Vitamine D3 1000UI,Supplément,223,463,240,0,40,3.5
+2021-01,MED025,Vitamine D3 1000UI,Supplément,191,431,240,0,40,3.5
+2021-02,MED025,Vitamine D3 1000UI,Supplément,114,354,240,0,40,3.5
+2021-03,MED025,Vitamine D3 1000UI,Supplément,126,366,240,0,40,3.5
+2021-04,MED025,Vitamine D3 1000UI,Supplément,132,372,240,0,40,3.5
+2021-05,MED025,Vitamine D3 1000UI,Supplément,79,319,240,0,40,3.5
+2021-06,MED025,Vitamine D3 1000UI,Supplément,45,285,240,0,40,3.5
+2021-07,MED025,Vitamine D3 1000UI,Supplément,58,298,240,0,40,3.5
+2021-08,MED025,Vitamine D3 1000UI,Supplément,81,321,240,0,40,3.5
+2021-09,MED025,Vitamine D3 1000UI,Supplément,101,341,240,0,40,3.5
+2021-10,MED025,Vitamine D3 1000UI,Supplément,168,408,240,0,40,3.5
+2021-11,MED025,Vitamine D3 1000UI,Supplément,218,458,240,0,40,3.5
+2021-12,MED025,Vitamine D3 1000UI,Supplément,231,471,240,0,40,3.5
+2022-01,MED025,Vitamine D3 1000UI,Supplément,189,429,240,0,40,3.5
+2022-02,MED025,Vitamine D3 1000UI,Supplément,141,381,240,0,40,3.5
+2022-03,MED025,Vitamine D3 1000UI,Supplément,139,379,240,0,40,3.5
+2022-04,MED025,Vitamine D3 1000UI,Supplément,109,349,240,0,40,3.5
+2022-05,MED025,Vitamine D3 1000UI,Supplément,90,330,240,0,40,3.5
+2022-06,MED025,Vitamine D3 1000UI,Supplément,50,290,240,0,40,3.5
+2022-07,MED025,Vitamine D3 1000UI,Supplément,52,292,240,0,40,3.5
+2022-08,MED025,Vitamine D3 1000UI,Supplément,92,332,240,0,40,3.5
+2022-09,MED025,Vitamine D3 1000UI,Supplément,143,383,240,0,40,3.5
+2022-10,MED025,Vitamine D3 1000UI,Supplément,185,425,240,0,40,3.5
+2022-11,MED025,Vitamine D3 1000UI,Supplément,192,432,240,0,40,3.5
+2022-12,MED025,Vitamine D3 1000UI,Supplément,273,513,240,0,40,3.5
+2023-01,MED025,Vitamine D3 1000UI,Supplément,204,444,240,0,40,3.5
+2023-02,MED025,Vitamine D3 1000UI,Supplément,149,389,240,0,40,3.5
+2023-03,MED025,Vitamine D3 1000UI,Supplément,139,379,240,0,40,3.5
+2023-04,MED025,Vitamine D3 1000UI,Supplément,103,343,240,0,40,3.5
+2023-05,MED025,Vitamine D3 1000UI,Supplément,110,350,240,0,40,3.5
+2023-06,MED025,Vitamine D3 1000UI,Supplément,55,295,240,0,40,3.5
+2023-07,MED025,Vitamine D3 1000UI,Supplément,56,296,240,0,40,3.5
+2023-08,MED025,Vitamine D3 1000UI,Supplément,100,340,240,0,40,3.5
+2023-09,MED025,Vitamine D3 1000UI,Supplément,160,400,240,0,40,3.5
+2023-10,MED025,Vitamine D3 1000UI,Supplément,177,417,240,0,40,3.5
+2023-11,MED025,Vitamine D3 1000UI,Supplément,225,465,240,0,40,3.5
+2023-12,MED025,Vitamine D3 1000UI,Supplément,264,504,240,0,40,3.5
+2024-01,MED025,Vitamine D3 1000UI,Supplément,232,472,240,0,40,3.5
+2024-02,MED025,Vitamine D3 1000UI,Supplément,168,408,240,0,40,3.5
+2024-03,MED025,Vitamine D3 1000UI,Supplément,160,400,240,0,40,3.5
+2024-04,MED025,Vitamine D3 1000UI,Supplément,139,379,240,0,40,3.5
+2024-05,MED025,Vitamine D3 1000UI,Supplément,131,371,240,0,40,3.5
+2024-06,MED025,Vitamine D3 1000UI,Supplément,66,306,240,0,40,3.5
+2024-07,MED025,Vitamine D3 1000UI,Supplément,78,318,240,0,40,3.5
+2024-08,MED025,Vitamine D3 1000UI,Supplément,132,372,240,0,40,3.5
+2024-09,MED025,Vitamine D3 1000UI,Supplément,169,409,240,0,40,3.5
+2024-10,MED025,Vitamine D3 1000UI,Supplément,207,447,240,0,40,3.5
+2024-11,MED025,Vitamine D3 1000UI,Supplément,246,486,240,0,40,3.5
+2024-12,MED025,Vitamine D3 1000UI,Supplément,258,498,240,0,40,3.5
+2025-01,MED025,Vitamine D3 1000UI,Supplément,268,508,240,0,40,3.5
+2025-02,MED025,Vitamine D3 1000UI,Supplément,162,402,240,0,40,3.5
+2025-03,MED025,Vitamine D3 1000UI,Supplément,167,407,240,0,40,3.5
+2020-01,MED026,Magnésium 300mg,Supplément,346,346,0,0,35,4.0
+2020-02,MED026,Magnésium 300mg,Supplément,90,300,210,0,35,4.0
+2020-03,MED026,Magnésium 300mg,Supplément,92,302,210,0,35,4.0
+2020-04,MED026,Magnésium 300mg,Supplément,73,283,210,0,35,4.0
+2020-05,MED026,Magnésium 300mg,Supplément,55,265,210,0,35,4.0
+2020-06,MED026,Magnésium 300mg,Supplément,25,235,210,0,35,4.0
+2020-07,MED026,Magnésium 300mg,Supplément,18,228,210,0,35,4.0
+2020-08,MED026,Magnésium 300mg,Supplément,51,261,210,0,35,4.0
+2020-09,MED026,Magnésium 300mg,Supplément,79,289,210,0,35,4.0
+2020-10,MED026,Magnésium 300mg,Supplément,129,339,210,0,35,4.0
+2020-11,MED026,Magnésium 300mg,Supplément,133,343,210,0,35,4.0
+2020-12,MED026,Magnésium 300mg,Supplément,177,387,210,0,35,4.0
+2021-01,MED026,Magnésium 300mg,Supplément,155,365,210,0,35,4.0
+2021-02,MED026,Magnésium 300mg,Supplément,109,319,210,0,35,4.0
+2021-03,MED026,Magnésium 300mg,Supplément,92,302,210,0,35,4.0
+2021-04,MED026,Magnésium 300mg,Supplément,81,291,210,0,35,4.0
+2021-05,MED026,Magnésium 300mg,Supplément,65,275,210,0,35,4.0
+2021-06,MED026,Magnésium 300mg,Supplément,34,244,210,0,35,4.0
+2021-07,MED026,Magnésium 300mg,Supplément,25,235,210,0,35,4.0
+2021-08,MED026,Magnésium 300mg,Supplément,59,269,210,0,35,4.0
+2021-09,MED026,Magnésium 300mg,Supplément,80,290,210,0,35,4.0
+2021-10,MED026,Magnésium 300mg,Supplément,127,337,210,0,35,4.0
+2021-11,MED026,Magnésium 300mg,Supplément,168,378,210,0,35,4.0
+2021-12,MED026,Magnésium 300mg,Supplément,197,407,210,0,35,4.0
+2022-01,MED026,Magnésium 300mg,Supplément,169,379,210,0,35,4.0
+2022-02,MED026,Magnésium 300mg,Supplément,94,304,210,0,35,4.0
+2022-03,MED026,Magnésium 300mg,Supplément,112,322,210,0,35,4.0
+2022-04,MED026,Magnésium 300mg,Supplément,90,300,210,0,35,4.0
+2022-05,MED026,Magnésium 300mg,Supplément,82,292,210,0,35,4.0
+2022-06,MED026,Magnésium 300mg,Supplément,20,230,210,0,35,4.0
+2022-07,MED026,Magnésium 300mg,Supplément,27,237,210,0,35,4.0
+2022-08,MED026,Magnésium 300mg,Supplément,66,276,210,0,35,4.0
+2022-09,MED026,Magnésium 300mg,Supplément,89,299,210,0,35,4.0
+2022-10,MED026,Magnésium 300mg,Supplément,135,345,210,0,35,4.0
+2022-11,MED026,Magnésium 300mg,Supplément,157,367,210,0,35,4.0
+2022-12,MED026,Magnésium 300mg,Supplément,201,411,210,0,35,4.0
+2023-01,MED026,Magnésium 300mg,Supplément,158,368,210,0,35,4.0
+2023-02,MED026,Magnésium 300mg,Supplément,104,314,210,0,35,4.0
+2023-03,MED026,Magnésium 300mg,Supplément,107,317,210,0,35,4.0
+2023-04,MED026,Magnésium 300mg,Supplément,87,297,210,0,35,4.0
+2023-05,MED026,Magnésium 300mg,Supplément,80,290,210,0,35,4.0
+2023-06,MED026,Magnésium 300mg,Supplément,50,260,210,0,35,4.0
+2023-07,MED026,Magnésium 300mg,Supplément,37,247,210,0,35,4.0
+2023-08,MED026,Magnésium 300mg,Supplément,70,280,210,0,35,4.0
+2023-09,MED026,Magnésium 300mg,Supplément,105,315,210,0,35,4.0
+2023-10,MED026,Magnésium 300mg,Supplément,157,367,210,0,35,4.0
+2023-11,MED026,Magnésium 300mg,Supplément,162,372,210,0,35,4.0
+2023-12,MED026,Magnésium 300mg,Supplément,225,435,210,0,35,4.0
+2024-01,MED026,Magnésium 300mg,Supplément,199,409,210,0,35,4.0
+2024-02,MED026,Magnésium 300mg,Supplément,138,348,210,0,35,4.0
+2024-03,MED026,Magnésium 300mg,Supplément,125,335,210,0,35,4.0
+2024-04,MED026,Magnésium 300mg,Supplément,127,337,210,0,35,4.0
+2024-05,MED026,Magnésium 300mg,Supplément,90,300,210,0,35,4.0
+2024-06,MED026,Magnésium 300mg,Supplément,29,239,210,0,35,4.0
+2024-07,MED026,Magnésium 300mg,Supplément,62,272,210,0,35,4.0
+2024-08,MED026,Magnésium 300mg,Supplément,104,314,210,0,35,4.0
+2024-09,MED026,Magnésium 300mg,Supplément,117,327,210,0,35,4.0
+2024-10,MED026,Magnésium 300mg,Supplément,165,375,210,0,35,4.0
+2024-11,MED026,Magnésium 300mg,Supplément,179,389,210,0,35,4.0
+2024-12,MED026,Magnésium 300mg,Supplément,225,435,210,0,35,4.0
+2025-01,MED026,Magnésium 300mg,Supplément,194,404,210,0,35,4.0
+2025-02,MED026,Magnésium 300mg,Supplément,128,338,210,0,35,4.0
+2025-03,MED026,Magnésium 300mg,Supplément,118,328,210,0,35,4.0
+2020-01,MED027,Fer 80mg,Supplément,284,284,0,0,30,3.0
+2020-02,MED027,Fer 80mg,Supplément,69,249,180,0,30,3.0
+2020-03,MED027,Fer 80mg,Supplément,45,225,180,0,30,3.0
+2020-04,MED027,Fer 80mg,Supplément,42,222,180,0,30,3.0
+2020-05,MED027,Fer 80mg,Supplément,25,205,180,0,30,3.0
+2020-06,MED027,Fer 80mg,Supplément,8,188,180,0,30,3.0
+2020-07,MED027,Fer 80mg,Supplément,12,192,180,0,30,3.0
+2020-08,MED027,Fer 80mg,Supplément,25,205,180,0,30,3.0
+2020-09,MED027,Fer 80mg,Supplément,54,234,180,0,30,3.0
+2020-10,MED027,Fer 80mg,Supplément,98,278,180,0,30,3.0
+2020-11,MED027,Fer 80mg,Supplément,93,273,180,0,30,3.0
+2020-12,MED027,Fer 80mg,Supplément,131,311,180,0,30,3.0
+2021-01,MED027,Fer 80mg,Supplément,102,282,180,0,30,3.0
+2021-02,MED027,Fer 80mg,Supplément,53,233,180,0,30,3.0
+2021-03,MED027,Fer 80mg,Supplément,49,229,180,0,30,3.0
+2021-04,MED027,Fer 80mg,Supplément,65,245,180,0,30,3.0
+2021-05,MED027,Fer 80mg,Supplément,27,207,180,0,30,3.0
+2021-06,MED027,Fer 80mg,Supplément,3,183,180,0,30,3.0
+2021-07,MED027,Fer 80mg,Supplément,9,189,180,0,30,3.0
+2021-08,MED027,Fer 80mg,Supplément,28,208,180,0,30,3.0
+2021-09,MED027,Fer 80mg,Supplément,55,235,180,0,30,3.0
+2021-10,MED027,Fer 80mg,Supplément,87,267,180,0,30,3.0
+2021-11,MED027,Fer 80mg,Supplément,124,304,180,0,30,3.0
+2021-12,MED027,Fer 80mg,Supplément,154,334,180,0,30,3.0
+2022-01,MED027,Fer 80mg,Supplément,110,290,180,0,30,3.0
+2022-02,MED027,Fer 80mg,Supplément,70,250,180,0,30,3.0
+2022-03,MED027,Fer 80mg,Supplément,54,234,180,0,30,3.0
+2022-04,MED027,Fer 80mg,Supplément,58,238,180,0,30,3.0
+2022-05,MED027,Fer 80mg,Supplément,33,213,180,0,30,3.0
+2022-06,MED027,Fer 80mg,Supplément,4,184,180,0,30,3.0
+2022-07,MED027,Fer 80mg,Supplément,13,193,180,0,30,3.0
+2022-08,MED027,Fer 80mg,Supplément,33,213,180,0,30,3.0
+2022-09,MED027,Fer 80mg,Supplément,67,247,180,0,30,3.0
+2022-10,MED027,Fer 80mg,Supplément,82,262,180,0,30,3.0
+2022-11,MED027,Fer 80mg,Supplément,133,313,180,0,30,3.0
+2022-12,MED027,Fer 80mg,Supplément,160,340,180,0,30,3.0
+2023-01,MED027,Fer 80mg,Supplément,142,322,180,0,30,3.0
+2023-02,MED027,Fer 80mg,Supplément,72,252,180,0,30,3.0
+2023-03,MED027,Fer 80mg,Supplément,79,259,180,0,30,3.0
+2023-04,MED027,Fer 80mg,Supplément,60,240,180,0,30,3.0
+2023-05,MED027,Fer 80mg,Supplément,36,216,180,0,30,3.0
+2023-06,MED027,Fer 80mg,Supplément,13,193,180,0,30,3.0
+2023-07,MED027,Fer 80mg,Supplément,17,197,180,0,30,3.0
+2023-08,MED027,Fer 80mg,Supplément,50,230,180,0,30,3.0
+2023-09,MED027,Fer 80mg,Supplément,84,264,180,0,30,3.0
+2023-10,MED027,Fer 80mg,Supplément,99,279,180,0,30,3.0
+2023-11,MED027,Fer 80mg,Supplément,126,306,180,0,30,3.0
+2023-12,MED027,Fer 80mg,Supplément,166,346,180,0,30,3.0
+2024-01,MED027,Fer 80mg,Supplément,149,329,180,0,30,3.0
+2024-02,MED027,Fer 80mg,Supplément,89,269,180,0,30,3.0
+2024-03,MED027,Fer 80mg,Supplément,86,266,180,0,30,3.0
+2024-04,MED027,Fer 80mg,Supplément,86,266,180,0,30,3.0
+2024-05,MED027,Fer 80mg,Supplément,55,235,180,0,30,3.0
+2024-06,MED027,Fer 80mg,Supplément,14,194,180,0,30,3.0
+2024-07,MED027,Fer 80mg,Supplément,19,199,180,0,30,3.0
+2024-08,MED027,Fer 80mg,Supplément,58,238,180,0,30,3.0
+2024-09,MED027,Fer 80mg,Supplément,59,239,180,0,30,3.0
+2024-10,MED027,Fer 80mg,Supplément,114,294,180,0,30,3.0
+2024-11,MED027,Fer 80mg,Supplément,126,306,180,0,30,3.0
+2024-12,MED027,Fer 80mg,Supplément,163,343,180,0,30,3.0
+2025-01,MED027,Fer 80mg,Supplément,157,337,180,0,30,3.0
+2025-02,MED027,Fer 80mg,Supplément,101,281,180,0,30,3.0
+2025-03,MED027,Fer 80mg,Supplément,81,261,180,0,30,3.0
+2020-01,MED028,Acide Folique 5mg,Supplément,204,204,0,0,25,2.5
+2020-02,MED028,Acide Folique 5mg,Supplément,31,181,150,0,25,2.5
+2020-03,MED028,Acide Folique 5mg,Supplément,8,158,150,0,25,2.5
+2020-04,MED028,Acide Folique 5mg,Supplément,1,151,150,0,25,2.5
+2020-05,MED028,Acide Folique 5mg,Supplément,2,152,150,0,25,2.5
+2020-06,MED028,Acide Folique 5mg,Supplément,0,126,150,24,25,2.5
+2020-07,MED028,Acide Folique 5mg,Supplément,24,127,150,47,25,2.5
+2020-08,MED028,Acide Folique 5mg,Supplément,47,155,150,42,25,2.5
+2020-09,MED028,Acide Folique 5mg,Supplément,42,163,150,29,25,2.5
+2020-10,MED028,Acide Folique 5mg,Supplément,48,198,150,0,25,2.5
+2020-11,MED028,Acide Folique 5mg,Supplément,48,198,150,0,25,2.5
+2020-12,MED028,Acide Folique 5mg,Supplément,74,224,150,0,25,2.5
+2021-01,MED028,Acide Folique 5mg,Supplément,57,207,150,0,25,2.5
+2021-02,MED028,Acide Folique 5mg,Supplément,28,178,150,0,25,2.5
+2021-03,MED028,Acide Folique 5mg,Supplément,25,175,150,0,25,2.5
+2021-04,MED028,Acide Folique 5mg,Supplément,14,164,150,0,25,2.5
+2021-05,MED028,Acide Folique 5mg,Supplément,4,154,150,0,25,2.5
+2021-06,MED028,Acide Folique 5mg,Supplément,0,127,150,23,25,2.5
+2021-07,MED028,Acide Folique 5mg,Supplément,23,135,150,38,25,2.5
+2021-08,MED028,Acide Folique 5mg,Supplément,38,161,150,27,25,2.5
+2021-09,MED028,Acide Folique 5mg,Supplément,27,173,150,4,25,2.5
+2021-10,MED028,Acide Folique 5mg,Supplément,47,197,150,0,25,2.5
+2021-11,MED028,Acide Folique 5mg,Supplément,70,220,150,0,25,2.5
+2021-12,MED028,Acide Folique 5mg,Supplément,85,235,150,0,25,2.5
+2022-01,MED028,Acide Folique 5mg,Supplément,60,210,150,0,25,2.5
+2022-02,MED028,Acide Folique 5mg,Supplément,34,184,150,0,25,2.5
+2022-03,MED028,Acide Folique 5mg,Supplément,30,180,150,0,25,2.5
+2022-04,MED028,Acide Folique 5mg,Supplément,26,176,150,0,25,2.5
+2022-05,MED028,Acide Folique 5mg,Supplément,14,164,150,0,25,2.5
+2022-06,MED028,Acide Folique 5mg,Supplément,0,141,150,9,25,2.5
+2022-07,MED028,Acide Folique 5mg,Supplément,9,136,150,23,25,2.5
+2022-08,MED028,Acide Folique 5mg,Supplément,23,160,150,13,25,2.5
+2022-09,MED028,Acide Folique 5mg,Supplément,27,177,150,0,25,2.5
+2022-10,MED028,Acide Folique 5mg,Supplément,48,198,150,0,25,2.5
+2022-11,MED028,Acide Folique 5mg,Supplément,58,208,150,0,25,2.5
+2022-12,MED028,Acide Folique 5mg,Supplément,108,258,150,0,25,2.5
+2023-01,MED028,Acide Folique 5mg,Supplément,73,223,150,0,25,2.5
+2023-02,MED028,Acide Folique 5mg,Supplément,35,185,150,0,25,2.5
+2023-03,MED028,Acide Folique 5mg,Supplément,34,184,150,0,25,2.5
+2023-04,MED028,Acide Folique 5mg,Supplément,28,178,150,0,25,2.5
+2023-05,MED028,Acide Folique 5mg,Supplément,23,173,150,0,25,2.5
+2023-06,MED028,Acide Folique 5mg,Supplément,0,139,150,11,25,2.5
+2023-07,MED028,Acide Folique 5mg,Supplément,11,140,150,21,25,2.5
+2023-08,MED028,Acide Folique 5mg,Supplément,21,171,150,0,25,2.5
+2023-09,MED028,Acide Folique 5mg,Supplément,32,182,150,0,25,2.5
+2023-10,MED028,Acide Folique 5mg,Supplément,68,218,150,0,25,2.5
+2023-11,MED028,Acide Folique 5mg,Supplément,75,225,150,0,25,2.5
+2023-12,MED028,Acide Folique 5mg,Supplément,99,249,150,0,25,2.5
+2024-01,MED028,Acide Folique 5mg,Supplément,81,231,150,0,25,2.5
+2024-02,MED028,Acide Folique 5mg,Supplément,44,194,150,0,25,2.5
+2024-03,MED028,Acide Folique 5mg,Supplément,37,187,150,0,25,2.5
+2024-04,MED028,Acide Folique 5mg,Supplément,32,182,150,0,25,2.5
+2024-05,MED028,Acide Folique 5mg,Supplément,16,166,150,0,25,2.5
+2024-06,MED028,Acide Folique 5mg,Supplément,0,133,150,17,25,2.5
+2024-07,MED028,Acide Folique 5mg,Supplément,17,146,150,21,25,2.5
+2024-08,MED028,Acide Folique 5mg,Supplément,26,176,150,0,25,2.5
+2024-09,MED028,Acide Folique 5mg,Supplément,30,180,150,0,25,2.5
+2024-10,MED028,Acide Folique 5mg,Supplément,74,224,150,0,25,2.5
+2024-11,MED028,Acide Folique 5mg,Supplément,71,221,150,0,25,2.5
+2024-12,MED028,Acide Folique 5mg,Supplément,112,262,150,0,25,2.5
+2025-01,MED028,Acide Folique 5mg,Supplément,97,247,150,0,25,2.5
+2025-02,MED028,Acide Folique 5mg,Supplément,43,193,150,0,25,2.5
+2025-03,MED028,Acide Folique 5mg,Supplément,39,189,150,0,25,2.5
+2020-01,MED029,Bisoprolol 5mg,Cardiovasculaire,166,166,0,0,20,5.0
+2020-02,MED029,Bisoprolol 5mg,Cardiovasculaire,12,132,120,0,20,5.0
+2020-03,MED029,Bisoprolol 5mg,Cardiovasculaire,21,141,120,0,20,5.0
+2020-04,MED029,Bisoprolol 5mg,Cardiovasculaire,9,129,120,0,20,5.0
+2020-05,MED029,Bisoprolol 5mg,Cardiovasculaire,20,140,120,0,20,5.0
+2020-06,MED029,Bisoprolol 5mg,Cardiovasculaire,10,130,120,0,20,5.0
+2020-07,MED029,Bisoprolol 5mg,Cardiovasculaire,19,139,120,0,20,5.0
+2020-08,MED029,Bisoprolol 5mg,Cardiovasculaire,16,136,120,0,20,5.0
+2020-09,MED029,Bisoprolol 5mg,Cardiovasculaire,8,128,120,0,20,5.0
+2020-10,MED029,Bisoprolol 5mg,Cardiovasculaire,20,140,120,0,20,5.0
+2020-11,MED029,Bisoprolol 5mg,Cardiovasculaire,34,154,120,0,20,5.0
+2020-12,MED029,Bisoprolol 5mg,Cardiovasculaire,46,166,120,0,20,5.0
+2021-01,MED029,Bisoprolol 5mg,Cardiovasculaire,41,161,120,0,20,5.0
+2021-02,MED029,Bisoprolol 5mg,Cardiovasculaire,12,132,120,0,20,5.0
+2021-03,MED029,Bisoprolol 5mg,Cardiovasculaire,24,144,120,0,20,5.0
+2021-04,MED029,Bisoprolol 5mg,Cardiovasculaire,23,143,120,0,20,5.0
+2021-05,MED029,Bisoprolol 5mg,Cardiovasculaire,23,143,120,0,20,5.0
+2021-06,MED029,Bisoprolol 5mg,Cardiovasculaire,21,141,120,0,20,5.0
+2021-07,MED029,Bisoprolol 5mg,Cardiovasculaire,29,149,120,0,20,5.0
+2021-08,MED029,Bisoprolol 5mg,Cardiovasculaire,21,141,120,0,20,5.0
+2021-09,MED029,Bisoprolol 5mg,Cardiovasculaire,30,150,120,0,20,5.0
+2021-10,MED029,Bisoprolol 5mg,Cardiovasculaire,25,145,120,0,20,5.0
+2021-11,MED029,Bisoprolol 5mg,Cardiovasculaire,38,158,120,0,20,5.0
+2021-12,MED029,Bisoprolol 5mg,Cardiovasculaire,47,167,120,0,20,5.0
+2022-01,MED029,Bisoprolol 5mg,Cardiovasculaire,41,161,120,0,20,5.0
+2022-02,MED029,Bisoprolol 5mg,Cardiovasculaire,10,130,120,0,20,5.0
+2022-03,MED029,Bisoprolol 5mg,Cardiovasculaire,26,146,120,0,20,5.0
+2022-04,MED029,Bisoprolol 5mg,Cardiovasculaire,21,141,120,0,20,5.0
+2022-05,MED029,Bisoprolol 5mg,Cardiovasculaire,31,151,120,0,20,5.0
+2022-06,MED029,Bisoprolol 5mg,Cardiovasculaire,24,144,120,0,20,5.0
+2022-07,MED029,Bisoprolol 5mg,Cardiovasculaire,21,141,120,0,20,5.0
+2022-08,MED029,Bisoprolol 5mg,Cardiovasculaire,34,154,120,0,20,5.0
+2022-09,MED029,Bisoprolol 5mg,Cardiovasculaire,22,142,120,0,20,5.0
+2022-10,MED029,Bisoprolol 5mg,Cardiovasculaire,27,147,120,0,20,5.0
+2022-11,MED029,Bisoprolol 5mg,Cardiovasculaire,38,158,120,0,20,5.0
+2022-12,MED029,Bisoprolol 5mg,Cardiovasculaire,52,172,120,0,20,5.0
+2023-01,MED029,Bisoprolol 5mg,Cardiovasculaire,52,172,120,0,20,5.0
+2023-02,MED029,Bisoprolol 5mg,Cardiovasculaire,16,136,120,0,20,5.0
+2023-03,MED029,Bisoprolol 5mg,Cardiovasculaire,35,155,120,0,20,5.0
+2023-04,MED029,Bisoprolol 5mg,Cardiovasculaire,36,156,120,0,20,5.0
+2023-05,MED029,Bisoprolol 5mg,Cardiovasculaire,33,153,120,0,20,5.0
+2023-06,MED029,Bisoprolol 5mg,Cardiovasculaire,26,146,120,0,20,5.0
+2023-07,MED029,Bisoprolol 5mg,Cardiovasculaire,24,144,120,0,20,5.0
+2023-08,MED029,Bisoprolol 5mg,Cardiovasculaire,45,165,120,0,20,5.0
+2023-09,MED029,Bisoprolol 5mg,Cardiovasculaire,35,155,120,0,20,5.0
+2023-10,MED029,Bisoprolol 5mg,Cardiovasculaire,42,162,120,0,20,5.0
+2023-11,MED029,Bisoprolol 5mg,Cardiovasculaire,57,177,120,0,20,5.0
+2023-12,MED029,Bisoprolol 5mg,Cardiovasculaire,50,170,120,0,20,5.0
+2024-01,MED029,Bisoprolol 5mg,Cardiovasculaire,57,177,120,0,20,5.0
+2024-02,MED029,Bisoprolol 5mg,Cardiovasculaire,22,142,120,0,20,5.0
+2024-03,MED029,Bisoprolol 5mg,Cardiovasculaire,33,153,120,0,20,5.0
+2024-04,MED029,Bisoprolol 5mg,Cardiovasculaire,29,149,120,0,20,5.0
+2024-05,MED029,Bisoprolol 5mg,Cardiovasculaire,39,159,120,0,20,5.0
+2024-06,MED029,Bisoprolol 5mg,Cardiovasculaire,24,144,120,0,20,5.0
+2024-07,MED029,Bisoprolol 5mg,Cardiovasculaire,40,160,120,0,20,5.0
+2024-08,MED029,Bisoprolol 5mg,Cardiovasculaire,40,160,120,0,20,5.0
+2024-09,MED029,Bisoprolol 5mg,Cardiovasculaire,30,150,120,0,20,5.0
+2024-10,MED029,Bisoprolol 5mg,Cardiovasculaire,35,155,120,0,20,5.0
+2024-11,MED029,Bisoprolol 5mg,Cardiovasculaire,49,169,120,0,20,5.0
+2024-12,MED029,Bisoprolol 5mg,Cardiovasculaire,61,181,120,0,20,5.0
+2025-01,MED029,Bisoprolol 5mg,Cardiovasculaire,61,181,120,0,20,5.0
+2025-02,MED029,Bisoprolol 5mg,Cardiovasculaire,33,153,120,0,20,5.0
+2025-03,MED029,Bisoprolol 5mg,Cardiovasculaire,39,159,120,0,20,5.0
+2020-01,MED030,Ramipril 5mg,Cardiovasculaire,165,165,0,0,20,5.5
+2020-02,MED030,Ramipril 5mg,Cardiovasculaire,20,140,120,0,20,5.5
+2020-03,MED030,Ramipril 5mg,Cardiovasculaire,22,142,120,0,20,5.5
+2020-04,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2020-05,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2020-06,MED030,Ramipril 5mg,Cardiovasculaire,17,137,120,0,20,5.5
+2020-07,MED030,Ramipril 5mg,Cardiovasculaire,23,143,120,0,20,5.5
+2020-08,MED030,Ramipril 5mg,Cardiovasculaire,17,137,120,0,20,5.5
+2020-09,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2020-10,MED030,Ramipril 5mg,Cardiovasculaire,26,146,120,0,20,5.5
+2020-11,MED030,Ramipril 5mg,Cardiovasculaire,34,154,120,0,20,5.5
+2020-12,MED030,Ramipril 5mg,Cardiovasculaire,40,160,120,0,20,5.5
+2021-01,MED030,Ramipril 5mg,Cardiovasculaire,38,158,120,0,20,5.5
+2021-02,MED030,Ramipril 5mg,Cardiovasculaire,3,123,120,0,20,5.5
+2021-03,MED030,Ramipril 5mg,Cardiovasculaire,26,146,120,0,20,5.5
+2021-04,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2021-05,MED030,Ramipril 5mg,Cardiovasculaire,25,145,120,0,20,5.5
+2021-06,MED030,Ramipril 5mg,Cardiovasculaire,20,140,120,0,20,5.5
+2021-07,MED030,Ramipril 5mg,Cardiovasculaire,30,150,120,0,20,5.5
+2021-08,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2021-09,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2021-10,MED030,Ramipril 5mg,Cardiovasculaire,22,142,120,0,20,5.5
+2021-11,MED030,Ramipril 5mg,Cardiovasculaire,39,159,120,0,20,5.5
+2021-12,MED030,Ramipril 5mg,Cardiovasculaire,37,157,120,0,20,5.5
+2022-01,MED030,Ramipril 5mg,Cardiovasculaire,33,153,120,0,20,5.5
+2022-02,MED030,Ramipril 5mg,Cardiovasculaire,16,136,120,0,20,5.5
+2022-03,MED030,Ramipril 5mg,Cardiovasculaire,30,150,120,0,20,5.5
+2022-04,MED030,Ramipril 5mg,Cardiovasculaire,27,147,120,0,20,5.5
+2022-05,MED030,Ramipril 5mg,Cardiovasculaire,24,144,120,0,20,5.5
+2022-06,MED030,Ramipril 5mg,Cardiovasculaire,21,141,120,0,20,5.5
+2022-07,MED030,Ramipril 5mg,Cardiovasculaire,29,149,120,0,20,5.5
+2022-08,MED030,Ramipril 5mg,Cardiovasculaire,34,154,120,0,20,5.5
+2022-09,MED030,Ramipril 5mg,Cardiovasculaire,25,145,120,0,20,5.5
+2022-10,MED030,Ramipril 5mg,Cardiovasculaire,26,146,120,0,20,5.5
+2022-11,MED030,Ramipril 5mg,Cardiovasculaire,40,160,120,0,20,5.5
+2022-12,MED030,Ramipril 5mg,Cardiovasculaire,46,166,120,0,20,5.5
+2023-01,MED030,Ramipril 5mg,Cardiovasculaire,42,162,120,0,20,5.5
+2023-02,MED030,Ramipril 5mg,Cardiovasculaire,18,138,120,0,20,5.5
+2023-03,MED030,Ramipril 5mg,Cardiovasculaire,29,149,120,0,20,5.5
+2023-04,MED030,Ramipril 5mg,Cardiovasculaire,30,150,120,0,20,5.5
+2023-05,MED030,Ramipril 5mg,Cardiovasculaire,25,145,120,0,20,5.5
+2023-06,MED030,Ramipril 5mg,Cardiovasculaire,30,150,120,0,20,5.5
+2023-07,MED030,Ramipril 5mg,Cardiovasculaire,37,157,120,0,20,5.5
+2023-08,MED030,Ramipril 5mg,Cardiovasculaire,45,165,120,0,20,5.5
+2023-09,MED030,Ramipril 5mg,Cardiovasculaire,36,156,120,0,20,5.5
+2023-10,MED030,Ramipril 5mg,Cardiovasculaire,27,147,120,0,20,5.5
+2023-11,MED030,Ramipril 5mg,Cardiovasculaire,47,167,120,0,20,5.5
+2023-12,MED030,Ramipril 5mg,Cardiovasculaire,43,163,120,0,20,5.5
+2024-01,MED030,Ramipril 5mg,Cardiovasculaire,61,181,120,0,20,5.5
+2024-02,MED030,Ramipril 5mg,Cardiovasculaire,24,144,120,0,20,5.5
+2024-03,MED030,Ramipril 5mg,Cardiovasculaire,32,152,120,0,20,5.5
+2024-04,MED030,Ramipril 5mg,Cardiovasculaire,21,141,120,0,20,5.5
+2024-05,MED030,Ramipril 5mg,Cardiovasculaire,37,157,120,0,20,5.5
+2024-06,MED030,Ramipril 5mg,Cardiovasculaire,35,155,120,0,20,5.5
+2024-07,MED030,Ramipril 5mg,Cardiovasculaire,37,157,120,0,20,5.5
+2024-08,MED030,Ramipril 5mg,Cardiovasculaire,47,167,120,0,20,5.5
+2024-09,MED030,Ramipril 5mg,Cardiovasculaire,32,152,120,0,20,5.5
+2024-10,MED030,Ramipril 5mg,Cardiovasculaire,48,168,120,0,20,5.5
+2024-11,MED030,Ramipril 5mg,Cardiovasculaire,39,159,120,0,20,5.5
+2024-12,MED030,Ramipril 5mg,Cardiovasculaire,60,180,120,0,20,5.5
+2025-01,MED030,Ramipril 5mg,Cardiovasculaire,42,162,120,0,20,5.5
+2025-02,MED030,Ramipril 5mg,Cardiovasculaire,25,145,120,0,20,5.5
+2025-03,MED030,Ramipril 5mg,Cardiovasculaire,40,160,120,0,20,5.5

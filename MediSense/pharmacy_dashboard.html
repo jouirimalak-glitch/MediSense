@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MediSense – Gestion Intelligente de l'Inventaire</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+<style>
+:root{
+  --bg:#F4FAF6;--bg2:#EBF5EE;--sf:#fff;--sf2:#F0F9F3;
+  --b1:#C8E6D0;--b2:#A8D4B4;
+  --g900:#0F4023;--g800:#1B5E34;--g700:#276B44;--g600:#2E8049;
+  --g500:#3A9457;--g400:#5AAD72;--g300:#85C99A;--g200:#B8E0C4;
+  --g100:#D8EFE0;--g50:#EFF7F2;
+  --teal:#0D7373;--tl2:#D4EFEF;
+  --amb:#B45309;--al2:#FEF3C7;
+  --red:#B91C1C;--rl2:#FEE2E2;
+  --blu:#1D4ED8;--bl2:#DBEAFE;
+  --tx:#0F2D1A;--tx2:#2D5A3A;--mt:#6B8F78;
+  --fn:'Inter',system-ui,sans-serif;--mo:'Consolas','SF Mono',monospace;
+  --r:10px;--r2:14px;
+  --sh:0 1px 6px rgba(30,90,50,.09);--sh2:0 4px 18px rgba(30,90,50,.14);
+}
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--fn);background:var(--bg);color:var(--tx);min-height:100vh;font-size:14px}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--g300);border-radius:3px}
+
+/* ══════════ LOGIN ══════════ */
+#login-overlay{position:fixed;inset:0;background:linear-gradient(135deg,var(--g800) 0%,var(--teal) 100%);display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .4s}
+#login-overlay.hide{opacity:0;pointer-events:none}
+.lcard{background:var(--sf);border-radius:22px;padding:46px 42px 38px;width:400px;box-shadow:0 28px 70px rgba(0,0,0,.28);text-align:center}
+.llogo{width:62px;height:62px;background:linear-gradient(135deg,var(--g600),var(--teal));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 20px;box-shadow:0 4px 14px rgba(30,90,50,.35)}
+.ltitle{font-size:24px;font-weight:800;color:var(--g800);margin-bottom:4px}
+.lsub{font-size:12px;color:var(--mt);margin-bottom:30px}
+.lfield{margin-bottom:16px;text-align:left}
+.lfield label{display:block;font-size:11px;font-weight:700;color:var(--mt);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.lfield input{width:100%;background:var(--bg);border:1.5px solid var(--b1);border-radius:9px;padding:10px 13px;font-size:13px;color:var(--tx);font-family:var(--fn);outline:none;transition:border .2s}
+.lfield input:focus{border-color:var(--g500);background:var(--sf)}
+.lbtn{width:100%;background:linear-gradient(90deg,var(--g600),var(--teal));border:none;border-radius:10px;color:#fff;padding:12px;font-size:14px;font-weight:700;cursor:pointer;margin-top:4px;transition:opacity .2s;font-family:var(--fn)}
+.lbtn:hover{opacity:.88}
+.lerr{color:var(--red);font-size:12px;font-weight:600;margin-top:10px;display:none;text-align:center}
+.lhint{font-size:11px;color:var(--mt);margin-top:16px}
+.lhint b{color:var(--g700)}
+
+/* ══════════ NOTIFICATIONS ══════════ */
+#notif-btn{position:relative;background:none;border:none;cursor:pointer;padding:6px;border-radius:8px;transition:background .15s}
+#notif-btn:hover{background:rgba(255,255,255,.2)}
+#notif-count{position:absolute;top:0;right:0;background:var(--red);color:#fff;border-radius:50%;width:18px;height:18px;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid var(--g800)}
+#notif-panel{position:fixed;top:64px;right:20px;width:380px;max-height:520px;background:var(--sf);border:1.5px solid var(--b1);border-radius:14px;box-shadow:var(--sh2);z-index:500;display:none;overflow:hidden;flex-direction:column}
+#notif-panel.show{display:flex}
+.np-head{padding:14px 16px;background:linear-gradient(90deg,var(--g700),var(--teal));display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.np-head h3{font-size:14px;font-weight:700;color:#fff}
+.np-head span{font-size:11px;color:var(--g200)}
+.np-close{background:rgba(255,255,255,.2);border:none;color:#fff;cursor:pointer;border-radius:6px;padding:2px 7px;font-size:14px}
+.np-body{overflow-y:auto;flex:1}
+.nitem{padding:12px 14px;border-bottom:1px solid var(--b1);display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:background .12s}
+.nitem:hover{background:var(--g50)}
+.nitem.unread{border-left:3px solid var(--red)}
+.nitem.warn{border-left:3px solid var(--amb)}
+.nitem.info{border-left:3px solid var(--g500)}
+.ni-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.ni-icon.crit{background:var(--rl2)}
+.ni-icon.warn{background:var(--al2)}
+.ni-icon.info{background:var(--g100)}
+.ni-body strong{display:block;font-size:13px;font-weight:700;color:var(--tx);margin-bottom:2px}
+.ni-body span{font-size:11px;color:var(--mt)}
+.ni-time{font-size:10px;color:var(--mt);margin-left:auto;flex-shrink:0;white-space:nowrap}
+.np-footer{padding:10px 14px;border-top:1px solid var(--b1);text-align:center;flex-shrink:0}
+.np-footer button{background:none;border:none;color:var(--g600);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--fn)}
+
+/* ══════════ HEADER ══════════ */
+header{height:60px;background:linear-gradient(90deg,var(--g800),var(--g600));display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:300;box-shadow:0 2px 12px rgba(15,64,35,.25)}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:34px;height:34px;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.logo h1{font-size:18px;font-weight:800;color:#fff;letter-spacing:-.3px}
+.logo h1 em{font-style:normal;color:#A8E6BF;font-weight:600}
+.hbadge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);color:#D4F0DF;font-size:11px;font-weight:600;padding:2px 10px;border-radius:20px;font-family:var(--mo)}
+.hright{display:flex;align-items:center;gap:10px}
+.hmeta{font-size:11px;color:rgba(255,255,255,.65);font-weight:500}
+.huser{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);border-radius:20px;padding:5px 12px 5px 5px}
+.hav{width:26px;height:26px;background:var(--g400);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--g900)}
+.huser span{font-size:12px;color:#fff;font-weight:600}
+.hlogout{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;cursor:pointer;border-radius:6px;padding:3px 9px;font-size:11px;font-weight:600;font-family:var(--fn);transition:background .15s}
+.hlogout:hover{background:rgba(255,255,255,.28)}
+
+/* ══════════ NAV ══════════ */
+nav{background:var(--sf);border-bottom:2px solid var(--b1);padding:0 24px;display:flex;gap:2px;overflow-x:auto;box-shadow:var(--sh)}
+nav::-webkit-scrollbar{height:0}
+.tab{padding:11px 14px;cursor:pointer;font-size:13px;font-weight:600;color:var(--mt);border-bottom:2px solid transparent;transition:all .18s;white-space:nowrap}
+.tab:hover{color:var(--g600);background:var(--bg2)}
+.tab.active{color:var(--g700);border-bottom-color:var(--g500);background:var(--g50)}
+
+/* ══════════ LAYOUT ══════════ */
+main{max-width:1440px;margin:0 auto;padding:26px 24px 40px}
+.page{display:none}.page.active{display:block}
+.gkpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:13px;margin-bottom:20px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:16px}
+@media(max-width:920px){.g2,.g3{grid-template-columns:1fr}}
+
+/* CARD */
+.card{background:var(--sf);border:1px solid var(--b1);border-radius:var(--r2);padding:18px;box-shadow:var(--sh)}
+.ct{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--mt);margin-bottom:13px;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.ct-left{display:flex;align-items:center;gap:6px}
+.ct-left::before{content:'';display:inline-block;width:3px;height:13px;background:var(--g500);border-radius:2px}
+
+/* KPI */
+.kpi{background:var(--sf);border:1px solid var(--b1);border-radius:var(--r2);padding:16px 18px;box-shadow:var(--sh);transition:box-shadow .18s,transform .18s;border-left:3px solid transparent}
+.kpi:hover{box-shadow:var(--sh2);transform:translateY(-1px)}
+.kpi .lb{font-size:11px;font-weight:600;color:var(--mt);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.kpi .vl{font-size:24px;font-weight:800;font-family:var(--mo);line-height:1.1}
+.kpi .sb{font-size:11px;font-weight:500;color:var(--mt);margin-top:4px}
+.kg{border-left-color:var(--g500)}.kg .vl{color:var(--g700)}
+.kt{border-left-color:var(--teal)}.kt .vl{color:var(--teal)}
+.ka{border-left-color:var(--amb)}.ka .vl{color:var(--amb)}
+.kr{border-left-color:var(--red)}.kr .vl{color:var(--red)}
+.kb{border-left-color:var(--blu)}.kb .vl{color:var(--blu)}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{padding:9px 12px;text-align:left;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--mt);border-bottom:2px solid var(--b1);background:var(--bg2)}
+tbody tr{border-bottom:1px solid var(--bg2);transition:background .12s}
+tbody tr:hover{background:var(--g50)}
+tbody td{padding:9px 12px}
+.mn{font-weight:700;color:var(--tx)}.mi{font-family:var(--mo);font-size:11px;color:var(--mt)}
+
+/* BADGES */
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700}
+.critique{background:var(--rl2);color:var(--red);border:1px solid #FECACA}
+.urgent{background:#FFF7ED;color:#C2410C;border:1px solid #FED7AA}
+.modere{background:var(--al2);color:var(--amb);border:1px solid #FDE68A}
+.ok{background:var(--g100);color:var(--g700);border:1px solid var(--g200)}
+.dot{width:5px;height:5px;border-radius:50%;background:currentColor}
+
+/* CONTROLS */
+.ctrl{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-bottom:16px}
+.cg label{display:block;font-size:11px;font-weight:700;color:var(--mt);margin-bottom:4px;text-transform:uppercase;letter-spacing:.4px}
+select{background:var(--sf);border:1.5px solid var(--b2);border-radius:8px;color:var(--tx);padding:7px 12px;font-size:13px;font-weight:500;cursor:pointer;font-family:var(--fn)}
+select:focus{outline:none;border-color:var(--g500)}
+input[type="number"]{background:var(--sf);border:1.5px solid var(--b2);border-radius:8px;color:var(--tx);padding:7px 12px;font-size:13px;font-weight:600;font-family:var(--mo)}
+input[type="number"]:focus{outline:none;border-color:var(--g500);box-shadow:0 0 0 3px rgba(46,128,73,.12)}
+.btn-reset{background:var(--sf);border:1.5px solid var(--b2);border-radius:8px;color:var(--mt);padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--fn);transition:all .15s}
+.btn-reset:hover{background:var(--bg2);color:var(--g700);border-color:var(--g400)}
+
+/* RECO LIVE GRID */
+.reco-live-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+@media(max-width:980px){.reco-live-grid{grid-template-columns:repeat(3,1fr)}}
+.rl-item{background:var(--bg2);border-radius:10px;padding:12px 10px;text-align:center}
+.rl-item.highlight{background:var(--g100);border:1.5px solid var(--g400)}
+.rl-lb{font-size:10px;font-weight:700;color:var(--mt);text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
+.rl-vl{font-size:17px;font-weight:800;font-family:var(--mo);color:var(--tx)}
+.rl-item.highlight .rl-vl{color:var(--g700)}
+
+/* TAGS */
+.tag{display:inline-block;padding:2px 9px;border-radius:12px;font-size:12px;font-family:var(--mo);font-weight:600;margin:2px}
+
+/* TITLES */
+.stitle{font-size:20px;font-weight:800;color:var(--g800);margin-bottom:3px;letter-spacing:-.3px}
+.ssub{font-size:13px;font-weight:500;color:var(--mt);margin-bottom:20px}
+
+/* API DOCS */
+.endpoint{background:var(--sf);border:1px solid var(--b1);border-radius:var(--r);margin-bottom:8px;overflow:hidden;box-shadow:var(--sh)}
+.ep-h{padding:11px 15px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:background .12s}
+.ep-h:hover{background:var(--bg2)}
+.mth{font-family:var(--mo);font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px;min-width:42px;text-align:center}
+.mth.get{background:var(--g100);color:var(--g700)}.mth.post{background:var(--al2);color:var(--amb)}
+.ep-path{font-family:var(--mo);font-size:13px;color:var(--teal);font-weight:600}
+.ep-desc{font-size:12px;color:var(--mt);font-weight:500;margin-left:auto}
+.ep-b{padding:0 15px 12px;display:none}.ep-b.open{display:block}
+pre{background:var(--bg2);border:1px solid var(--b1);border-radius:8px;padding:11px;font-size:12px;font-family:var(--mo);overflow-x:auto;color:var(--g800);line-height:1.6}
+
+
+
+/* ══════════ INTERACTIVE CHART CONTROLS ══════════ */
+.chart-controls{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.cc-btn{padding:5px 12px;border-radius:16px;border:1.5px solid var(--b2);background:var(--sf);color:var(--mt);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--fn);transition:all .15s}
+.cc-btn.active,.cc-btn:hover{background:var(--g700);color:#fff;border-color:var(--g700)}
+.chart-type-btn{padding:5px 10px;border-radius:6px;border:1.5px solid var(--b2);background:var(--sf);color:var(--mt);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--fn);transition:all .15s}
+.chart-type-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* ══════════ FOOTER ══════════ */
+footer{background:var(--g800);padding:12px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.f-brand{font-size:13px;font-weight:700;color:#A8E6BF;display:flex;align-items:center;gap:6px}
+.f-names{font-size:12px;font-weight:600;color:rgba(255,255,255,.75)}
+.f-names span{color:#D4F0DF;font-weight:700}
+.f-yr{font-size:12px;color:rgba(255,255,255,.45);font-weight:600}
+
+/* ══════════ CHATBOT ══════════ */
+#cb-btn{position:fixed;bottom:26px;right:26px;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--g600),var(--teal));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 16px rgba(30,90,50,.35);z-index:1000;transition:transform .18s,box-shadow .18s}
+#cb-btn:hover{transform:scale(1.08)}
+#cb-btn .nt{position:absolute;top:-2px;right:-2px;width:17px;height:17px;background:var(--red);border-radius:50%;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid var(--bg);color:#fff}
+#cb-panel{position:fixed;bottom:88px;right:26px;width:375px;height:530px;background:var(--sf);border:1.5px solid var(--b1);border-radius:16px;display:flex;flex-direction:column;z-index:999;box-shadow:0 16px 50px rgba(15,64,35,.2);transform:scale(0) translateY(16px);transform-origin:bottom right;transition:transform .24s cubic-bezier(.175,.885,.32,1.275),opacity .18s;opacity:0}
+#cb-panel.open{transform:scale(1) translateY(0);opacity:1}
+.cb-hd{padding:13px 16px;background:linear-gradient(90deg,var(--g700),var(--teal));border-radius:14px 14px 0 0;display:flex;align-items:center;gap:9px;flex-shrink:0}
+.cb-av{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:18px}
+.cb-nfo strong{display:block;font-size:13px;font-weight:700;color:#fff}
+.cb-nfo span{font-size:11px;font-weight:600;color:#A8E6BF}
+.cb-cls{margin-left:auto;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.8);cursor:pointer;font-size:15px;padding:3px 8px;border-radius:6px;transition:all .15s}
+.cb-cls:hover{background:rgba(255,255,255,.25);color:#fff}
+#cb-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:9px;background:var(--bg)}
+.msg{display:flex;gap:7px;animation:mIn .2s ease}
+@keyframes mIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.msg.bot{align-self:flex-start}.msg.user{align-self:flex-end;flex-direction:row-reverse}
+.m-av{width:27px;height:27px;border-radius:7px;flex-shrink:0;background:linear-gradient(135deg,var(--g600),var(--teal));display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px}
+.m-bub{max-width:272px;padding:9px 13px;border-radius:12px;font-size:13px;line-height:1.5;font-weight:500}
+.msg.bot .m-bub{background:var(--sf);border:1px solid var(--b1);border-radius:3px 12px 12px 12px;color:var(--tx)}
+.msg.user .m-bub{background:linear-gradient(135deg,var(--g600),var(--teal));color:#fff;border-radius:12px 3px 12px 12px}
+.m-bub strong{color:var(--g700)}.msg.user .m-bub strong{color:#D4F0DF;font-weight:700}
+.mb{display:inline-flex;align-items:center;padding:1px 7px;border-radius:10px;font-size:11px;font-weight:700;margin:1px}
+.mb.r{background:var(--rl2);color:var(--red)}.mb.g{background:var(--g100);color:var(--g700)}.mb.a{background:var(--al2);color:var(--amb)}
+.cb-sugs{padding:8px 13px 6px;display:flex;flex-wrap:wrap;gap:5px;background:var(--bg);border-top:1px solid var(--b1)}
+.sug{background:var(--sf);border:1px solid var(--b2);border-radius:14px;padding:4px 11px;font-size:12px;font-weight:600;cursor:pointer;transition:all .14s;color:var(--tx2)}
+.sug:hover{background:var(--g100);border-color:var(--g400);color:var(--g700)}
+.cb-inp{padding:11px 13px;border-top:1.5px solid var(--b1);display:flex;gap:7px;flex-shrink:0;background:var(--sf);border-radius:0 0 14px 14px}
+#cbi{flex:1;background:var(--bg2);border:1.5px solid var(--b1);border-radius:18px;color:var(--tx);padding:7px 13px;font-size:13px;outline:none;font-family:var(--fn)}
+#cbi:focus{border-color:var(--g500);background:var(--sf)}
+#cbs{background:linear-gradient(135deg,var(--g600),var(--teal));border:none;border-radius:50%;width:34px;height:34px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;flex-shrink:0;box-shadow:0 2px 8px rgba(30,90,50,.3);transition:transform .14s}
+#cbs:hover{transform:scale(1.1)}
+.typ{display:flex;gap:4px;align-items:center;padding:9px 13px}
+.typ span{width:6px;height:6px;border-radius:50%;background:var(--g300);animation:ty 1.2s infinite}
+.typ span:nth-child(2){animation-delay:.2s}.typ span:nth-child(3){animation-delay:.4s}
+@keyframes ty{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+
+/* ══════════ TOAST ══════════ */
+#toast-container{position:fixed;top:76px;right:20px;z-index:800;display:flex;flex-direction:column;gap:8px}
+.toast{background:var(--sf);border:1px solid var(--b1);border-radius:10px;padding:12px 16px;min-width:280px;max-width:340px;box-shadow:var(--sh2);display:flex;align-items:flex-start;gap:10px;animation:toastIn .3s ease;font-size:13px}
+.toast.success{border-left:3px solid var(--g500)}
+.toast.error  {border-left:3px solid var(--red)}
+.toast.info   {border-left:3px solid var(--teal)}
+@keyframes toastIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+.toast-icon{font-size:18px;flex-shrink:0}
+.toast-body strong{display:block;font-weight:700;color:var(--tx);margin-bottom:2px}
+.toast-body span{color:var(--mt);font-size:12px}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     LOGIN OVERLAY
+══════════════════════════════════ -->
+<div id="login-overlay">
+  <div class="lcard">
+    <div class="llogo">⚕️</div>
+    <div class="ltitle">MediSense</div>
+    <div class="lsub">Connexion administrateur · Espace sécurisé</div>
+    <div class="lfield">
+      <label>Identifiant</label>
+      <input id="l-user" type="text" placeholder="admin" autocomplete="username">
+    </div>
+    <div class="lfield">
+      <label>Mot de passe</label>
+      <input id="l-pass" type="password" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <button class="lbtn" onclick="doLogin()">Se connecter</button>
+    <div class="lerr" id="l-err">❌ Identifiant ou mot de passe incorrect</div>
+    <div class="lhint">Démo : <b>admin</b> / <b>pharma2026</b></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     TOAST CONTAINER
+══════════════════════════════════ -->
+<div id="toast-container"></div>
+
+<!-- ══════════════════════════════════
+     NOTIFICATION PANEL
+══════════════════════════════════ -->
+<div id="notif-panel">
+  <div class="np-head">
+    <h3>🔔 Notifications</h3>
+    <span id="np-unread-count">12 non lues</span>
+    <button class="np-close" onclick="toggleNotif()">✕</button>
+  </div>
+  <div class="np-body" id="np-body"></div>
+  <div class="np-footer">
+    <button onclick="markAllRead()">Tout marquer comme lu</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     HEADER
+══════════════════════════════════ -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">⚕️</div>
+    <h1>Medi<em>Sense</em></h1>
+    <span class="hbadge">API v1.0</span>
+  </div>
+  <div class="hright">
+    <span class="hmeta">57 504 enregistrements · 30 médicaments</span>
+    <button id="notif-btn" onclick="toggleNotif()">
+      🔔
+      <span id="notif-count">12</span>
+    </button>
+    <div class="huser">
+      <div class="hav" id="h-av">A</div>
+      <span id="h-name">Admin</span>
+    </div>
+    <button class="hlogout" onclick="doLogout()">Déconnexion</button>
+  </div>
+</header>
+
+<nav>
+  <div class="tab active" onclick="SP('dashboard',this)">📊 Tableau de bord</div>
+  <div class="tab" onclick="SP('reco',this)">⚠️ Recommandations</div>
+  <div class="tab" onclick="SP('predict',this)">📈 Prédictions</div>
+  <div class="tab" onclick="SP('analytics',this)">🔬 Analytique</div>
+  <div class="tab" onclick="SP('models',this)">🤖 Modèles ML</div>
+  <div class="tab" onclick="SP('api',this)">⚡ API Docs</div>
+</nav>
+
+<main>
+
+<!-- ══ DASHBOARD ══ -->
+<div class="page active" id="page-dashboard">
+  <div class="stitle">Tableau de bord</div>
+  <div class="ssub">Supervision temps réel · Jan 2020 → Mars 2025 · 30 médicaments · 13 catégories</div>
+
+  <div class="gkpi" id="kpi-section">
+    <div class="kpi kr"><div class="lb">Ruptures critiques</div><div class="vl">30</div><div class="sb">⚠ Commande immédiate</div></div>
+    <div class="kpi kg"><div class="lb">Médicaments suivis</div><div class="vl">30</div><div class="sb">30 modèles actifs</div></div>
+    <div class="kpi ka"><div class="lb">Unités à commander</div><div class="vl" id="k-ord">—</div><div class="sb">30j · ×1.2 sécurité</div></div>
+    <div class="kpi kt"><div class="lb">Précision modèles</div><div class="vl">85.6%</div><div class="sb">MAE moyen = 1.42</div></div>
+    <div class="kpi kg"><div class="lb">Coût total estimé</div><div class="vl" id="k-cst">—</div><div class="sb">MAD · estimation 30j</div></div>
+    <div class="kpi kb"><div class="lb">Enregistrements</div><div class="vl">57 504</div><div class="sb">5 ans de données</div></div>
+  </div>
+
+  <!-- INTERACTIVE CHART -->
+  <div class="card" style="margin-bottom:16px" id="chart-main-card">
+    <div class="ct">
+      <div class="ct-left">Graphique Interactif — Ventes & Revenus</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px">
+      <div style="display:flex;gap:4px">
+        <button class="cc-btn active" onclick="setMetric('qty',this)">Quantité</button>
+        <button class="cc-btn" onclick="setMetric('rev',this)">Revenus</button>
+        <button class="cc-btn" onclick="setMetric('both',this)">Les deux</button>
+      </div>
+      <div style="width:1px;height:20px;background:var(--b1)"></div>
+      <div style="display:flex;gap:4px">
+        <button class="chart-type-btn active" onclick="setChartType('line',this)" title="Ligne">📈</button>
+        <button class="chart-type-btn" onclick="setChartType('bar',this)" title="Barres">📊</button>
+        <button class="chart-type-btn" onclick="setChartType('area',this)" title="Aire">🏔</button>
+      </div>
+      <div style="width:1px;height:20px;background:var(--b1)"></div>
+      <div style="display:flex;gap:4px">
+        <button class="cc-btn active" onclick="setPeriod(12,this)">12 mois</button>
+        <button class="cc-btn" onclick="setPeriod(24,this)">24 mois</button>
+        <button class="cc-btn" onclick="setPeriod(36,this)">36 mois</button>
+        <button class="cc-btn" onclick="setPeriod(0,this)">Tout</button>
+      </div>
+    </div>
+    <div style="position:relative;height:300px"><canvas id="c-interactive"></canvas></div>
+  </div>
+
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-left">Ventes mensuelles — 5 ans</div></div><canvas id="c-mon" style="max-height:220px"></canvas></div>
+    <div class="card">
+      <div class="ct">
+        <div class="ct-left">Revenus par catégorie</div>
+      </div>
+      <canvas id="c-pie" style="max-height:220px"></canvas>
+    </div>
+  </div>
+
+  <div class="card" id="dash-table-card">
+    <div class="ct">
+      <div class="ct-left">État du stock — 30 médicaments</div>
+    </div>
+    <table><thead><tr><th>Médicament</th><th>Catégorie</th><th>Stock</th><th>Demande 30j</th><th>À commander</th><th>Urgence</th><th>Tendance</th></tr></thead>
+    <tbody id="tb-dash"></tbody></table>
+  </div>
+</div>
+
+<!-- ══ RECOMMANDATIONS ══ -->
+<div class="page" id="page-reco">
+  <div class="stitle">Recommandations de Réapprovisionnement</div>
+  <div class="ssub">30 médicaments priorisés · modifiez le stock de chaque médicament pour recalculer en direct</div>
+
+  <div class="card" style="margin-bottom:16px">
+    <div class="ct"><div class="ct-left">⚙️ Facteur de sécurité global</div></div>
+    <div class="ctrl" style="margin-bottom:0">
+      <div class="cg"><label>Facteur sécurité (×)</label><input type="number" id="reco-safety-input" value="1.2" min="1" max="3" step="0.1" style="width:100px" oninput="rReco()"></div>
+      <button class="btn-reset" onclick="resetRecoSafety()">↺ Réinitialiser</button>
+      <div style="font-size:11px;color:var(--mt);margin-left:8px">💡 Modifiez le champ <strong>Stock</strong> sur chaque carte ci-dessous pour recalculer la commande</div>
+    </div>
+  </div>
+
+  <div class="gkpi" style="grid-template-columns:repeat(4,1fr)" id="reco-kpi-row">
+    <div class="kpi kr"><div class="lb">CRITIQUE</div><div class="vl" id="rk-crit">30</div><div class="sb">Stock épuisé</div></div>
+    <div class="kpi ka"><div class="lb">URGENT</div><div class="vl" id="rk-urg">0</div><div class="sb">&lt;14 jours</div></div>
+    <div class="kpi ka"><div class="lb">MODÉRÉ</div><div class="vl" id="rk-mod">0</div><div class="sb">&lt;30 jours</div></div>
+    <div class="kpi kg"><div class="lb">OK</div><div class="vl" id="rk-ok">0</div><div class="sb">Suffisant</div></div>
+  </div>
+  <div id="rc-cards"></div>
+</div>
+
+<!-- ══ PRÉDICTIONS ══ -->
+<div class="page" id="page-predict">
+  <div class="stitle">Prédiction de Demande</div>
+  <div class="ssub">Prévisions journalières · Random Forest Regressor · paramètres modifiables</div>
+
+  <div class="card" style="margin-bottom:16px">
+    <div class="ct"><div class="ct-left">⚙️ Paramètres de simulation</div></div>
+    <div class="ctrl" style="margin-bottom:0">
+      <div class="cg"><label>Médicament</label><select id="psel" onchange="UP()"></select></div>
+      <div class="cg"><label>Stock actuel (unités)</label><input type="number" id="p-stock-input" value="0" min="0" style="width:120px" oninput="UP()"></div>
+      <div class="cg"><label>Horizon (jours)</label><input type="number" id="p-horizon-input" value="14" min="1" max="90" style="width:100px" oninput="UP()"></div>
+      <div class="cg"><label>Facteur sécurité (×)</label><input type="number" id="p-safety-input" value="1.2" min="1" max="3" step="0.1" style="width:100px" oninput="UP()"></div>
+      <button class="btn-reset" onclick="resetParams()">↺ Réinitialiser</button>
+    </div>
+  </div>
+
+  <div class="g3">
+    <div class="kpi kg"><div class="lb">Total prévu (horizon)</div><div class="vl" id="p-tot">—</div></div>
+    <div class="kpi kt"><div class="lb">Moy. journalière</div><div class="vl" id="p-avg">—</div></div>
+    <div class="kpi ka"><div class="lb">Précision modèle</div><div class="vl" id="p-acc">—</div></div>
+  </div>
+
+  <!-- RECOMMANDATION CALCULÉE EN DIRECT -->
+  <div class="card" id="p-reco-card" style="margin-bottom:16px;border-left:4px solid var(--red)">
+    <div class="ct"><div class="ct-left">📦 Recommandation calculée — basée sur vos paramètres</div></div>
+    <div class="reco-live-grid">
+      <div class="rl-item"><div class="rl-lb">Stock actuel</div><div class="rl-vl" id="rl-stock">0</div></div>
+      <div class="rl-item"><div class="rl-lb">Demande prévue</div><div class="rl-vl" id="rl-demand">—</div></div>
+      <div class="rl-item"><div class="rl-lb">Stock requis (×sécurité)</div><div class="rl-vl" id="rl-required">—</div></div>
+      <div class="rl-item highlight"><div class="rl-lb">À commander</div><div class="rl-vl" id="rl-order">—</div></div>
+      <div class="rl-item"><div class="rl-lb">Coût estimé</div><div class="rl-vl" id="rl-cost">—</div></div>
+      <div class="rl-item"><div class="rl-lb">Jours de couverture</div><div class="rl-vl" id="rl-days">—</div></div>
+      <div class="rl-item"><div class="rl-lb">Urgence</div><div class="rl-vl" id="rl-urgency">—</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <div class="ct"><div class="ct-left">Prédictions journalières</div></div>
+    <canvas id="c-pred" style="max-height:240px"></canvas>
+  </div>
+  <div class="card"><div class="ct"><div class="ct-left">Détail journalier</div></div>
+    <table><thead><tr><th>#</th><th>Date</th><th>Demande prévue</th><th>Jour</th><th>Niveau</th></tr></thead>
+    <tbody id="tb-pred"></tbody></table>
+  </div>
+</div>
+
+<!-- ══ ANALYTIQUE ══ -->
+<div class="page" id="page-analytics">
+  <div class="stitle">Analyse des Ventes — 5 ans</div>
+  <div class="ssub">Janvier 2020 → Mars 2025 · 553 313 unités · 3 649 803 MAD</div>
+  <div class="gkpi">
+    <div class="kpi kg"><div class="lb">Total vendues</div><div class="vl">553 313</div><div class="sb">63 mois</div></div>
+    <div class="kpi kt"><div class="lb">Chiffre d'affaires</div><div class="vl">3.65M</div><div class="sb">MAD</div></div>
+    <div class="kpi ka"><div class="lb">Moy. journalière</div><div class="vl">~295</div><div class="sb">unités/jour</div></div>
+    <div class="kpi kb"><div class="lb">Croissance annuelle</div><div class="vl">+3%</div><div class="sb">tendance 2020→2024</div></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-left">Évolution mensuelle</div></div><canvas id="c-m2"></canvas></div>
+    <div class="card"><div class="ct"><div class="ct-left">Ventes annuelles</div></div><canvas id="c-yr"></canvas></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-left">Quantité par catégorie</div></div><canvas id="c-cq"></canvas></div>
+    <div class="card"><div class="ct"><div class="ct-left">Revenus par catégorie (MAD)</div></div><canvas id="c-cr"></canvas></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-left">Top 10 par volume</div></div>
+      <table><thead><tr><th>Rang</th><th>Médicament</th><th>Unités</th><th>Part</th></tr></thead><tbody id="tb-topq"></tbody></table>
+    </div>
+    <div class="card"><div class="ct"><div class="ct-left">Top 10 par revenus</div></div>
+      <table><thead><tr><th>Rang</th><th>Médicament</th><th>MAD</th><th>Part</th></tr></thead><tbody id="tb-topr"></tbody></table>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODÈLES ══ -->
+<div class="page" id="page-models">
+  <div class="stitle">Performance des Modèles ML</div>
+  <div class="ssub">Random Forest Regressor · 5 ans · 30 modèles indépendants</div>
+  <div class="g3">
+    <div class="kpi kg"><div class="lb">Algorithme</div><div class="vl" style="font-size:13px;line-height:1.5">Random Forest</div><div class="sb">100 arbres · depth=10</div></div>
+    <div class="kpi kt"><div class="lb">R² Moyen</div><div class="vl">0.680</div><div class="sb">Coefficient de détermination</div></div>
+    <div class="kpi ka"><div class="lb">Précision Moyenne</div><div class="vl">85.6%</div><div class="sb">MAE moyen = 1.42</div></div>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="ct"><div class="ct-left">Features utilisées — 12 variables</div></div>
+    <div style="margin-top:4px">
+      <span class="tag" style="background:var(--g100);color:var(--g800)">year</span><span class="tag" style="background:var(--g100);color:var(--g800)">month</span><span class="tag" style="background:var(--g100);color:var(--g800)">day_of_week</span><span class="tag" style="background:var(--g100);color:var(--g800)">quarter</span><span class="tag" style="background:var(--g100);color:var(--g800)">is_weekend</span>
+      <span class="tag" style="background:var(--tl2);color:var(--teal)">month_sin/cos</span><span class="tag" style="background:var(--tl2);color:var(--teal)">dow_sin/cos</span>
+      <span class="tag" style="background:var(--al2);color:var(--amb)">lag_7</span><span class="tag" style="background:var(--al2);color:var(--amb)">lag_14</span><span class="tag" style="background:var(--al2);color:var(--amb)">lag_30</span><span class="tag" style="background:var(--al2);color:var(--amb)">rolling_7</span><span class="tag" style="background:var(--al2);color:var(--amb)">rolling_30</span>
+    </div>
+  </div>
+  <div class="card"><div class="ct"><div class="ct-left">Métriques — 30 modèles</div></div>
+    <table><thead><tr><th>ID</th><th>Médicament</th><th>Catégorie</th><th>R²</th><th>MAE</th><th>Précision</th><th>Barre</th></tr></thead>
+    <tbody id="tb-met"></tbody></table>
+  </div>
+</div>
+
+<!-- ══ API ══ -->
+<div class="page" id="page-api">
+  <div class="stitle">Documentation API REST</div>
+  <div class="ssub">Base URL : <code style="font-family:var(--mo);color:var(--teal);font-weight:700">http://localhost:5000</code> · JSON · CORS activé</div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="ct"><div class="ct-left">Démarrage rapide</div></div>
+    <pre>pip install pandas numpy scikit-learn flask joblib
+python generate_data.py && python train_model.py && python app.py
+# API démarre sur http://localhost:5000</pre>
+  </div>
+  <div id="ep-list"></div>
+</div>
+
+</main>
+
+<footer>
+  <div class="f-brand">⚕️ MediSense · Medication Demand Prediction API</div>
+  <div class="f-names"><span>Jouiri Malak</span> · <span>Icharli Rania</span></div>
+  <div class="f-yr">2026</div>
+</footer>
+
+<!-- CHATBOT -->
+<button id="cb-btn" onclick="TC()">💬<span class="nt">1</span></button>
+<div id="cb-panel">
+  <div class="cb-hd"><div class="cb-av">⚕️</div><div class="cb-nfo"><strong>SenseBot</strong><span>● En ligne</span></div><button class="cb-cls" onclick="TC()">✕</button></div>
+  <div id="cb-msgs">
+    <div class="msg bot"><div class="m-av">⚕️</div><div class="m-bub">Bonjour ! Je suis <strong>SenseBot</strong>.<br>30 médicaments · 57 504 enregistrements · 5 ans.<br>Comment puis-je vous aider ?</div></div>
+  </div>
+  <div class="cb-sugs" id="cb-sugs">
+    <span class="sug" onclick="SS(this)">Stock critique ?</span>
+    <span class="sug" onclick="SS(this)">Coût total commande</span>
+    <span class="sug" onclick="SS(this)">Top médicaments</span>
+    <span class="sug" onclick="SS(this)">Prédire doliprane</span>
+    <span class="sug" onclick="SS(this)">Graphique interactif</span>
+  </div>
+  <div class="cb-inp"><input id="cbi" type="text" placeholder="Posez votre question…" onkeydown="if(event.key==='Enter')SM()"><button id="cbs" onclick="SM()">➤</button></div>
+</div>
+
+<script>
+// ═══════════════════ DATA ═══════════════════
+const RECS=[{id:"MED010",name:"Doliprane 1000mg",cat:"Antalgique",uc:3.0,stock:0,p30:976,ord:1171,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:3513,acc:86.8,rp:60},{id:"MED001",name:"Paracétamol 500mg",cat:"Antalgique",uc:2.5,stock:0,p30:813,ord:975,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:2437.5,acc:87.5,rp:50},{id:"MED003",name:"Ibuprofène 400mg",cat:"Anti-inflammatoire",uc:3.5,stock:0,p30:575,ord:690,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:2415,acc:87.3,rp:40},{id:"MED018",name:"Cétirizine 10mg",cat:"Antihistaminique",uc:3.5,stock:0,p30:492,ord:590,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:2065,acc:85.7,rp:35},{id:"MED009",name:"Vitamine C 1000mg",cat:"Supplément",uc:3.0,stock:0,p30:459,ord:550,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1650,acc:86.4,rp:45},{id:"MED008",name:"Loratadine 10mg",cat:"Antihistaminique",uc:4.5,stock:0,p30:406,ord:487,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:2191.5,acc:86.1,rp:30},{id:"MED025",name:"Vitamine D3 1000UI",cat:"Supplément",uc:3.5,stock:0,p30:365,ord:438,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1533,acc:86.3,rp:40},{id:"MED002",name:"Amoxicilline 500mg",cat:"Antibiotique",uc:8.0,stock:0,p30:333,ord:399,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:3192,acc:85.8,rp:30},{id:"MED004",name:"Oméprazole 20mg",cat:"Gastrique",uc:5.0,stock:0,p30:323,ord:387,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1935,acc:86.7,rp:25},{id:"MED026",name:"Magnésium 300mg",cat:"Supplément",uc:4.0,stock:0,p30:301,ord:361,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1444,acc:85.6,rp:35},{id:"MED019",name:"Diclofénac 50mg",cat:"Anti-inflammatoire",uc:4.0,stock:0,p30:273,ord:327,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1308,acc:86.1,rp:30},{id:"MED015",name:"Pantoprazole 40mg",cat:"Gastrique",uc:6.0,stock:0,p30:263,ord:315,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1890,acc:86.1,rp:30},{id:"MED027",name:"Fer 80mg",cat:"Supplément",uc:3.0,stock:0,p30:246,ord:295,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:885,acc:85.2,rp:30},{id:"MED005",name:"Metformine 850mg",cat:"Diabète",uc:4.0,stock:0,p30:241,ord:289,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1156,acc:86.4,rp:35},{id:"MED013",name:"Atorvastatine 20mg",cat:"Cardiovasculaire",uc:7.0,stock:0,p30:212,ord:254,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1778,acc:86.3,rp:25},{id:"MED024",name:"Prednisolone 5mg",cat:"Corticoïde",uc:4.5,stock:0,p30:212,ord:254,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1143,acc:85.4,rp:25},{id:"MED011",name:"Augmentin 875mg",cat:"Antibiotique",uc:15.0,stock:0,p30:195,ord:234,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:3510,acc:84.0,rp:20},{id:"MED006",name:"Amlodipine 5mg",cat:"Cardiovasculaire",uc:6.5,stock:0,p30:191,ord:229,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1488.5,acc:85.2,rp:20},{id:"MED017",name:"Lansoprazole 30mg",cat:"Gastrique",uc:5.5,stock:0,p30:185,ord:222,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1221,acc:85.3,rp:20},{id:"MED028",name:"Acide Folique 5mg",cat:"Supplément",uc:2.5,stock:0,p30:174,ord:208,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:520,acc:85.1,rp:25},{id:"MED022",name:"Ciprofloxacine 500mg",cat:"Antibiotique",uc:12.0,stock:0,p30:162,ord:194,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:2328,acc:85.6,rp:20},{id:"MED014",name:"Lévothyroxine 50mcg",cat:"Thyroïde",uc:5.5,stock:0,p30:153,ord:183,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1006.5,acc:85.5,rp:20},{id:"MED029",name:"Bisoprolol 5mg",cat:"Cardiovasculaire",uc:5.0,stock:0,p30:150,ord:180,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:900,acc:85.7,rp:20},{id:"MED030",name:"Ramipril 5mg",cat:"Cardiovasculaire",uc:5.5,stock:0,p30:149,ord:178,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:979,acc:83.7,rp:20},{id:"MED020",name:"Tramadol 50mg",cat:"Antalgique",uc:6.0,stock:0,p30:146,ord:175,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1050,acc:84.5,rp:20},{id:"MED023",name:"Doxycycline 100mg",cat:"Antibiotique",uc:8.5,stock:0,p30:137,ord:164,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1394,acc:85.4,rp:20},{id:"MED007",name:"Salbutamol Spray",cat:"Respiratoire",uc:12.0,stock:0,p30:134,ord:160,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1920,acc:85.3,rp:15},{id:"MED016",name:"Sertraline 50mg",cat:"Psychiatrique",uc:9.0,stock:0,p30:115,ord:138,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1242,acc:83.9,rp:15},{id:"MED012",name:"Ventoline 100mcg",cat:"Respiratoire",uc:14.0,stock:0,p30:112,ord:134,urg:"CRITIQUE",ul:3,days:0,tr:"baisse",cost:1876,acc:84.7,rp:15},{id:"MED021",name:"Fluconazole 150mg",cat:"Antifongique",uc:10.0,stock:0,p30:99,ord:118,urg:"CRITIQUE",ul:3,days:0,tr:"stable",cost:1180,acc:81.9,rp:15}];
+
+// État centralisé et modifiable : stock actuel par médicament (0 = rupture totale par défaut)
+// Synchronisé entre Dashboard, Recommandations et Prédictions
+const RECO_STATE = {};
+RECS.forEach(r => RECO_STATE[r.id] = { stock: 0 });
+
+function computeReco(r, safety){
+  const stock    = RECO_STATE[r.id].stock;
+  const required = Math.round(r.p30 * safety);
+  const toOrder  = Math.max(0, required - stock);
+  const dailyAvg = r.p30 / 30;
+  const daysLeft = dailyAvg>0 ? (stock/dailyAvg) : 999;
+  let urgency, ul;
+  if(daysLeft < 7)       { urgency='CRITIQUE'; ul=3; }
+  else if(daysLeft < 14) { urgency='URGENT';   ul=2; }
+  else if(daysLeft < 30) { urgency='MODÉRÉ';   ul=1; }
+  else                   { urgency='OK';       ul=0; }
+  const cost = Math.round(toOrder * r.uc * 100)/100;
+  return { stock, required, toOrder, daysLeft, urgency, ul, cost };
+}
+
+
+const MONTHLY=[{p:"2020-01",q:8957,r:62938},{p:"2020-02",q:7891,r:54413},{p:"2020-03",q:7949,r:53329},{p:"2020-04",q:7855,r:50266},{p:"2020-05",q:7957,r:50060},{p:"2020-06",q:7520,r:46575},{p:"2020-07",q:7495,r:46882},{p:"2020-08",q:7501,r:47329},{p:"2020-09",q:8035,r:52020},{p:"2020-10",q:8932,r:58790},{p:"2020-11",q:9046,r:60781},{p:"2020-12",q:9860,r:67547},{p:"2021-01",q:9033,r:63666},{p:"2021-02",q:7745,r:53718},{p:"2021-03",q:8405,r:56268},{p:"2021-04",q:8275,r:52958},{p:"2021-05",q:8262,r:52018},{p:"2021-06",q:7679,r:47901},{p:"2021-07",q:7815,r:48621},{p:"2021-08",q:7829,r:49659},{p:"2021-09",q:8178,r:52980},{p:"2021-10",q:9047,r:59647},{p:"2021-11",q:9498,r:63641},{p:"2021-12",q:10272,r:70741},{p:"2022-01",q:9203,r:65070},{p:"2022-02",q:7997,r:55502},{p:"2022-03",q:8475,r:56823},{p:"2022-04",q:8394,r:53974},{p:"2022-05",q:8711,r:54798},{p:"2022-06",q:7927,r:49075},{p:"2022-07",q:7882,r:49042},{p:"2022-08",q:8092,r:51323},{p:"2022-09",q:8537,r:55158},{p:"2022-10",q:9251,r:61167},{p:"2022-11",q:9758,r:65205},{p:"2022-12",q:10483,r:71830},{p:"2023-01",q:9682,r:68624},{p:"2023-02",q:8158,r:56317},{p:"2023-03",q:8736,r:58587},{p:"2023-04",q:8456,r:54509},{p:"2023-05",q:8999,r:56594},{p:"2023-06",q:8082,r:50247},{p:"2023-07",q:8088,r:50508},{p:"2023-08",q:8540,r:54033},{p:"2023-09",q:8764,r:56854},{p:"2023-10",q:9662,r:63169},{p:"2023-11",q:10029,r:67335},{p:"2023-12",q:10630,r:73468},{p:"2024-01",q:10077,r:71142},{p:"2024-02",q:8843,r:60520},{p:"2024-03",q:8975,r:60113},{p:"2024-04",q:8833,r:56493},{p:"2024-05",q:9253,r:58171},{p:"2024-06",q:8248,r:51555},{p:"2024-07",q:8524,r:53134},{p:"2024-08",q:8711,r:55117},{p:"2024-09",q:8820,r:57143},{p:"2024-10",q:9925,r:65487},{p:"2024-11",q:10348,r:69548},{p:"2024-12",q:11069,r:76203},{p:"2025-01",q:10274,r:72376},{p:"2025-02",q:8723,r:60020},{p:"2025-03",q:9118,r:60824}];
+const CATS=[{c:"Antibiotique",q:62858,r:858253},{c:"Antalgique",q:127227,r:500087},{c:"Supplément",q:102145,r:432610},{c:"Cardiovasculaire",q:44175,r:351162},{c:"Gastrique",q:47585,r:337512},{c:"Respiratoire",q:17410,r:291455},{c:"Anti-inflammatoire",q:57022,r:271610},{c:"Antihistaminique",q:43704,r:224256},{c:"Psychiatrique",q:7147,r:83620},{c:"Corticoïde",q:13882,r:81210},{c:"Diabète",q:15375,r:79950},{c:"Antifongique",q:5535,r:71955},{c:"Thyroïde",q:9248,r:66123}];
+const YEARLY=[{y:2020,q:98998,r:650930},{y:2021,q:102038,r:671817},{y:2022,q:104710,r:688966},{y:2023,q:107826,r:710245},{y:2024,q:111626,r:734626},{y:2025,q:28115,r:193219}];
+const TOPQ=[{id:"MED010",n:"Doliprane 1000mg",q:64210},{id:"MED001",n:"Paracétamol 500mg",q:53157},{id:"MED003",n:"Ibuprofène 400mg",q:38314},{id:"MED009",n:"Vitamine C 1000mg",q:30499},{id:"MED002",n:"Amoxicilline 500mg",q:25667},{id:"MED018",n:"Cétirizine 10mg",q:24163},{id:"MED025",n:"Vitamine D3 1000UI",q:24109},{id:"MED026",n:"Magnésium 300mg",q:20064},{id:"MED004",n:"Oméprazole 20mg",q:20053},{id:"MED008",n:"Loratadine 10mg",q:19541}];
+const TOPR=[{id:"MED011",n:"Augmentin 875mg",r:286299},{id:"MED002",n:"Amoxicilline 500mg",r:266937},{id:"MED010",n:"Doliprane 1000mg",r:250419},{id:"MED022",n:"Ciprofloxacine 500mg",r:193003},{id:"MED003",n:"Ibuprofène 400mg",r:174329},{id:"MED001",n:"Paracétamol 500mg",r:172760},{id:"MED007",n:"Salbutamol Spray",r:152443},{id:"MED012",n:"Ventoline 100mcg",r:139012},{id:"MED004",n:"Oméprazole 20mg",r:130344},{id:"MED015",n:"Pantoprazole 40mg",r:123763}];
+const PREDS={MED001:[30,27,27,30,28,13,28,28,27,28,29,27,14,30],MED002:[13,12,12,13,12,5,12,11,12,12,12,12,6,12],MED003:[22,20,20,23,21,10,21,21,20,18,23,20,9,21],MED004:[12,11,11,14,11,5,12,11,11,11,13,11,5,11],MED005:[9,8,8,10,7,4,9,9,8,9,10,8,4,9],MED006:[7,7,6,8,7,3,7,7,6,6,7,7,3,7],MED007:[6,5,5,5,5,2,5,5,5,5,5,5,2,5],MED008:[13,15,14,15,13,7,14,15,14,14,14,15,7,14],MED009:[17,15,15,19,16,9,17,16,15,16,19,16,8,18],MED010:[38,33,33,36,33,17,38,38,33,32,38,33,16,36],MED011:[7,7,7,8,6,4,7,6,7,7,8,7,3,7],MED012:[5,4,4,5,4,2,5,5,3,4,5,4,2,5],MED013:[8,7,7,8,7,3,8,8,7,7,9,7,4,9],MED014:[6,5,5,7,5,2,6,6,5,5,6,5,3,6],MED015:[9,9,9,11,10,4,9,10,9,9,11,9,4,9],MED016:[4,4,4,5,4,2,4,4,4,4,5,4,2,4],MED017:[7,6,6,8,6,3,7,7,6,6,8,6,3,7],MED018:[16,15,18,15,18,7,20,19,17,17,19,18,7,18],MED019:[10,8,9,12,10,5,11,10,9,9,11,9,4,10],MED020:[6,5,5,6,5,2,5,5,5,5,6,5,2,6],MED021:[4,3,3,4,4,1,4,4,3,3,4,4,1,4],MED022:[5,5,5,5,6,3,5,6,6,6,6,6,3,6],MED023:[5,4,5,5,5,2,5,5,5,5,5,5,2,5],MED024:[7,7,7,9,7,4,8,8,7,8,9,7,4,7],MED025:[13,12,12,13,12,6,14,14,12,13,15,12,6,14],MED026:[11,10,10,12,11,5,12,11,11,10,11,10,4,11],MED027:[9,8,8,10,8,4,9,9,9,9,9,8,4,9],MED028:[6,6,6,7,6,3,6,7,6,6,7,6,3,6],MED029:[6,5,5,6,5,2,6,6,5,5,6,5,2,6],MED030:[6,5,5,6,5,2,6,6,5,5,7,5,2,6]};
+const MET={MED001:{r2:0.68,mae:3.68,acc:87.5},MED002:{r2:0.787,mae:1.98,acc:85.8},MED003:{r2:0.683,mae:2.67,acc:87.3},MED004:{r2:0.628,mae:1.51,acc:86.7},MED005:{r2:0.586,mae:1.16,acc:86.4},MED006:{r2:0.591,mae:0.96,acc:85.2},MED007:{r2:0.825,mae:0.79,acc:85.3},MED008:{r2:0.856,mae:1.53,acc:86.1},MED009:{r2:0.708,mae:2.32,acc:86.4},MED010:{r2:0.659,mae:4.67,acc:86.8},MED011:{r2:0.754,mae:1.29,acc:84.0},MED012:{r2:0.815,mae:0.62,acc:84.7},MED013:{r2:0.63,mae:1.02,acc:86.3},MED014:{r2:0.593,mae:0.74,acc:85.5},MED015:{r2:0.582,mae:1.23,acc:86.1},MED016:{r2:0.553,mae:0.64,acc:83.9},MED017:{r2:0.595,mae:0.94,acc:85.3},MED018:{r2:0.829,mae:1.91,acc:85.7},MED019:{r2:0.681,mae:1.44,acc:86.1},MED020:{r2:0.601,mae:0.85,acc:84.5},MED021:{r2:0.617,mae:0.56,acc:81.9},MED022:{r2:0.798,mae:0.99,acc:85.6},MED023:{r2:0.78,mae:0.82,acc:85.4},MED024:{r2:0.673,mae:1.12,acc:85.4},MED025:{r2:0.683,mae:1.84,acc:86.3},MED026:{r2:0.643,mae:1.6,acc:85.6},MED027:{r2:0.693,mae:1.29,acc:85.2},MED028:{r2:0.698,mae:0.95,acc:85.1},MED029:{r2:0.608,mae:0.75,acc:85.7},MED030:{r2:0.565,mae:0.85,acc:83.7}};
+const MNAMES={MED001:"Paracétamol 500mg",MED002:"Amoxicilline 500mg",MED003:"Ibuprofène 400mg",MED004:"Oméprazole 20mg",MED005:"Metformine 850mg",MED006:"Amlodipine 5mg",MED007:"Salbutamol Spray",MED008:"Loratadine 10mg",MED009:"Vitamine C 1000mg",MED010:"Doliprane 1000mg",MED011:"Augmentin 875mg",MED012:"Ventoline 100mcg",MED013:"Atorvastatine 20mg",MED014:"Lévothyroxine 50mcg",MED015:"Pantoprazole 40mg",MED016:"Sertraline 50mg",MED017:"Lansoprazole 30mg",MED018:"Cétirizine 10mg",MED019:"Diclofénac 50mg",MED020:"Tramadol 50mg",MED021:"Fluconazole 150mg",MED022:"Ciprofloxacine 500mg",MED023:"Doxycycline 100mg",MED024:"Prednisolone 5mg",MED025:"Vitamine D3 1000UI",MED026:"Magnésium 300mg",MED027:"Fer 80mg",MED028:"Acide Folique 5mg",MED029:"Bisoprolol 5mg",MED030:"Ramipril 5mg"};
+const MCATS={MED001:"Antalgique",MED002:"Antibiotique",MED003:"Anti-inflammatoire",MED004:"Gastrique",MED005:"Diabète",MED006:"Cardiovasculaire",MED007:"Respiratoire",MED008:"Antihistaminique",MED009:"Supplément",MED010:"Antalgique",MED011:"Antibiotique",MED012:"Respiratoire",MED013:"Cardiovasculaire",MED014:"Thyroïde",MED015:"Gastrique",MED016:"Psychiatrique",MED017:"Gastrique",MED018:"Antihistaminique",MED019:"Anti-inflammatoire",MED020:"Antalgique",MED021:"Antifongique",MED022:"Antibiotique",MED023:"Antibiotique",MED024:"Corticoïde",MED025:"Supplément",MED026:"Supplément",MED027:"Supplément",MED028:"Supplément",MED029:"Cardiovasculaire",MED030:"Cardiovasculaire"};
+const MIDS=Object.keys(MNAMES);
+const DATES=["2025-04-01","2025-04-02","2025-04-03","2025-04-04","2025-04-05","2025-04-06","2025-04-07","2025-04-08","2025-04-09","2025-04-10","2025-04-11","2025-04-12","2025-04-13","2025-04-14"];
+const PAL=['#2E8049','#0D7373','#B45309','#1D4ED8','#5AAD72','#1A9494','#D97706','#3B82F6','#276B44','#0E8A8A','#92400E','#1E40AF','#3A9457'];
+
+// ═══════════════════ LOGIN ═══════════════════
+const USERS = { admin:"pharma2026", pharmacien:"pharma123", gestionnaire:"stock456" };
+function doLogin(){
+  const u=document.getElementById('l-user').value.trim();
+  const p=document.getElementById('l-pass').value;
+  const err=document.getElementById('l-err');
+  if(USERS[u]&&USERS[u]===p){
+    err.style.display='none';
+    const ov=document.getElementById('login-overlay');
+    ov.classList.add('hide');
+    setTimeout(()=>ov.style.display='none',400);
+    document.getElementById('h-name').textContent=u.charAt(0).toUpperCase()+u.slice(1);
+    document.getElementById('h-av').textContent=u[0].toUpperCase();
+    showToast('success','Connexion réussie','Bienvenue, '+u+' !');
+    setTimeout(()=>checkStockAlerts(),1200);
+  } else {
+    err.style.display='block';
+    document.getElementById('l-pass').value='';
+  }
+}
+function doLogout(){
+  document.getElementById('login-overlay').classList.remove('hide');
+  document.getElementById('login-overlay').style.display='flex';
+  document.getElementById('l-user').value='';
+  document.getElementById('l-pass').value='';
+  showToast('info','Déconnecté','À bientôt !');
+}
+
+// ═══════════════════ TOAST ═══════════════════
+function showToast(type,title,msg,duration=3500){
+  const icons={success:'✅',error:'❌',info:'ℹ️'};
+  const t=document.createElement('div');
+  t.className=`toast ${type}`;
+  t.innerHTML=`<span class="toast-icon">${icons[type]||'📢'}</span><div class="toast-body"><strong>${title}</strong><span>${msg}</span></div>`;
+  document.getElementById('toast-container').appendChild(t);
+  setTimeout(()=>{ t.style.opacity='0'; t.style.transform='translateX(20px)'; t.style.transition='all .3s'; setTimeout(()=>t.remove(),300); },duration);
+}
+
+// ═══════════════════ NOTIFICATIONS ═══════════════════
+let notifOpen=false;
+const NOTIFS=[
+  {id:1,type:'crit',icon:'🚨',title:'Rupture critique — Doliprane 1000mg',msg:'Stock épuisé · Demande 30j : 976 unités',time:'Maintenant',read:false},
+  {id:2,type:'crit',icon:'🚨',title:'Rupture critique — Paracétamol 500mg',msg:'Stock épuisé · Commander 975 unités',time:'Il y a 2 min',read:false},
+  {id:3,type:'crit',icon:'🚨',title:'Rupture critique — Ibuprofène 400mg',msg:'Stock épuisé · Coût : 2 415 MAD',time:'Il y a 5 min',read:false},
+  {id:4,type:'crit',icon:'🚨',title:'Rupture critique — Cétirizine 10mg',msg:'Stock épuisé · Demande 30j : 492 unités',time:'Il y a 8 min',read:false},
+  {id:5,type:'warn',icon:'⚠️',title:'Coût réapprovisionnement élevé',msg:'Budget estimé : 53 295 MAD pour 30 médicaments',time:'Il y a 10 min',read:false},
+  {id:6,type:'crit',icon:'🚨',title:'Rupture critique — Augmentin 875mg',msg:'Stock épuisé · Coût : 3 510 MAD',time:'Il y a 12 min',read:false},
+  {id:7,type:'warn',icon:'📊',title:'Pic de demande détecté — Doliprane',msg:'Prédiction : 38 unités/jour ce week-end',time:'Il y a 15 min',read:false},
+  {id:8,type:'crit',icon:'🚨',title:'Rupture critique — Amoxicilline 500mg',msg:'Stock épuisé · Antibiotique critique',time:'Il y a 20 min',read:false},
+  {id:9,type:'info',icon:'✅',title:'Modèles ML rechargés',msg:'30 modèles Random Forest actifs · Précision : 85.6%',time:'Il y a 30 min',read:false},
+  {id:10,type:'warn',icon:'⚠️',title:'Tendance baisse — Ventoline 100mcg',msg:'Prévision en baisse sur 14 jours',time:'Il y a 45 min',read:false},
+  {id:11,type:'info',icon:'📈',title:'Rapport mensuel disponible',msg:'Données Mars 2025 intégrées avec succès',time:'Il y a 1h',read:false},
+  {id:12,type:'crit',icon:'🚨',title:'5 antibiotiques en rupture',msg:'Amoxicilline · Augmentin · Ciprofloxacine · Doxycycline · MED023',time:'Il y a 2h',read:false},
+];
+
+function renderNotifs(){
+  const body=document.getElementById('np-body');
+  body.innerHTML=NOTIFS.map(n=>`
+  <div class="nitem ${n.read?'':'unread'} ${n.type==='crit'?'':'n.type==="warn"?"warn":"info"'}" onclick="readNotif(${n.id})">
+    <div class="ni-icon ${n.type==='crit'?'crit':n.type==='warn'?'warn':'info'}">${n.icon}</div>
+    <div class="ni-body"><strong>${n.title}</strong><span>${n.msg}</span></div>
+    <span class="ni-time">${n.time}</span>
+  </div>`).join('');
+  const unread=NOTIFS.filter(n=>!n.read).length;
+  document.getElementById('notif-count').textContent=unread||'';
+  document.getElementById('notif-count').style.display=unread?'flex':'none';
+  document.getElementById('np-unread-count').textContent=unread+' non lue'+(unread>1?'s':'');
+}
+function toggleNotif(){
+  notifOpen=!notifOpen;
+  document.getElementById('notif-panel').classList.toggle('show',notifOpen);
+  if(notifOpen)renderNotifs();
+}
+function readNotif(id){NOTIFS.find(n=>n.id===id).read=true;renderNotifs();}
+function markAllRead(){NOTIFS.forEach(n=>n.read=true);renderNotifs();showToast('success','Notifications','Toutes marquées comme lues');}
+function checkStockAlerts(){
+  RECS.filter(r=>r.ul===3).slice(0,3).forEach((r,i)=>{
+    setTimeout(()=>showToast('error','Alerte stock critique',r.name+' — stock épuisé · Commander '+r.ord+' unités',5000),i*800);
+  });
+}
+document.addEventListener('click',e=>{if(notifOpen&&!e.target.closest('#notif-panel')&&!e.target.closest('#notif-btn')){notifOpen=false;document.getElementById('notif-panel').classList.remove('show');}});
+
+// ═══════════════════ NAV ═══════════════════
+function SP(n,el){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+n).classList.add('active');el.classList.add('active');
+}
+function BDG(u){const c={CRITIQUE:'critique',URGENT:'urgent','MODÉRÉ':'modere',OK:'ok'}[u]||'ok';return`<span class="badge ${c}"><span class="dot"></span>${u}</span>`;}
+function TRD(t){return t==='hausse'?'↑ hausse':t==='baisse'?'↓ baisse':'→ stable';}
+function NF(n){return Number(n).toLocaleString('fr-FR');}
+
+// ═══════════════════ DASHBOARD ═══════════════════
+function rDash(){
+  const safety = parseFloat(document.getElementById('reco-safety-input')?.value) || 1.2;
+  let totOrder = 0, totCost = 0;
+  document.getElementById('tb-dash').innerHTML=RECS.map(r=>{
+    const c = computeReco(r, safety);
+    totOrder += c.toOrder;
+    totCost  += c.cost;
+    const urgColors = {CRITIQUE:'var(--red)', URGENT:'var(--amb)', 'MODÉRÉ':'var(--amb)', OK:'var(--g500)'};
+    return `<tr>
+    <td><div class="mn">${r.name}</div><div class="mi">${r.id}</div></td>
+    <td style="color:var(--mt);font-size:12px">${r.cat}</td>
+    <td><input type="number" min="0" value="${c.stock}" style="width:75px;padding:3px 6px;font-size:12px" onchange="updateStockEverywhere('${r.id}', this.value)"></td>
+    <td style="font-family:var(--mo);font-weight:600">${NF(r.p30)}</td>
+    <td style="font-family:var(--mo);font-weight:700;color:var(--g700)">${NF(c.toOrder)}</td>
+    <td>${BDG(c.urgency)}</td>
+    <td style="font-size:12px">${TRD(r.tr)}</td>
+  </tr>`;
+  }).join('');
+  document.getElementById('k-ord').textContent=NF(totOrder);
+  document.getElementById('k-cst').textContent=NF(Math.round(totCost));
+}
+
+// Met à jour le stock d'un médicament et rafraîchit TOUTES les vues qui en dépendent
+function updateStockEverywhere(id, value){
+  let v = parseFloat(value);
+  if(isNaN(v)||v<0) v=0;
+  RECO_STATE[id].stock = v;
+  rDash();
+  rReco();
+  // Si l'onglet prédictions affiche ce même médicament, on le resynchronise aussi
+  const psel = document.getElementById('psel');
+  if(psel && psel.value === id){
+    document.getElementById('p-stock-input').value = v;
+    UP();
+  }
+}
+
+// ═══════════════════ RECOMMANDATIONS ═══════════════════
+function rReco(){
+  const safety = parseFloat(document.getElementById('reco-safety-input')?.value) || 1.2;
+  let counts = {3:0,2:0,1:0,0:0};
+
+  document.getElementById('rc-cards').innerHTML = RECS.map(r=>{
+    const c = computeReco(r, safety);
+    counts[c.ul]++;
+    const urgColors = {CRITIQUE:'var(--red)', URGENT:'var(--amb)', 'MODÉRÉ':'var(--amb)', OK:'var(--g500)'};
+    return `
+    <div style="background:var(--sf);border:1px solid var(--b1);border-left:3px solid ${urgColors[c.urgency]};border-radius:var(--r2);padding:14px 18px;margin-bottom:10px;display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:14px;align-items:center;box-shadow:var(--sh)">
+      <div><div style="font-weight:700;margin-bottom:2px">${r.name}</div><div style="font-size:11px;color:var(--mt)">${r.id} · ${r.cat} · ${r.uc} MAD/u</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;font-size:12px">
+        <div>
+          <div style="color:var(--mt);font-size:10px;text-transform:uppercase;font-weight:700">Stock (modifiable)</div>
+          <input type="number" min="0" value="${c.stock}" style="width:70px;padding:3px 6px;font-size:13px" onchange="updateRecoStock('${r.id}', this.value)">
+        </div>
+        <div><div style="color:var(--mt);font-size:10px;text-transform:uppercase;font-weight:700">Demande 30j</div><div style="font-family:var(--mo);font-weight:700">${r.p30}</div></div>
+        <div><div style="color:var(--mt);font-size:10px;text-transform:uppercase;font-weight:700">À commander</div><div style="font-family:var(--mo);color:var(--g700);font-weight:800">${NF(c.toOrder)}</div></div>
+        <div><div style="color:var(--mt);font-size:10px;text-transform:uppercase;font-weight:700">Coût MAD</div><div style="font-family:var(--mo);font-weight:700">${NF(c.cost)}</div></div>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:700;color:var(--mt);text-transform:uppercase;margin-bottom:4px">Précision ML</div>
+        <div style="background:var(--bg2);border-radius:3px;height:6px;overflow:hidden;margin-bottom:3px"><div style="height:100%;width:${r.acc}%;background:linear-gradient(90deg,var(--g600),var(--teal))"></div></div>
+        <div style="font-size:12px;font-weight:700;color:var(--teal)">${r.acc}%</div>
+        <div style="margin-top:4px;font-size:11px;color:var(--mt)">${c.daysLeft.toFixed(1)} j de stock</div>
+      </div>
+      ${BDG(c.urgency)}
+    </div>`;
+  }).join('');
+
+  document.getElementById('rk-crit').textContent = counts[3];
+  document.getElementById('rk-urg').textContent  = counts[2];
+  document.getElementById('rk-mod').textContent  = counts[1];
+  document.getElementById('rk-ok').textContent   = counts[0];
+}
+
+function updateRecoStock(id, value){
+  let v = parseFloat(value);
+  if(isNaN(v)||v<0) v=0;
+  RECO_STATE[id].stock = v;
+  rReco();
+}
+
+function resetRecoSafety(){
+  document.getElementById('reco-safety-input').value = 1.2;
+  RECS.forEach(r => RECO_STATE[r.id].stock = 0);
+  rReco();
+}
+
+// ═══════════════════ METRICS ═══════════════════
+function rMet(){
+  document.getElementById('tb-met').innerHTML=MIDS.map(id=>{const m=MET[id];return`<tr>
+    <td class="mi">${id}</td><td class="mn">${MNAMES[id]}</td>
+    <td style="font-size:12px;color:var(--mt)">${MCATS[id]}</td>
+    <td style="font-family:var(--mo);font-weight:700;color:var(--teal)">${m.r2}</td>
+    <td style="font-family:var(--mo);font-weight:700;color:var(--amb)">${m.mae}</td>
+    <td style="font-family:var(--mo);font-weight:700;color:var(--g700)">${m.acc}%</td>
+    <td><div style="height:5px;width:${m.acc}px;max-width:100px;background:linear-gradient(90deg,var(--g500),var(--teal));border-radius:3px;display:inline-block"></div></td>
+  </tr>`}).join('');
+}
+
+// ═══════════════════ TOP TABLES ═══════════════════
+function rTop(){
+  const tq=TOPQ.reduce((s,t)=>s+t.q,0),tr=TOPR.reduce((s,t)=>s+t.r,0);
+  document.getElementById('tb-topq').innerHTML=TOPQ.map((t,i)=>`<tr>
+    <td style="font-weight:800;color:${i<3?'var(--amb)':'var(--mt)'}">${String(i+1).padStart(2,'0')}</td>
+    <td><div class="mn">${t.n}</div><div class="mi">${t.id}</div></td>
+    <td style="font-family:var(--mo);font-weight:700">${NF(t.q)}</td>
+    <td><div style="display:flex;align-items:center;gap:6px"><div style="height:5px;width:${Math.round(t.q/tq*150)}px;background:linear-gradient(90deg,var(--g500),var(--teal));border-radius:3px"></div><span style="font-size:11px;color:var(--mt)">${(t.q/tq*100).toFixed(1)}%</span></div></td>
+  </tr>`).join('');
+  document.getElementById('tb-topr').innerHTML=TOPR.map((t,i)=>`<tr>
+    <td style="font-weight:800;color:${i<3?'var(--amb)':'var(--mt)'}">${String(i+1).padStart(2,'0')}</td>
+    <td><div class="mn">${t.n}</div><div class="mi">${t.id}</div></td>
+    <td style="font-family:var(--mo);font-weight:700">${NF(t.r)}</td>
+    <td><div style="display:flex;align-items:center;gap:6px"><div style="height:5px;width:${Math.round(t.r/tr*150)}px;background:linear-gradient(90deg,var(--teal),var(--g500));border-radius:3px"></div><span style="font-size:11px;color:var(--mt)">${(t.r/tr*100).toFixed(1)}%</span></div></td>
+  </tr>`).join('');
+}
+
+// ═══════════════════ INTERACTIVE CHART ═══════════════════
+let iChart=null, iMetric='qty', iType='line', iPeriod=12;
+
+function buildInteractiveChart(){
+  if(iChart)iChart.destroy();
+  const data=iPeriod===0?MONTHLY:MONTHLY.slice(-iPeriod);
+  const labels=data.map(m=>m.p);
+  const gc='rgba(46,128,73,.07)',tc='#6B8F78';
+  const datasets=[];
+  if(iMetric==='qty'||iMetric==='both'){
+    datasets.push({
+      label:'Quantité vendue',data:data.map(m=>m.q),
+      borderColor:'#2E8049',backgroundColor:iType==='area'?'rgba(46,128,73,.18)':'rgba(46,128,73,.65)',
+      fill:iType==='area',tension:.4,pointRadius:iType==='line'?3:0,
+      borderWidth:2,yAxisID:'y',
+      type:iType==='area'?'line':iType,
+      borderRadius:iType==='bar'?4:0,
+    });
+  }
+  if(iMetric==='rev'||iMetric==='both'){
+    datasets.push({
+      label:'Revenus (MAD)',data:data.map(m=>m.r),
+      borderColor:'#0D7373',backgroundColor:iType==='area'?'rgba(13,115,115,.15)':'rgba(13,115,115,.55)',
+      fill:iType==='area',tension:.4,pointRadius:iType==='line'?3:0,
+      borderWidth:2,yAxisID:iMetric==='both'?'y2':'y',
+      type:iType==='area'?'line':iType,
+      borderRadius:iType==='bar'?4:0,
+    });
+  }
+  const ctx=document.getElementById('c-interactive').getContext('2d');
+  iChart=new Chart(ctx,{
+    type:iType==='area'?'line':(iMetric==='both'?'line':iType),
+    data:{labels,datasets},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{labels:{color:tc,font:{size:11,weight:'600'}}},
+        tooltip:{
+          backgroundColor:'#1B5E34',titleColor:'#A8E6BF',bodyColor:'#fff',
+          borderColor:'#2E8049',borderWidth:1,cornerRadius:8,
+          callbacks:{label:ctx=>` ${ctx.dataset.label}: ${NF(ctx.parsed.y)}`}
+        }
+      },
+      scales:{
+        x:{ticks:{color:tc,font:{size:10},maxRotation:45},grid:{color:gc}},
+        y:{ticks:{color:tc},grid:{color:gc},title:{display:iMetric==='both',text:'Quantité',color:tc,font:{size:10}}},
+        ...(iMetric==='both'?{y2:{position:'right',ticks:{color:'#0D7373'},grid:{drawOnChartArea:false},title:{display:true,text:'MAD',color:'#0D7373',font:{size:10}}}}:{})
+      }
+    }
+  });
+}
+
+function setMetric(m,el){
+  iMetric=m;
+  document.querySelectorAll('.cc-btn').forEach(b=>{if(['qty','rev','both'].some(v=>b.onclick.toString().includes(v)))b.classList.remove('active')});
+  el.classList.add('active');
+  buildInteractiveChart();
+}
+function setChartType(t,el){
+  iType=t;
+  document.querySelectorAll('.chart-type-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  buildInteractiveChart();
+}
+function setPeriod(p,el){
+  iPeriod=p;
+  const periodBtns=document.querySelectorAll('.cc-btn');
+  periodBtns.forEach(b=>{if(['12','24','36','Tout'].some(v=>b.textContent.includes(v)))b.classList.remove('active')});
+  el.classList.add('active');
+  buildInteractiveChart();
+}
+
+// ═══════════════════ PREDICT ═══════════════════
+let predCh=null;
+function bSel(){
+  const s=document.getElementById('psel');
+  MIDS.forEach(id=>{const o=document.createElement('option');o.value=id;o.textContent=`${MNAMES[id]} (${id})`;s.appendChild(o)});
+  // Pré-remplir le stock avec la valeur par défaut du médicament sélectionné
+  document.getElementById('psel').addEventListener('change', syncStockField);
+}
+
+function syncStockField(){
+  // Quand on change de médicament, on réinitialise le stock affiché à 0 (rupture par défaut)
+  document.getElementById('p-stock-input').value = 0;
+}
+
+/* Génère un tableau de `horizon` prédictions à partir des 14 valeurs de base.
+   Si horizon <= 14 : on tronque. Si horizon > 14 : on répète le motif hebdomadaire. */
+function buildPredsForHorizon(id, horizon){
+  const base = PREDS[id];
+  if(horizon <= base.length) return base.slice(0, horizon);
+  const out = [];
+  for(let i=0;i<horizon;i++) out.push(base[i % base.length]);
+  return out;
+}
+
+function buildDatesForHorizon(horizon){
+  const out=[];
+  const start=new Date(DATES[0]);
+  for(let i=0;i<horizon;i++){
+    const d=new Date(start);
+    d.setDate(start.getDate()+i);
+    out.push(d.toISOString().slice(0,10));
+  }
+  return out;
+}
+
+function UP(){
+  const id      = document.getElementById('psel').value;
+  const m       = MET[id];
+  const rec0    = RECS.find(r=>r.id===id);
+
+  // ── Lecture des paramètres modifiables ──
+  let stock   = parseFloat(document.getElementById('p-stock-input').value);
+  let horizon = parseInt(document.getElementById('p-horizon-input').value);
+  let safety  = parseFloat(document.getElementById('p-safety-input').value);
+  if(isNaN(stock)||stock<0)     stock=0;
+  if(isNaN(horizon)||horizon<1) horizon=14;
+  if(horizon>90) horizon=90;
+  if(isNaN(safety)||safety<1)   safety=1.2;
+
+  const p     = buildPredsForHorizon(id, horizon);
+  const dates = buildDatesForHorizon(horizon);
+  const tot   = p.reduce((a,b)=>a+b,0);
+
+  document.getElementById('p-tot').textContent = tot;
+  document.getElementById('p-avg').textContent = (tot/p.length).toFixed(1);
+  document.getElementById('p-acc').textContent = m.acc+'%';
+
+  // ── Calcul de la recommandation EN DIRECT selon stock/horizon/safety ──
+  const required  = Math.round(tot * safety);
+  const toOrder   = Math.max(0, required - stock);
+  const dailyAvg  = tot / horizon;
+  const daysLeft  = dailyAvg>0 ? (stock/dailyAvg) : 999;
+  let urgency, ul;
+  if(daysLeft < 7)            { urgency='CRITIQUE'; ul=3; }
+  else if(daysLeft < 14)      { urgency='URGENT';   ul=2; }
+  else if(daysLeft < horizon) { urgency='MODÉRÉ';   ul=1; }
+  else                        { urgency='OK';       ul=0; }
+  const cost = Math.round(toOrder * rec0.uc * 100)/100;
+
+  document.getElementById('rl-stock').textContent    = NF(stock);
+  document.getElementById('rl-demand').textContent   = NF(tot);
+  document.getElementById('rl-required').textContent = NF(required);
+  document.getElementById('rl-order').textContent     = NF(toOrder);
+  document.getElementById('rl-cost').textContent      = NF(cost)+' MAD';
+  document.getElementById('rl-days').textContent      = isFinite(daysLeft) ? daysLeft.toFixed(1)+' j' : '∞';
+  document.getElementById('rl-urgency').innerHTML     = BDG(urgency);
+
+  // Couleur de la bordure de la carte selon l'urgence
+  const urgColors = {CRITIQUE:'var(--red)', URGENT:'var(--amb)', 'MODÉRÉ':'var(--amb)', OK:'var(--g500)'};
+  document.getElementById('p-reco-card').style.borderLeftColor = urgColors[urgency];
+
+  // ── Graphique ──
+  if(predCh)predCh.destroy();
+  const mx=Math.max(...p);
+  predCh=new Chart(document.getElementById('c-pred').getContext('2d'),{type:'bar',data:{labels:dates,datasets:[{
+    label:'Demande prévue',data:p,
+    backgroundColor:p.map((_,i)=>{const d=new Date(dates[i]);return(d.getDay()===0||d.getDay()===6)?'rgba(185,28,28,.25)':'rgba(46,128,73,.55)'}),
+    borderColor:p.map((_,i)=>{const d=new Date(dates[i]);return(d.getDay()===0||d.getDay()===6)?'#B91C1C':'#2E8049'}),
+    borderWidth:1.5,borderRadius:5}]},
+    options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>` ${ctx.parsed.y} unités`}}},
+    scales:{x:{ticks:{color:'#6B8F78',font:{size:10},maxRotation:60},grid:{color:'rgba(46,128,73,.06)'}},y:{ticks:{color:'#6B8F78'},grid:{color:'rgba(46,128,73,.06)'}}}}});
+
+  // ── Tableau détaillé ──
+  const days=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  document.getElementById('tb-pred').innerHTML=dates.map((d,i)=>{
+    const v=p[i],dw=new Date(d).getDay(),we=dw===0||dw===6,pct=Math.round(v/mx*100);
+    return`<tr><td style="color:var(--mt);font-weight:600">${i+1}</td><td style="font-family:var(--mo)">${d}</td>
+    <td style="font-family:var(--mo);font-weight:800;color:${we?'var(--red)':v>mx*.8?'var(--g600)':'var(--tx)'}">${v}</td>
+    <td style="font-size:12px;color:${we?'var(--red)':'var(--mt)'}">${days[dw]}${we?' ✕':''}</td>
+    <td><div style="display:flex;align-items:center;gap:5px"><div style="height:4px;width:${pct}px;max-width:80px;background:${we?'var(--red)':'var(--g500)'};border-radius:2px"></div><span style="font-size:11px;color:var(--mt)">${pct}%</span></div></td></tr>`;
+  }).join('');
+}
+
+function resetParams(){
+  document.getElementById('p-stock-input').value   = 0;
+  document.getElementById('p-horizon-input').value = 14;
+  document.getElementById('p-safety-input').value  = 1.2;
+  UP();
+}
+
+// ═══════════════════ CHARTS ANALYTICS ═══════════════════
+function MC(id,type,labels,datasets,opts={}){
+  const ctx=document.getElementById(id);if(!ctx)return;
+  const gc='rgba(46,128,73,.07)',tc='#6B8F78';
+  return new Chart(ctx,{type,data:{labels,datasets},options:{responsive:true,maintainAspectRatio:true,
+    plugins:{legend:{labels:{color:tc,font:{size:11,weight:'600'}}},...(opts.plugins||{})},
+    scales:type!=='doughnut'&&type!=='pie'?{x:{ticks:{color:tc,font:{size:10,weight:'500'},maxRotation:45},grid:{color:gc}},y:{ticks:{color:tc,font:{weight:'500'}},grid:{color:gc}}}:undefined,...opts}});
+}
+function iCharts(){
+  const ml=MONTHLY.map(m=>m.p);
+  MC('c-mon','line',ml,[{label:'Quantité',data:MONTHLY.map(m=>m.q),borderColor:'#2E8049',backgroundColor:'rgba(46,128,73,.1)',fill:true,tension:.4,pointRadius:1.5,borderWidth:2}]);
+  MC('c-pie','doughnut',CATS.map(c=>c.c),[{data:CATS.map(c=>c.r),backgroundColor:PAL,borderColor:'#fff',borderWidth:2.5}],{plugins:{legend:{position:'right',labels:{color:'#2D5A3A',font:{size:10,weight:'600'},boxWidth:11,padding:7}}}});
+  MC('c-m2','bar',ml,[{label:'Quantité',data:MONTHLY.map(m=>m.q),backgroundColor:'rgba(46,128,73,.55)',borderColor:'#2E8049',borderWidth:1,borderRadius:3}]);
+  MC('c-yr','bar',YEARLY.map(y=>y.y),[{label:'Quantité',data:YEARLY.map(y=>y.q),backgroundColor:['#276B44','#2E8049','#3A9457','#5AAD72','#0D7373','#1A9494'],borderRadius:6}],{plugins:{legend:{display:false}}});
+  MC('c-cq','bar',CATS.map(c=>c.c),[{label:'Quantité',data:CATS.map(c=>c.q),backgroundColor:PAL,borderRadius:4}],{plugins:{legend:{display:false}}});
+  MC('c-cr','bar',CATS.map(c=>c.c),[{label:'Revenus MAD',data:CATS.map(c=>c.r),backgroundColor:PAL,borderRadius:4}],{plugins:{legend:{display:false}}});
+}
+
+// ═══════════════════ API DOCS ═══════════════════
+function rEps(){
+  const EPS=[
+    {m:'GET',p:'/',d:'Documentation complète',ex:`{"api":"MediSense","models":{"avg_accuracy":"85.6%","medications_trained":30}}`},
+    {m:'GET',p:'/api/medications',d:'Liste 30 médicaments + stock',ex:`{"total":30,"medications":[{"id":"MED001","name":"Paracétamol 500mg","current_stock":0}]}`},
+    {m:'GET',p:'/api/predict/:id?horizon=30',d:'Prédictions journalières',ex:`{"predictions":[{"date":"2025-04-01","predicted_demand":30}],"summary":{"total":813}}`},
+    {m:'GET',p:'/api/recommend/all',d:'Toutes recommandations urgence',ex:`{"summary":{"critical":30,"total_cost":53295},"recommendations":[...]}`},
+    {m:'GET',p:'/api/analytics/sales',d:'Agrégats mensuels + catégories',ex:`{"totals":{"quantity_sold":553313,"revenue":3649803}}`},
+    {m:'GET',p:'/api/model/metrics',d:'R², MAE, précision 30 modèles',ex:`{"global_performance":{"avg_r2":0.680,"avg_accuracy":85.6}}`},
+    {m:'POST',p:'/api/predict/custom',d:'Prédiction paramétrable',ex:`// Body: {"medication_id":"MED001","horizon":30}\n{"predictions":[...],"estimated_cost":2437.5}`},
+  ];
+  document.getElementById('ep-list').innerHTML=EPS.map((e,i)=>`
+  <div class="endpoint"><div class="ep-h" onclick="document.getElementById('eb${i}').classList.toggle('open')">
+    <span class="mth ${e.m.toLowerCase()}">${e.m}</span><span class="ep-path">${e.p}</span><span class="ep-desc">${e.d}</span>
+  </div><div class="ep-b" id="eb${i}"><pre>${e.ex}</pre></div></div>`).join('');
+}
+
+// ═══════════════════ CHATBOT ═══════════════════
+let co=false;
+function TC(){co=!co;document.getElementById('cb-panel').classList.toggle('open',co);document.querySelector('#cb-btn .nt').style.display='none';if(co)setTimeout(()=>document.getElementById('cbi').focus(),260);}
+function AM(txt,u){
+  const el=document.getElementById('cb-msgs');
+  const d=document.createElement('div');d.className='msg '+(u?'user':'bot');
+  d.innerHTML=u?`<div class="m-bub">${txt}</div>`:`<div class="m-av">⚕️</div><div class="m-bub">${txt}</div>`;
+  el.appendChild(d);el.scrollTop=el.scrollHeight;
+}
+function AT(){const el=document.getElementById('cb-msgs');const d=document.createElement('div');d.className='msg bot';d.id='ti';d.innerHTML=`<div class="m-av">⚕️</div><div class="m-bub"><div class="typ"><span></span><span></span><span></span></div></div>`;el.appendChild(d);el.scrollTop=el.scrollHeight;}
+function RT(){const t=document.getElementById('ti');if(t)t.remove();}
+function SS(el){document.getElementById('cbi').value=el.textContent;SM();}
+function SM(){
+  const inp=document.getElementById('cbi'),txt=inp.value.trim();if(!txt)return;
+  inp.value='';AM(txt,true);
+  document.getElementById('cb-sugs').style.display='none';
+  AT();setTimeout(()=>{RT();AM(REP(txt),false);},550+Math.random()*400);
+}
+
+function REP(q){
+  q=q.toLowerCase();
+  const totO=NF(RECS.reduce((s,r)=>s+r.ord,0)),totC=NF(Math.round(RECS.reduce((s,r)=>s+r.cost,0)));
+  let fm=null;
+  for(const [id,nm] of Object.entries(MNAMES)){if(q.includes(nm.toLowerCase())||q.includes(id.toLowerCase())||q.includes(nm.toLowerCase().split(' ')[0])){fm={id,nm};break;}}
+  const rx=q.match(/\bmed0?(\d+)/i);
+  if(rx&&!fm){const id='MED'+String(rx[1]).padStart(3,'0');if(MNAMES[id])fm={id,nm:MNAMES[id]};}
+  if(fm){
+    const {id}=fm,rec=RECS.find(r=>r.id===id),m=MET[id],pr=PREDS[id],t14=pr.reduce((a,b)=>a+b,0);
+    if(q.includes('stock')||q.includes('commander'))return`<strong>${fm.nm}</strong><br>Stock : <span class="mb r">0 unités</span><br>Demande 30j : <strong>${rec.p30}</strong><br>À commander : <strong>${rec.ord}</strong><br>Coût : <strong>${NF(rec.cost)} MAD</strong>`;
+    if(q.includes('prédi')||q.includes('previ'))return`<strong>Prédictions 14j — ${fm.nm}</strong><br>Total : <strong>${t14}</strong> · Moy : <strong>${(t14/14).toFixed(1)}/j</strong><br>Précision : <span class="mb g">${m.acc}%</span>`;
+    return`<strong>${fm.nm}</strong> · ${id}<br>Demande 30j : <strong>${rec.p30}</strong> · À commander : <strong>${rec.ord}</strong><br>Précision : <span class="mb g">${m.acc}%</span>`;
+  }
+  if(q.includes('critique')||q.includes('rupture'))return`🚨 <strong>30 médicaments en rupture critique</strong><br>${RECS.slice(0,3).map(r=>`• ${r.name} → <strong>${r.ord}</strong>`).join('<br>')}<br>…<br>Budget total : <strong>${totC} MAD</strong>`;
+  if(q.includes('coût')||q.includes('cout')||q.includes('budget'))return`💰 <strong>Budget réapprovisionnement</strong><br>Total : <strong>${totC} MAD</strong><br>Unités : <strong>${totO}</strong>`;
+  if(q.includes('top')||q.includes('plus vendu'))return`🏆 <strong>Top 5 médicaments</strong><br>${TOPQ.slice(0,5).map((t,i)=>`${i+1}. ${t.n} — <strong>${NF(t.q)} u.</strong>`).join('<br>')}`;
+  if(q.includes('notif')||q.includes('alerte'))return`🔔 <strong>Notifications</strong><br>12 alertes actives dont <strong>10 ruptures critiques</strong>.<br>Cliquez la cloche 🔔 en haut à droite pour les voir.`;
+  if(q.includes('graphique')||q.includes('chart')||q.includes('interactif'))return`📊 <strong>Graphique interactif</strong><br>Disponible sur le tableau de bord :<br>• Switcher <strong>Quantité / Revenus / Les deux</strong><br>• Types : <strong>Ligne / Barres / Aire</strong><br>• Périodes : <strong>12 / 24 / 36 mois / Tout</strong>`;
+  if(q.includes('aide')||q.includes('help'))return`💡 <strong>Commandes disponibles :</strong><br>• "stock doliprane" · "prédictions MED001"<br>• "coût total" · "ruptures critiques"<br>• "notifications"<br>• "graphique interactif"`;
+  if(q.includes('bonjour')||q.includes('salut'))return`Bonjour ! Système actif — <strong>57 504 enregistrements</strong> · 30 médicaments.<br>Tapez <strong>"aide"</strong> pour les commandes.`;
+  return`Commande non reconnue. Essayez :<br>• "stock paracétamol" · "notifications" · "aide"`;
+}
+
+// ═══════════════════ INIT ═══════════════════
+document.addEventListener('DOMContentLoaded',()=>{
+  renderNotifs();
+  rDash();rReco();rMet();rTop();rEps();bSel();
+  iCharts();
+  buildInteractiveChart();
+  UP();
+});
+</script>
+</body>
+</html>
