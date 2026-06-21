@@ -1,5 +1,5 @@
 """
-PharmaPred — API REST de prédiction de demande de médicaments
+MediSense — API REST de prédiction de demande de médicaments
 Flask · 10 endpoints · JSON · CORS activé
 Lancez : python app.py
 """
