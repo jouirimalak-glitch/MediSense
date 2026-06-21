@@ -1,5 +1,5 @@
 """
-PharmaPred — Modèle ML de prédiction de demande
+MediSense — Modèle ML de prédiction de demande
 Random Forest Regressor · 30 modèles · features temporelles + lags
 Lancez : python train_model.py
 """
